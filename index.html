@@ -1,0 +1,1018 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Medical</title>
+    <link rel="icon" href="./Assets/icon.webp" />
+    <link rel="stylesheet" href="./index.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <!-- Swiper CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+    />
+  </head>
+  <body>
+    <div class="medical-loader" id="medicalLoader">
+      <div class="loader-wrapper">
+        <div class="device-container">
+          <div class="device-ring"></div>
+          <div class="device-ring inner"></div>
+          <div class="device-core">
+            <img src="./Assets/icon.webp" alt="Stackly" class="loader-logo" />
+          </div>
+          <div class="scan-line"></div>
+        </div>
+
+        <div class="ecg-line">
+          <svg viewBox="0 0 500 100" preserveAspectRatio="none">
+            <path
+              d="M0 50 L70 50 L90 20 L110 80 L130 50 L200 50 L220 30 L240 70 L260 50 L500 50"
+            />
+          </svg>
+        </div>
+
+        <h3 class="loading-text">INITIATING DIAGNOSTIC SCAN...</h3>
+        <p class="sub-text">Establishing Secure Interface with Medical Hub</p>
+      </div>
+    </div>
+
+    <div class="the-main">
+      <header>
+        <div class="header1">
+          <div class="container1">
+            <h3>Welcome To Stackly Medical Devices & Services.</h3>
+          </div>
+          <div class="container2">
+            <div>
+              <i class="fa-solid fa-phone-volume"></i>
+              <p>(123)456-7890</p>
+            </div>
+            <div>
+              <i class="fa-regular fa-envelope"></i>
+              <p>Support@stackly.com</p>
+            </div>
+          </div>
+        </div>
+        <div class="header2">
+          <div class="logo">
+            <a href="./index.html">
+              <img src="./Assets/logo.webp" alt="Logo" />
+            </a>
+          </div>
+
+          <nav>
+            <ul>
+              <li class="dropdown">
+                <a href="./index.html">Home</a>
+
+                <span class="drop-toggle">
+                  <i class="fa-solid fa-caret-down"></i>
+                </span>
+
+                <ul class="dropdown-menu">
+                  <li><a href="./index2.html">Home 2</a></li>
+                </ul>
+              </li>
+
+              <li><a href="./about.html">About</a></li>
+              <li><a href="./service.html">Services</a></li>
+              <li><a href="./blog.html">Blog</a></li>
+              <li><a href="./contact.html">Contact Us</a></li>
+              <li><a href="./dashboard.html">Dashboard</a></li>
+            </ul>
+          </nav>
+
+          <div class="icons">
+            <div class="login">
+              <a class="btn" href="./app.html">Buy Now</a>
+
+              <a href="./login.html">
+                <i class="fa-regular fa-circle-user"></i>
+              </a>
+            </div>
+
+            <div class="mobilebar">
+              <div class="hamburger-box">
+                <div class="hamburger">
+                  <div class="line line1"></div>
+                  <div class="line line2"></div>
+                  <div class="line line3"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
+
+      <div class="sidebar" id="sidebar">
+        <ul>
+          <li
+            class="has-dropdown menu-item"
+            data-aos="fade-up-right"
+            data-aos-delay="100"
+          >
+            <div class="dropdown-header">
+              <a href="./index.html">Home</a>
+              <span class="drop-caret" id="home-caret">▾</span>
+            </div>
+            <ul class="submenu" id="home-dropdown">
+              <li><a href="./index2.html">Home 2</a></li>
+            </ul>
+          </li>
+
+          <li class="menu-item" data-aos="fade-up-right" data-aos-delay="150">
+            <a href="./about.html">About</a>
+          </li>
+          <li class="menu-item" data-aos="fade-up-right" data-aos-delay="200">
+            <a href="./service.html">Services</a>
+          </li>
+          <li class="menu-item" data-aos="fade-up-right" data-aos-delay="250">
+            <a href="./blog.html">Blog</a>
+          </li>
+          <li class="menu-item" data-aos="fade-up-right" data-aos-delay="300">
+            <a href="./contact.html">Contact Us</a>
+          </li>
+          <li class="menu-item" data-aos="fade-up-right" data-aos-delay="350">
+            <a href="./dashboard.html">Dashboard</a>
+          </li>
+          <li class="menu-item" data-aos="fade-up-right" data-aos-delay="400">
+            <a href="./login.html">Login</a>
+          </li>
+        </ul>
+
+        <div
+          class="sidebar-login"
+          data-aos="fade-up-right"
+          data-aos-delay="450"
+        >
+          <a href="./app.html">
+            <button class="login-btn">Buy Now</button>
+          </a>
+        </div>
+      </div>
+
+      <div class="overlay" id="overlay"></div>
+
+      <main>
+        <section class="medical-hero">
+          <div class="hero-bg-slideshow">
+            <div
+              class="slide active"
+              style="
+                background-image: url(&quot;https://images.unsplash.com/photo-1551076805-e1869033e561?q=80&w=2000&quot;);
+              "
+            ></div>
+            <div
+              class="slide"
+              style="
+                background-image: url(&quot;https://images.unsplash.com/photo-1516549655169-df83a0774514?q=80&w=2000&quot;);
+              "
+            ></div>
+            <div
+              class="slide"
+              style="
+                background-image: url(&quot;https://images.unsplash.com/photo-1576091160550-2173dba999ef?q=80&w=2000&quot;);
+              "
+            ></div>
+            <div
+              class="slide"
+              style="
+                background-image: url(&quot;https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?q=80&w=2000&quot;);
+              "
+            ></div>
+            <div class="overlay-dark"></div>
+          </div>
+
+          <div class="bg-grid"></div>
+          <div class="glow-sphere"></div>
+
+          <div class="hero-container">
+            <div class="hero-text-content">
+              <div class="status-chip">
+                <span class="pulse-dot"></span>
+                <span class="typewriter"
+                  >SYSTEM STATUS: OPTIMAL // NEURAL LINK ACTIVE // v4.2.0</span
+                >
+              </div>
+
+              <span class="medical-tag">Advanced Surgical Robotics & AI</span>
+
+              <h1 class="hero-title">
+                The Future of <br />
+                <span class="accent-green">Clinical Autonomy</span>
+              </h1>
+
+              <p class="hero-description">
+                Integrating proprietary **Quantum-Sensing** technology with
+                real-time AI analytics. We provide surgeons with unprecedented
+                intraoperative insights, reducing procedural risk by 42% through
+                high-fidelity neural-mapping and robotic precision.
+              </p>
+
+              <div class="tech-specs-horizontal">
+                <div class="spec-item">
+                  <span class="spec-dot"></span>
+                  <p><strong>Latency:</strong> < 2ms Fiber Optic Sync</p>
+                </div>
+                <div class="spec-item">
+                  <span class="spec-dot"></span>
+                  <p><strong>Resolution:</strong> 8K Holographic Imaging</p>
+                </div>
+              </div>
+
+              <div class="feature-mini-grid">
+                <div class="f-item">
+                  <div class="f-line"></div>
+                  <strong>99.99%</strong>
+                  <span>Success Metric</span>
+                </div>
+                <div class="f-item">
+                  <div class="f-line"></div>
+                  <strong>25k+</strong>
+                  <span>Global Installs</span>
+                </div>
+                <div class="f-item">
+                  <div class="f-line"></div>
+                  <strong>Tier 4</strong>
+                  <span>Data Security</span>
+                </div>
+              </div>
+
+              <div class="hero-actions">
+                <a href="#products" class="btn-main">View System Catalog</a>
+                <a href="#demo" class="btn-outline">Book Technical Briefing</a>
+              </div>
+            </div>
+
+            <div class="hero-visual-wrapper">
+              <div class="data-stream-box">
+                <div class="stream-header">LIVE TELEMETRY FEED</div>
+                <div class="stream-content">
+                  <code>> Initializing Bio-Link... [OK]</code>
+                  <code>> Scanning Tissue Density... [98%]</code>
+                  <code>> AI Calibration Complete.</code>
+                </div>
+              </div>
+
+              <div class="floating-stats-card data-card-1">
+                <div class="stat-icon">✓</div>
+                <div>
+                  <span class="stat-label">COMPLIANCE ENGINE</span>
+                  <span class="stat-value">HIPAA / GDPR / FDA Class III</span>
+                </div>
+              </div>
+
+              <div class="floating-stats-card data-card-2">
+                <div class="stat-icon-alt">⚡</div>
+                <div>
+                  <span class="stat-label">AI PROCESSING</span>
+                  <span class="stat-value">Active Neural-Engine v8.4</span>
+                </div>
+              </div>
+
+              <div class="visual-specs-list">
+                <div class="spec-line">
+                  <span>MODALITY</span> [ ROBOTIC_SURGERY ]
+                </div>
+                <div class="spec-line">
+                  <span>ENCRYPTION</span> [ MIL-GRADE_AES ]
+                </div>
+                <div class="spec-line"><span>BIO-SYNC</span> [ REAL_TIME ]</div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+
+      <section class="about-hero">
+        <div class="about-container">
+          <div class="about-content">
+            <h1 class="gsap-reveal">About Our Company</h1>
+            <p class="subheading gsap-reveal">
+              Precision Engineering for Life-Critical Systems
+            </p>
+            <p class="intro-p gsap-reveal">
+              Since 2012, we have been at the forefront of the medical
+              revolution. By merging <strong>Quantum-Sensing</strong> with
+              surgical robotics, we don't just build devices; we build the
+              future of clinical autonomy.
+            </p>
+
+            <div class="about-toggle-container gsap-reveal">
+              <div class="toggle-nav">
+                <button
+                  class="toggle-btn active"
+                  onclick="toggleAbout('mission')"
+                >
+                  Our Mission
+                </button>
+                <button class="toggle-btn" onclick="toggleAbout('vision')">
+                  Our Vision
+                </button>
+              </div>
+              <div class="toggle-content" id="about-text">
+                To empower surgeons with zero-latency neural feedback and
+                autonomous precision through ISO-certified hardware.
+              </div>
+            </div>
+
+            <div class="cert-grid gsap-reveal">
+              <div class="cert-card"><span>ISO</span> 13485</div>
+              <div class="cert-card"><span>CE</span> Mark</div>
+              <div class="cert-card"><span>FDA</span> Class III</div>
+            </div>
+          </div>
+
+          <div class="about-image-wrapper gsap-reveal">
+            <img
+              src="./Assets/pexels-vijay-victor-789205481-20186736.jpg"
+              alt="Laboratory"
+              class="main-about-img"
+            />
+            <div class="floating-badge">Est. 2012</div>
+          </div>
+        </div>
+      </section>
+
+      <section class="services-section">
+        <div class="services-header">
+          <h1 class="gsap-service-title">Our Ecosystem</h1>
+          <p class="gsap-service-title">
+            End-to-end technical integration for modern healthcare institutions.
+          </p>
+        </div>
+
+        <div class="services-grid">
+          <div class="service-card">
+            <div class="service-img-header">
+              <img
+                src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?q=80&w=500"
+                alt="Mfg"
+              />
+            </div>
+            <div class="service-icon">01</div>
+            <h3>Device Manufacturing</h3>
+            <p>High-precision production with class-100 cleanroom standards.</p>
+            <div class="service-hover-bg"></div>
+          </div>
+
+          <div class="service-card">
+            <div class="service-img-header">
+              <img
+                src="https://images.unsplash.com/photo-1516549655169-df83a0774514?q=80&w=500"
+                alt="Inst"
+              />
+            </div>
+            <div class="service-icon">02</div>
+            <h3>Rapid Installation</h3>
+            <p>Seamless integration into existing hospital ERP/HIS networks.</p>
+            <div class="service-hover-bg"></div>
+          </div>
+
+          <div class="service-card">
+            <div class="service-img-header">
+              <img
+                src="https://images.unsplash.com/photo-1581092160562-40aa08e78837?q=80&w=500"
+                alt="Maint"
+              />
+            </div>
+            <div class="service-icon">03</div>
+            <h3>Predictive Maintenance</h3>
+            <p>AI-driven diagnostics to prevent downtime before it happens.</p>
+            <div class="service-hover-bg"></div>
+          </div>
+
+          <div class="service-card">
+            <div class="service-img-header">
+              <img
+                src="https://images.unsplash.com/photo-1576091160550-2173dba999ef?q=80&w=500"
+                alt="Dev"
+              />
+            </div>
+            <div class="service-icon">04</div>
+            <h3>Custom OEM Development</h3>
+            <p>White-label solutions tailored to proprietary clinical needs.</p>
+            <div class="service-hover-bg"></div>
+          </div>
+          <div class="service-card">
+            <div class="service-img-header">
+              <img
+                src="https://images.unsplash.com/photo-1551076805-e1869033e561?q=80&w=500"
+                alt="Radiology"
+              />
+            </div>
+            <div class="service-icon">05</div>
+            <h3>Advanced Imaging</h3>
+            <p>Next-gen MRI and CT sensor arrays with 8K neural reconstruction.</p>
+            <div class="service-hover-bg"></div>
+          </div>
+
+          <div class="service-card">
+            <div class="service-img-header">
+              <img
+                src="https://images.unsplash.com/photo-1579154235884-332005fd81f5?q=80&w=500"
+                alt="Laboratory"
+              />
+            </div>
+            <div class="service-icon">06</div>
+            <h3>Biometric Analysis</h3>
+            <p>Automated pathology screening using real-time molecular sensors.</p>
+            <div class="service-hover-bg"></div>
+          </div>
+
+          <div class="service-card">
+            <div class="service-img-header">
+              <img
+                src="https://images.unsplash.com/photo-1559757175-5700dde675bc?q=80&w=500"
+                alt="Neurology"
+              />
+            </div>
+            <div class="service-icon">07</div>
+            <h3>Neural Interface</h3>
+            <p>Zero-latency haptic systems for complex neurological procedures.</p>
+            <div class="service-hover-bg"></div>
+          </div>
+
+          <div class="service-card">
+            <div class="service-img-header">
+              <img
+                src="https://images.unsplash.com/photo-1584036561566-baf8f5f1b144?q=80&w=500"
+                alt="Sterilization"
+              />
+            </div>
+            <div class="service-icon">08</div>
+            <h3>Sterilization Hubs</h3>
+            <p>Autonomous UV-C and chemical sterilization for surgical suites.</p>
+            <div class="service-hover-bg"></div>
+          </div>
+        </div>
+      </section>
+
+      <section class="blog-section">
+        <div class="section-container">
+          <div class="blog-header gsap-blog-reveal">
+            <h2 class="subheading">Clinical Insights</h2>
+            <h1>Latest in MedTech Innovation</h1>
+          </div>
+          <div class="blog-grid">
+            <article class="blog-card gsap-blog-reveal">
+              <div class="blog-img">
+                <img
+                  src="https://images.unsplash.com/photo-1576086213369-97a306dca664?q=80&w=500"
+                  alt="Robotics"
+                />
+                <span class="category">Robotics</span>
+              </div>
+              <div class="blog-content">
+                <span class="date">Oct 12, 2025</span>
+                <h3>The Future of Minimally Invasive Surgery</h3>
+                <p>
+                  Exploring how haptic feedback is changing surgical precision
+                  in 2026.
+                </p>
+                <a href="#" class="read-more">Read Analysis →</a>
+              </div>
+            </article>
+
+            <article class="blog-card gsap-blog-reveal">
+              <div class="blog-img">
+                <img
+                  src="https://images.unsplash.com/photo-1582719471384-894fbb16e074?q=80&w=500"
+                  alt="AI"
+                />
+                <span class="category">AI & Data</span>
+              </div>
+              <div class="blog-content">
+                <span class="date">Sept 28, 2025</span>
+                <h3>AI Diagnostics in Critical Care</h3>
+                <p>
+                  Real-time patient monitoring systems and predictive analytics.
+                </p>
+                <a href="#" class="read-more">Read Analysis →</a>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="case-studies">
+        <div class="case-wrapper">
+          <div class="case-info gsap-case">
+            <h2 class="subheading">Case Study</h2>
+            <h1>St. Jude’s Digital Transformation</h1>
+            <p>
+              How our custom OEM sensors reduced surgical recovery time by 22%
+              over a 12-month clinical trial.
+            </p>
+            <ul class="stats-list">
+              <li><strong>22%</strong> Recovery Speed</li>
+              <li><strong>400+</strong> Successful Procedures</li>
+            </ul>
+          </div>
+          <div class="case-visual gsap-case">
+            <img
+              src="https://images.unsplash.com/photo-1551601651-2a8555f1a136?q=80&w=800"
+              alt="Hospital Tech"
+            />
+          </div>
+        </div>
+      </section>
+
+      <section class="partners-section">
+        <p class="marquee-title">Trusted by Global Healthcare Leaders</p>
+        <div class="marquee">
+          <div class="marquee-content">
+            <span class="partner-logo">BIO-TECH CORP</span>
+            <span class="partner-logo">HEALTH-GRID</span>
+            <span class="partner-logo">NEURO-SYNC</span>
+            <span class="partner-logo">GLOBAL CLINIC</span>
+            <span class="partner-logo">VITAL-FLOW</span>
+            <span class="partner-logo">BIO-TECH CORP</span>
+            <span class="partner-logo">HEALTH-GRID</span>
+            <span class="partner-logo">NEURO-SYNC</span>
+            <span class="partner-logo">GLOBAL CLINIC</span>
+            <span class="partner-logo">VITAL-FLOW</span>
+          </div>
+        </div>
+      </section>
+
+      <section class="contact-section">
+        <div class="contact-grid">
+          <div class="contact-form-wrapper gsap-contact">
+            <h1>Technical Support</h1>
+            <p>Submit a ticket or request a device demonstration.</p>
+            <form id="med-form">
+              <div class="input-group">
+                <input type="text" placeholder="Full Name" required />
+              </div>
+              <div class="input-group">
+                <input type="email" placeholder="Hospital Email" required />
+              </div>
+              <select class="input-group">
+                <option>Inquiry Type</option>
+                <option>Technical Support</option>
+                <option>Device Procurement</option>
+                <option>Maintenance Request</option>
+              </select>
+              <textarea placeholder="Message..." rows="5"></textarea>
+              <button type="submit" class="submit-btn">
+                Send Dispatch Request
+              </button>
+            </form>
+          </div>
+          <div class="contact-info gsap-contact">
+            <div class="support-card emergency">
+              <h3>24/7 Technical Hotline</h3>
+              <p>For critical equipment failure only:</p>
+              <a href="tel:+18005550199">+1 (800) 555-0199</a>
+            </div>
+            <div class="support-card">
+              <h3>Global HQ</h3>
+              <p>
+                122 Medical Plaza, Innovation Drive<br />Cambridge, MA 02139
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <footer class="main-footer">
+        <div class="footer-grid">
+          <div class="footer-brand gsap-contact">
+            <div class="logo" style="margin-bottom: 20px">
+              <a href="./index.html">
+                <!-- <img
+                  src="./Assets/logo.webp"
+                  alt="MEDDEVICE Logo"
+                  style="max-width: 180px"
+                /> -->
+              </a>
+            </div>
+            <h2 class="footer-logo">MED<span>DEVICE</span></h2>
+            <p>
+              Advancing human health through autonomous precision and clinical
+              intelligence. Our ISO-certified hardware provides the global
+              infrastructure for AI-assisted surgical operations.
+            </p>
+          </div>
+
+          <div class="footer-links gsap-contact">
+            <h4>Quick Links</h4>
+
+            <a href="./about.html">About</a>
+            <a href="./service.html">Services</a>
+            <a href="./blog.html">Blog</a>
+            <a href="./contact.html">Contact Us</a>
+            <a href="./dashboard.html">Dashboard</a>
+            <a href="./login.html">Login</a>
+          </div>
+          <div class="footer-links">
+            <h4>Navigation</h4>
+            <a href="#">About</a>
+            <a href="#">Services</a>
+            <a href="#">Clinical Blog</a>
+            <a href="#">Case Studies</a>
+          </div>
+          <div class="footer-newsletter">
+            <h4>Newsletter</h4>
+            <p>Stay updated on medical breakthroughs.</p>
+            <div class="news-input">
+              <input type="email" placeholder="Email Address" />
+              <button>→</button>
+            </div>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p>&copy; 2026 Medical Device Innovations. All Rights Reserved.</p>
+          <div class="legal-links">
+            <a href="#">Privacy Policy</a>
+            <a href="#">ISO Compliance</a>
+          </div>
+        </div>
+      </footer>
+    </div>
+  </body>
+
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script src="./script.js"></script>
+  <script>
+    AOS.init({
+      once: true,
+      duration: 1000,
+      easing: "ease-out-cubic",
+      startEvent: "aos:ready", // manual trigger
+    });
+  </script>
+  <!-- GSAP -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+
+  <!-- Header Scrolled -->
+  <script>
+    window.addEventListener("scroll", function () {
+      const header = document.querySelector(".header2");
+      const mainSection = document.querySelector("main"); // Targets your <main> tag
+
+      // Get the position of the main section
+      const sectionBottom = mainSection.getBoundingClientRect().bottom;
+
+      // If the bottom of 'main' is less than or equal to 0 (off-screen)
+      if (sectionBottom <= 0) {
+        header.classList.add("scrolled");
+      } else {
+        header.classList.remove("scrolled");
+      }
+    });
+  </script>
+
+  <!-- Hero Section -->
+  <script>
+    // Global scope variables
+    let heroTl;
+
+    document.addEventListener("DOMContentLoaded", () => {
+      gsap.registerPlugin(ScrollTrigger);
+
+      // 1. Setup the Hero Timeline (PAUSED)
+      // We use .from() so we don't need gsap.set() on every element
+      heroTl = gsap.timeline({
+        paused: true,
+        defaults: { ease: "power4.out", duration: 1.2 },
+      });
+
+      // Check if hero exists on current page before adding to timeline
+      if (document.querySelector(".medical-hero")) {
+        heroTl
+          .from(".hero-title", { y: 80, opacity: 0 })
+          .from(".tech-specs-horizontal", { y: 30, opacity: 0 }, "-=0.8")
+          .from(".hero-description", { y: 30, opacity: 0 }, "-=0.6")
+          .from(".f-item", { y: 30, opacity: 0, stagger: 0.2 }, "-=0.8")
+          .from(".hero-actions", { y: 20, opacity: 0 }, "-=0.6")
+          .from(".data-stream-box", { x: 60, opacity: 0 }, "-=1")
+          .from(
+            ".floating-stats-card",
+            {
+              scale: 0.8,
+              opacity: 0,
+              stagger: 0.3,
+              ease: "back.out(1.7)",
+            },
+            "-=0.8",
+          );
+
+        // Initialize Slideshow & Parallax only if hero is present
+        initSlideshow();
+        initMouseParallax();
+        initTypewriter();
+      }
+    });
+
+    // 2. LOADER LOGIC (Triggering the GSAP)
+    window.addEventListener("load", () => {
+      const loader = document.getElementById("medicalLoader");
+      const mainContent = document.querySelector("main");
+      const LOADER_TIME = 2500;
+
+      setTimeout(() => {
+        loader.style.opacity = "0";
+
+        setTimeout(() => {
+          loader.style.display = "none";
+
+          /* Make Content Visible */
+          if (mainContent) {
+            mainContent.style.visibility = "visible";
+            mainContent.style.opacity = "1";
+            mainContent.style.transform = "translateY(0)";
+          }
+
+          /* 🔥 TRIGGER THE HERO GSAP */
+          if (heroTl) heroTl.play();
+
+          /* Refresh other scroll-based tools */
+          ScrollTrigger.refresh();
+          if (typeof AOS !== "undefined") AOS.refreshHard();
+        }, 600);
+      }, LOADER_TIME);
+    });
+
+    // --- HELPER FUNCTIONS ---
+
+    function initSlideshow() {
+      const slides = document.querySelectorAll(".slide");
+      if (!slides.length) return;
+      let current = 0;
+      setInterval(() => {
+        slides[current].classList.remove("active");
+        current = (current + 1) % slides.length;
+        slides[current].classList.add("active");
+        gsap.fromTo(
+          slides[current],
+          { scale: 1.2 },
+          { scale: 1, duration: 6, ease: "linear" },
+        );
+      }, 5000);
+    }
+
+    function initMouseParallax() {
+      document.addEventListener("mousemove", (e) => {
+        const x = (e.clientX / window.innerWidth - 0.5) * 40;
+        const y = (e.clientY / window.innerHeight - 0.5) * 40;
+        gsap.to(".hero-visual-wrapper", {
+          x: x,
+          y: y,
+          duration: 2,
+          ease: "power2.out",
+        });
+        gsap.to(".glow-sphere", { x: x * 1.5, y: y * 1.5, duration: 3 });
+      });
+    }
+
+    function initTypewriter() {
+      const typeTarget = document.querySelector(".typewriter");
+      if (!typeTarget) return;
+      const text = typeTarget.innerText;
+      typeTarget.innerText = "";
+      let i = 0;
+      function type() {
+        if (i < text.length) {
+          typeTarget.innerText += text.charAt(i++);
+          setTimeout(type, 30);
+        }
+      }
+      type();
+    }
+  </script>
+  <!-- about / Services -->
+  <script>
+    // Register GSAP Plugins
+    gsap.registerPlugin(ScrollTrigger);
+
+    window.addEventListener("DOMContentLoaded", () => {
+      // --- 0. Hero Timeline Initialization ---
+      // Added your requested paused timeline with power4 easing
+      const heroTl = gsap.timeline({
+        paused: true,
+        defaults: { ease: "power4.out", duration: 1.2 },
+      });
+
+      // 1. About Section Text Reveal (Integrated into heroTl)
+      heroTl.from(".gsap-reveal", {
+        y: 50,
+        opacity: 1, // Changed from 1 to 0 for actual reveal
+        stagger: 0.15,
+      });
+
+      // Start the hero animation sequence
+      heroTl.play();
+
+      // 2. Parallax Effect for the About Image (Independent ScrollTrigger)
+      gsap.to(".main-about-img", {
+        scrollTrigger: {
+          trigger: ".about-image-wrapper",
+          start: "top bottom",
+          end: "bottom top",
+          scrub: true,
+        },
+        y: -50,
+        ease: "none",
+      });
+
+      // 3. Service Cards Entrance (ScrollTrigger based)
+      gsap.from(".service-card", {
+        scrollTrigger: {
+          trigger: ".services-grid",
+          start: "top 85%",
+        },
+        opacity: 1, // Changed from 1 to 0
+        scale: 0.95,
+        duration: 1.4,
+        stagger: 0.2,
+        ease: "expo.out",
+      });
+
+      // 4. Icon "Glitch" or Subtle Scale on Scroll
+      gsap.from(".service-icon", {
+        scrollTrigger: {
+          trigger: ".services-grid",
+          start: "top 80%",
+        },
+        opacity: 1, // Changed from 1 to 0
+        x: -20,
+        duration: 1.6,
+        stagger: 0.2,
+        delay: 0.5,
+      });
+    });
+
+    // Toggle Logic for Mission/Vision
+    function toggleAbout(type) {
+      const textElement = document.getElementById("about-text");
+      const buttons = document.querySelectorAll(".toggle-btn");
+
+      const content = {
+        mission:
+          "To empower surgeons with zero-latency neural feedback and autonomous precision through ISO-certified hardware.",
+        vision:
+          "To become the global infrastructure for AI-assisted clinical operations by 2030, reducing procedural risk by 60%.",
+      };
+
+      // Switch Active Class
+      buttons.forEach((btn) => btn.classList.remove("active"));
+      event.target.classList.add("active");
+
+      // GSAP Transition
+      gsap.to(textElement, {
+        opacity: 1, // Fade out first
+        x: -15,
+        duration: 0.4,
+        onComplete: () => {
+          textElement.innerHTML = content[type];
+          gsap.to(textElement, {
+            opacity: 1,
+            x: 0,
+            duration: 0.4,
+            ease: "power1.out",
+          });
+        },
+      });
+    }
+  </script>
+  <!-- blog, partners -->
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      // 1. Ensure heroTl is accessible (assuming it's defined in the previous script)
+      // If not, we redefine the reference here to prevent errors.
+      if (typeof heroTl === "undefined") {
+        window.heroTl = gsap.timeline({
+          paused: true,
+          defaults: { ease: "power4.out", duration: 1.2 },
+        });
+      }
+
+      // --- BLOG SECTION REVEAL (Integrated into heroTl) ---
+      // We add the blog header to the heroTl so it preps for the page entrance
+      heroTl.from(
+        ".gsap-blog-reveal",
+        {
+          y: 50,
+          opacity: 1,
+          stagger: 0.2,
+        },
+        "-=0.5",
+      );
+
+      // --- CASE STUDIES (ScrollTrigger) ---
+      // This triggers only when the user scrolls to the section
+      gsap.from(".case-info", {
+        scrollTrigger: {
+          trigger: ".case-studies",
+          start: "top 80%",
+        },
+        x: -100,
+        opacity: 1,
+        duration: 1.5,
+        ease: "power4.out",
+      });
+
+      gsap.from(".case-visual img", {
+        scrollTrigger: {
+          trigger: ".case-studies",
+          start: "top 80%",
+        },
+        x: 100,
+        opacity: 1,
+        scale: 0.9,
+        duration: 1.5,
+        ease: "power4.out",
+      });
+
+      // --- STATS LIST COUNTER EFFECT ---
+
+      gsap.from(".stats-list li", {
+        scrollTrigger: {
+          trigger: ".stats-list",
+          start: "top 90%",
+        },
+        y: 30,
+        opacity: 1,
+        stagger: 0.3,
+        duration: 1,
+        ease: "back.out(1.7)",
+      });
+
+      // --- CONTACT SECTION REVEAL ---
+      gsap.from(".gsap-contact", {
+        scrollTrigger: {
+          trigger: ".contact-section",
+          start: "top 85%",
+        },
+        y: 40,
+        opacity: 1,
+        stagger: 0.2,
+        duration: 1.2,
+        ease: "power4.out",
+      });
+
+      // --- FOOTER STAGGER ---
+      gsap.from(".footer-grid > div", {
+        scrollTrigger: {
+          trigger: ".main-footer",
+          start: "top 95%",
+        },
+        y: 30,
+        opacity: 1,
+        stagger: 0.15,
+        duration: 1,
+        ease: "power4.out",
+      });
+    });
+
+    // --- FORM FUNCTIONALITY (Dispatch Logic) ---
+    const medForm = document.getElementById("med-form");
+    if (medForm) {
+      medForm.addEventListener("submit", (e) => {
+        e.preventDefault();
+        const btn = medForm.querySelector(".submit-btn");
+
+        // Visual feedback for "Dispatching"
+        btn.innerHTML = "Establishing Secure Link...";
+        btn.style.background = "#1e293b";
+        btn.disabled = true;
+
+        setTimeout(() => {
+          btn.innerHTML = "Dispatch Request Sent ✓";
+          btn.style.background = "#27ae60";
+
+          // Reset form after delay
+          setTimeout(() => {
+            medForm.reset();
+            btn.innerHTML = "Send Dispatch Request";
+            btn.style.background = "#2ecc71";
+            btn.disabled = false;
+          }, 3000);
+        }, 1500);
+      });
+
+      gsap.from(".footer-links a", {
+        scrollTrigger: {
+          trigger: ".main-footer",
+          start: "top 90%",
+        },
+        x: -20, // Slight slide from left like your sidebar
+        opacity: 0, // We use 0 here for the footer reveal so it's not distracting
+        stagger: 0.1, // Cascade effect
+        duration: 1.2,
+        ease: "power4.out",
+      });
+    }
+  </script>
+</html>
