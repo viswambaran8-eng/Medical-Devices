@@ -1,7 +1,7 @@
     window.addEventListener("load", () => {
   const loader = document.getElementById("medicalLoader");
   const mainContent = document.querySelector("main");
-  const LOADER_TIME = 2500;
+  const LOADER_TIME = 1500;
   // 2. Loader Logic
   setTimeout(() => {
     /* Fade loader */

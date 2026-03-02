@@ -1,0 +1,767 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Medical</title>
+    <link rel="icon" href="./Assets/icon.webp" />
+    <link rel="stylesheet" href="./products.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <!-- Swiper CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+    />
+  </head>
+  <body>
+    <div class="medical-loader" id="medicalLoader">
+      <div class="loader-wrapper">
+        <div class="device-container">
+          <div class="device-ring"></div>
+          <div class="device-ring inner"></div>
+          <div class="device-core">
+            <img src="./Assets/icon.webp" alt="Stackly" class="loader-logo" />
+          </div>
+          <div class="scan-line"></div>
+        </div>
+
+        <div class="ecg-line">
+          <svg viewBox="0 0 500 100" preserveAspectRatio="none">
+            <path
+              d="M0 50 L70 50 L90 20 L110 80 L130 50 L200 50 L220 30 L240 70 L260 50 L500 50"
+            />
+          </svg>
+        </div>
+
+        <h3 class="loading-text">INITIATING DIAGNOSTIC SCAN...</h3>
+        <p class="sub-text">Establishing Secure Interface with Medical Hub</p>
+      </div>
+    </div>
+
+    <div class="the-main">
+      <header>
+        <div class="header1">
+          <div class="container1">
+            <h3>Welcome To Stackly Medical Devices & Services.</h3>
+          </div>
+          <div class="container2">
+            <div>
+              <i class="fa-solid fa-phone-volume"></i>
+              <p>(123)456-7890</p>
+            </div>
+            <div>
+              <i class="fa-regular fa-envelope"></i>
+              <p>Support@stackly.com</p>
+            </div>
+          </div>
+        </div>
+        <div class="header2">
+          <div class="logo">
+            <a href="./index2.html">
+              <img src="./Assets/logo.webp" alt="Logo" />
+            </a>
+          </div>
+
+          <nav>
+            <ul>
+              <li class="dropdown">
+                <a href="./index2.html">Home</a>
+
+                <span class="drop-toggle">
+                  <i class="fa-solid fa-caret-down"></i>
+                </span>
+
+                <ul class="dropdown-menu">
+                  <li><a href="./index.html">Home 1</a></li>
+                </ul>
+              </li>
+
+              <li><a href="./products.html">Products</a></li>
+              <li><a href="./industries.html">Industries</a></li>
+              <li><a href="./innovation.html">Innovation</a></li>
+              <li><a href="./support.html">Support</a></li>
+            </ul>
+          </nav>
+
+          <div class="icons">
+            <div class="login">
+              <!-- <a class="btn" href="./app.html">Buy Now</a> -->
+
+              <a href="./login2.html">
+                <i class="fa-regular fa-circle-user"></i>
+              </a>
+            </div>
+
+            <div class="mobilebar">
+              <div class="hamburger-box">
+                <div class="hamburger">
+                  <div class="line line1"></div>
+                  <div class="line line2"></div>
+                  <div class="line line3"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
+
+      <div class="sidebar" id="sidebar">
+        <ul>
+          <li
+            class="has-dropdown menu-item"
+            data-aos="fade-up-right"
+            data-aos-delay="100"
+          >
+            <div class="dropdown-header">
+              <a href="./index2.html">Home</a>
+              <span class="drop-caret" id="home-caret">▾</span>
+            </div>
+            <ul class="submenu" id="home-dropdown">
+              <li><a href="./index.html">Home 1</a></li>
+            </ul>
+          </li>
+
+          <li class="menu-item" data-aos="fade-up-right" data-aos-delay="150">
+            <a href="./products.html">Products</a>
+          </li>
+          <li class="menu-item" data-aos="fade-up-right" data-aos-delay="200">
+            <a href="./industries.html">Industries</a>
+          </li>
+          <li class="menu-item" data-aos="fade-up-right" data-aos-delay="250">
+            <a href="./innovation.html">Innovation</a>
+          </li>
+          <li class="menu-item" data-aos="fade-up-right" data-aos-delay="300">
+            <a href="./support.html">Support</a>
+          </li>
+
+          <li class="menu-item" data-aos="fade-up-right" data-aos-delay="400">
+            <a href="./login2.html">Login</a>
+          </li>
+        </ul>
+
+        <div
+          class="sidebar-login"
+          data-aos="fade-up-right"
+          data-aos-delay="450"
+        >
+          <!-- <a href="./app.html">
+            <button class="login-btn">Buy Now</button>
+          </a> -->
+        </div>
+      </div>
+
+      <div class="overlay" id="overlay"></div>
+
+      <main>
+        <section class="hero-section">
+          <div class="hero-overlay"></div>
+          <div class="container">
+            <div class="hero-content">
+              <span class="small-tagline">Smart Device Ecosystem</span>
+              <h1 class="main-heading">
+                Connected Medical Devices Built for Intelligent Healthcare
+              </h1>
+              <p class="subtext">
+                Explore our next-generation medical devices designed for
+                seamless cloud connectivity, real-time monitoring, and advanced
+                data analytics.
+              </p>
+              <a href="./error2.html" class="btn-demo">Request Product Demo</a>
+            </div>
+          </div>
+        </section>
+      </main>
+      <section class="product-category bg-light">
+        <div class="container grid-layout">
+          <div class="content-side">
+            <h2 class="category-heading">AI-Enabled Patient Monitoring</h2>
+            <p class="category-description">
+              Advanced bedside and wearable monitors that track vital signs in
+              real time and sync securely with our cloud dashboard.
+            </p>
+            <div class="features-grid">
+              <div class="feature-item">
+                <strong>Live heart rate, BP, SpO2 monitoring</strong>
+                <span>High-precision sensors with 99.9% accuracy.</span>
+              </div>
+              <div class="feature-item">
+                <strong>Intelligent alert notifications</strong>
+                <span
+                  >ML-driven threshold detection to prevent alarm fatigue.</span
+                >
+              </div>
+              <div class="feature-item">
+                <strong>Centralized hospital dashboard integration</strong>
+                <span>Seamless FHIR/HL7 data standards compliance.</span>
+              </div>
+              <div class="feature-item">
+                <strong>Remote access capability</strong>
+                <span>Monitor patients from any authorized mobile device.</span>
+              </div>
+            </div>
+          </div>
+          <div class="image-side">
+            <div class="img-wrapper">
+              <img
+                src="./Assets/smart medical device_11zon_11zon.webp"
+                alt="Smart Monitoring System"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="product-category">
+        <div class="container grid-layout reverse">
+          <div class="content-side">
+            <h2 class="category-heading">Critical Care Monitoring Units</h2>
+            <p class="category-description">
+              Comprehensive ICU systems designed for high-dependency and
+              emergency environments with secure remote supervision.
+            </p>
+            <ul class="feature-list-alt">
+              <li class="list-gap">
+                <strong>Multi-patient monitoring:</strong> Visualize up to 32
+                patients on a single interface.
+              </li>
+              <li  class="list-gap">
+                <strong>Predictive health analytics:</strong> Early warning
+                scores (EWS) calculated in real-time.
+              </li>
+              <li  class="list-gap">
+                <strong>Emergency alert escalation:</strong> Automated routing
+                to rapid response teams.
+              </li>
+              <li  class="list-gap">
+                <strong>24/7 uptime reliability:</strong> Dual-redundant power
+                and cloud failover systems.
+              </li>
+            </ul>
+          </div>
+          <div class="image-side">
+            <div class="img-wrapper">
+              <img
+                src="./Assets/ICU Diagnostic Equipmen_11zon.webp"
+                alt="ICU Solutions"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="category-3" class="product-section dark-bg reveal-container">
+        <div class="container grid-2">
+          <div class="image-side reveal-left">
+            <div class="img-wrapper shadow-green">
+              <img
+                src="./Assets/diagonos equiment_11zon.webp"
+                alt="Diagnostic Equipment"
+              />
+              <div class="img-caption">Model V-Series NextGen</div>
+            </div>
+          </div>
+          <div class="content-side reveal-right">
+            <span class="category-tag">Diagnostic Intelligence</span>
+            <h2 class="section-heading">Cloud-Synced Diagnostic Equipment</h2>
+            <p class="description">
+              Eliminate manual data entry errors. Our diagnostic suite leverages
+              edge computing to process complex medical imagery and lab data,
+              syncing results directly to the patient's Electronic Health Record
+              (EHR).
+            </p>
+
+            <div class="specs-grid">
+              <div class="spec-item">
+                <strong>Latency</strong>
+                <span>< 150ms Upload</span>
+              </div>
+              <div class="spec-item">
+                <strong>Security</strong>
+                <span>AES-256 Bit</span>
+              </div>
+              <div class="spec-item">
+                <strong>AI Accuracy</strong>
+                <span>99.4% Detection</span>
+              </div>
+            </div>
+
+            <div class="feature-pills">
+              <span>Real-time data upload</span>
+              <span>Automated patient record updates</span>
+              <span>Secure cloud storage</span>
+              <span>AI-assisted result analysis</span>
+            </div>
+
+            <div class="btn-group">
+              <a href="./error2.html" class="btn-primary">Shop Now</a>
+              <a href="./error2.html" class="btn-text">Download Whitepaper →</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="category-4" class="product-section alt-bg reveal-container">
+        <div class="container grid-2 reverse">
+          <div class="image-side reveal-right">
+            <div class="img-wrapper">
+              <img
+                src="./Assets/iot devices_11zon_11zon.webp"
+                alt="Portable IoT Devices"
+              />
+            </div>
+            <div class="compliance-row">
+              <span class="badge">FDA Approved</span>
+              <span class="badge">CE Certified</span>
+              <span class="badge">HIPAA Compliant</span>
+            </div>
+          </div>
+          <div class="content-side reveal-left">
+            <span class="category-tag">Telemedicine Ready</span>
+            <h2 class="section-heading">Mobile & Remote Healthcare Devices</h2>
+            <p class="description">
+              Bridge the gap between clinic and home. Our portable IoT devices
+              provide hospital-grade monitoring in a compact form factor,
+              enabling continuous care for chronic patients and post-op
+              recovery.
+            </p>
+
+            <ul class="rich-feature-list">
+              <li class="list-gap">
+                <strong>Adaptive Connectivity</strong>
+                <p>
+                  Auto-switching between Bluetooth 5.2, Wi-Fi 6, and 5G cellular
+                  failover.
+                </p>
+              </li>
+              <li class="list-gap">
+                <strong>Physician Portal</strong>
+                <p class="list-gap">
+                  Direct encrypted stream to healthcare providers for instant
+                  intervention.
+                </p>
+              </li>
+              <li class="list-gap">
+                <strong>Ultra-Low Power</strong>
+                <p>
+                  Up to 72 hours of continuous monitoring on a single 30-minute
+                  charge.
+                </p>
+              </li>
+            </ul>
+
+            <div class="btn-group">
+              <a href="./error2.html" class="btn-primary">Shop Now</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="category-5" class="saas-section dark-bg reveal-container">
+        <div class="container">
+          <div class="saas-header text-center reveal-up">
+            <span class="category-tag">Enterprise Management</span>
+            <h2 class="section-heading">
+              Centralized Medical Device Dashboard
+            </h2>
+            <p class="description max-width">
+              A holistic command center for healthcare administrators. Manage
+              fleet health, analyze patient population data, and ensure 100%
+              device compliance from a single, intuitive SaaS interface.
+            </p>
+          </div>
+
+          <div class="dashboard-preview reveal-up">
+            <img
+              src="./Assets/healthcare-dashboard_11zon.webp"
+              alt="Healthcare Dashboard"
+            />
+
+            <div class="dashboard-stats-overlay">
+              <div class="stat-box">
+                <h3 class="counter">4.2k</h3>
+                <p>Active Devices</p>
+              </div>
+              <div class="stat-box">
+                <h3 class="counter">99.9%</h3>
+                <p>Uptime</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="capability-grid mt-50 reveal-up">
+            <div class="cap-card">
+              <div class="cap-icon">🌐</div>
+              <h4>Multi-location Management</h4>
+              <p>
+                Sync data across multiple hospital branches with regional data
+                residency support.
+              </p>
+            </div>
+            <div class="cap-card">
+              <div class="cap-icon">📈</div>
+              <h4>Real-time Performance</h4>
+              <p>
+                Instant telemetry on hardware health, battery cycles, and
+                calibration needs.
+              </p>
+            </div>
+            <div class="cap-card">
+              <div class="cap-icon">👤</div>
+              <h4>Role-based Access</h4>
+              <p>
+                Granular permissions for nurses, doctors, and IT administrators.
+              </p>
+            </div>
+          </div>
+
+          <div class="text-center mt-50 reveal-up">
+            <a href="./error2.html" class="btn-outline">Explore Platform Features</a>
+          </div>
+        </div>
+      </section>
+
+      <footer class="main-footer">
+        <div class="footer-grid">
+          <div class="footer-brand gsap-contact">
+            <div class="logo" style="margin-bottom: 20px">
+              <a href="./index2.html">
+                <img
+                  src="./Assets/logo.webp"
+                  alt="MEDDEVICE Logo"
+                  style="max-width: 180px"
+                />
+              </a>
+            </div>
+            <!-- <h2 class="footer-logo">MED<span>DEVICE</span></h2> -->
+            <p>
+              Advancing human health through autonomous precision and clinical
+              intelligence. Our ISO-certified hardware provides the global
+              infrastructure for AI-assisted surgical operations.
+            </p>
+          </div>
+
+          <div class="footer-links gsap-contact">
+            <h4>Quick Links</h4>
+
+            <a href="./products.html">Products</a>
+            <a href="./industries.html">Industries</a>
+            <a href="./innovation.html">Innovation</a>
+            <a href="./support.html">Support</a>
+            <a href="./login2.html">Login</a>
+          </div>
+          <div class="footer-links">
+            <h4>Navigation</h4>
+            <a href="./products.html">Products</a>
+            <a href="./industries.html">Industries</a>
+            <a href="./innovation.html">Innovation</a>
+            <a href="./support.html">Support</a>
+          </div>
+          <div class="footer-newsletter">
+            <h4>Newsletter</h4>
+            <p>Stay updated on medical breakthroughs.</p>
+            <div class="news-input">
+              <input type="email" placeholder="Email Address" required />
+              <button>→</button>
+            </div>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p>&copy; 2026 Medical Device Innovations. All Rights Reserved.</p>
+          <div class="legal-links">
+            <a href="./error2.html">Privacy Policy</a>
+            <a href="./error2.html">ISO Compliance</a>
+          </div>
+        </div>
+      </footer>
+    </div>
+  </body>
+
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script src="./script.js"></script>
+  <script>
+    AOS.init({
+      once: true,
+      duration: 1000,
+      easing: "ease-out-cubic",
+      startEvent: "aos:ready", // manual trigger
+    });
+  </script>
+  <!-- GSAP -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+
+  <!-- Header Scrolled -->
+  <script>
+    window.addEventListener("scroll", function () {
+      const header = document.querySelector(".header2");
+      const mainSection = document.querySelector("main"); // Targets your <main> tag
+
+      // Get the position of the main section
+      const sectionBottom = mainSection.getBoundingClientRect().bottom;
+
+      // If the bottom of 'main' is less than or equal to 0 (off-screen)
+      if (sectionBottom <= 0) {
+        header.classList.add("scrolled");
+      } else {
+        header.classList.remove("scrolled");
+      }
+    });
+  </script>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      // 1. Initialize GSAP Timeline (Paused by default)
+      const tl = gsap.timeline({ paused: true });
+
+      // 2. Define the Entrance Animation Sequence
+      // Hero Elements
+      tl.from(".hero-content > *", {
+        y: 40,
+        opacity: 1,
+        duration: 1.6,
+        stagger: 0.15,
+        ease: "power3.out",
+      })
+
+      // 3. Setup Scroll-Triggered Animations for Product Categories
+      // These work independently of the initial timeline once triggered
+      const productSections = document.querySelectorAll(".product-category");
+
+      productSections.forEach((section) => {
+        const isReverse = section
+          .querySelector(".grid-layout")
+          .classList.contains("reverse");
+
+        gsap.from(section.querySelector(".content-side"), {
+          scrollTrigger: {
+            trigger: section,
+            start: "top 75%",
+            toggleActions: "play none none none",
+          },
+          x: isReverse ? 50 : -50,
+          opacity: 1,
+          duration: 2,
+          ease: "power2.out",
+        });
+
+        gsap.from(section.querySelector(".img-wrapper"), {
+          scrollTrigger: {
+            trigger: section,
+            start: "top 70%",
+          },
+          scale: 0.8,
+          opacity: 1,
+          duration: 2,
+          ease: "expo.out",
+        });
+
+        // Hover Effect Logic for Feature Items
+        const items = section.querySelectorAll(".feature-item");
+        items.forEach((item) => {
+          item.addEventListener("mouseenter", () => {
+            gsap.to(item, {
+              scale: 1.05,
+              borderColor: "#2ecc71",
+              duration: 0.3,
+            });
+          });
+          item.addEventListener("mouseleave", () => {
+            gsap.to(item, {
+              scale: 1,
+              borderColor: "transparent",
+              duration: 0.3,
+            });
+          });
+        });
+      });
+
+      // 4. The Loader Wrapper Logic
+      window.addEventListener("load", () => {
+        const loader = document.getElementById("medicalLoader");
+        const mainContent = document.querySelector("main");
+        const LOADER_TIME = 1500;
+
+        setTimeout(() => {
+          /* Fade loader out */
+          loader.style.opacity = "0";
+
+          setTimeout(() => {
+            loader.style.display = "none";
+
+            /* Reveal Main Content */
+            if (mainContent) {
+              mainContent.style.visibility = "visible";
+              mainContent.style.opacity = "1";
+              mainContent.style.transform = "translateY(0)";
+            }
+
+            /* 🔥 Start the GSAP Entrance Sequence */
+            tl.play();
+
+            /* Refresh AOS if you are using it alongside GSAP */
+            if (typeof AOS !== "undefined") {
+              AOS.refreshHard();
+              document.dispatchEvent(new Event("aos:ready"));
+            }
+
+            // Optional: Enable scrolling only after loader is gone
+            document.body.style.overflowY = "auto";
+          }, 600); // Wait for opacity transition to finish
+        }, LOADER_TIME);
+      });
+    });
+  </script>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      // 1. Register ScrollTrigger Plugin
+      gsap.registerPlugin(ScrollTrigger);
+
+      // 2. Initial Entrance Timeline (Paused until Loader finishes)
+      const entranceTl = gsap.timeline({ paused: true });
+
+      entranceTl
+        .from("#category-3 .reveal-left", {
+          x: -100,
+          opacity: 1,
+          duration: 1.2,
+          ease: "power4.out",
+        })
+        .from(
+          "#category-3 .reveal-right",
+          {
+            x: 100,
+            opacity: 1,
+            duration: 1.2,
+            ease: "power4.out",
+          },
+          "-=0.8",
+        )
+        .from(
+          "#category-3 .spec-item",
+          {
+            y: 20,
+            opacity: 1,
+            stagger: 0.1,
+            duration: 0.5,
+            ease: "back.out(1.7)",
+          },
+          "-=0.5",
+        );
+
+      // 3. Independent ScrollTrigger Logic for Remaining Sections
+      // Category 4: Portable IoT
+      gsap.from("#category-4 .reveal-right", {
+        scrollTrigger: {
+          trigger: "#category-4",
+          start: "top 75%", // Triggers when top of section hits 75% of viewport
+          toggleActions: "play none none none",
+        },
+        x: 100,
+        opacity: 1,
+        duration: 1.2,
+        ease: "power3.out",
+      });
+
+      gsap.from("#category-4 .reveal-left", {
+        scrollTrigger: {
+          trigger: "#category-4",
+          start: "top 75%",
+        },
+        x: -100,
+        opacity: 1,
+        duration: 1.2,
+        ease: "power3.out",
+      });
+
+      // Category 5: SaaS Dashboard & Cards
+      const saasTl = gsap.timeline({
+        scrollTrigger: {
+          trigger: "#category-5",
+          start: "top 70%",
+        },
+      });
+
+      saasTl
+        
+        .from(
+          ".cap-card",
+          {
+            y: 40,
+            opacity: 1,
+            stagger: 0.2,
+            duration: 0.8,
+            ease: "power2.out",
+          },
+          "-=0.4",
+        )
+        .from(
+          ".stat-box",
+          {
+            scale: 0.8,
+            opacity: 1,
+            stagger: 0.2,
+            duration: 0.6,
+            ease: "back.out(2)",
+          },
+          "-=0.5",
+        );
+
+      // 4. Hover Interactions (Functional logic for #2ecc71 highlights)
+      const cards = document.querySelectorAll(".cap-card, .feature-pills span");
+      cards.forEach((card) => {
+        card.addEventListener("mouseenter", () => {
+          gsap.to(card, {
+            borderColor: "#2ecc71",
+            backgroundColor: "rgba(46, 204, 113, 0.15)",
+            duration: 0.3,
+          });
+        });
+        card.addEventListener("mouseleave", () => {
+          gsap.to(card, {
+            borderColor: "rgba(255,255,255,0.1)",
+            backgroundColor: "transparent",
+            duration: 0.3,
+          });
+        });
+      });
+
+      // 5. The Final Loader Trigger
+      window.addEventListener("load", () => {
+        const loader = document.getElementById("medicalLoader");
+        const sections = document.querySelectorAll(".reveal-container");
+        const LOADER_TIME = 1500;
+
+        setTimeout(() => {
+          // Fade out the loader
+          if (loader) {
+            loader.style.opacity = "0";
+            loader.style.transition = "opacity 0.6s ease";
+          }
+
+          setTimeout(() => {
+            if (loader) loader.style.display = "none";
+
+            // Reveal all sections
+            sections.forEach((sec) => {
+              sec.style.visibility = "visible";
+              sec.style.opacity = "1";
+            });
+
+            // 🔥 Refresh ScrollTrigger now that elements are visible/sized
+            ScrollTrigger.refresh();
+
+            // 🔥 Play the initial entrance animation
+            entranceTl.play();
+          }, 600);
+        }, LOADER_TIME);
+      });
+    });
+  </script>
+</html>

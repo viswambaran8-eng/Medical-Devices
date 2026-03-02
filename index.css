@@ -103,7 +103,7 @@ header {
 }
 
 .logo img {
-  width: 180px;
+  width: 160px;
   margin-top: 10px;
 }
 
@@ -472,7 +472,7 @@ body.no-scroll {
   font-size: 26px;
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
+  justify-content: space-between;
   transition: all 0.9s ease;
   font-family: "Roboto Slab", serif;
 }
@@ -1757,6 +1757,7 @@ body.no-scroll {
   padding: 50px 8%;
   background: #050505;
   color: #fff;
+  overflow-x: hidden;
 }
 
 .services-header {
@@ -1925,6 +1926,7 @@ body.no-scroll {
 .blog-section {
   background: #0a0a0a;
   padding: 50px 8%;
+  overflow-x: hidden;
 }
 
 .blog-grid {
@@ -2016,6 +2018,7 @@ body.no-scroll {
   background: #0a0a0a;
   color: #fff;
   padding: 50px 8%;
+  overflow-x: hidden;
 }
 
 .case-wrapper {
@@ -2029,6 +2032,12 @@ body.no-scroll {
   width: 100%;
   border-radius: 4px;
   box-shadow: 20px 20px 0px #2ecc71;
+}
+
+@media screen and (max-width: 450px) {
+  .case-visual img {
+    width: 95%;
+  }
 }
 
 .stats-list {
@@ -2057,6 +2066,7 @@ body.no-scroll {
   padding: 60px 0;
   background: black;
   border-bottom: 1px solid #e2e8f0;
+  overflow-x: hidden;
 }
 
 .marquee-title {
@@ -2093,8 +2103,9 @@ body.no-scroll {
 
 /* --- Contact Section --- */
 .contact-section {
-  padding: 50px 8%;
+  padding: 50px 4%;
   background: black ;
+  overflow-x: hidden;
 }
 
 .contact-grid {
@@ -2112,6 +2123,15 @@ body.no-scroll {
   align-items: center;
   text-align: start;
   gap: 10px;
+}
+
+@media screen and (max-width: 480px) {
+  .contact-form-wrapper {
+    padding: 15px;
+  }
+  .contact-form-wrapper h1 {
+    font-size: 28px;
+  }
 }
 
 .contact-form-wrapper form {
@@ -2159,6 +2179,13 @@ textarea {
   border-radius: 4px;
   cursor: pointer;
   transition: all 0.3s;
+  margin-top: 10px;
+}
+
+@media screen and (max-width: 600px) {
+  .submit-btn {
+    padding: 12px 18px;
+  }
 }
 
 .submit-btn:hover {
@@ -2211,6 +2238,16 @@ textarea {
   color: #2ecc71;
 }
 
+.footer-links , .footer-newsletter {
+  margin-top: 30px;
+}
+
+@media screen and (max-width: 1000px) {
+  .footer-links , .footer-newsletter  {
+    margin-top: 10px;
+  }
+}
+
 .footer-links h4, 
 .footer-newsletter h4 {
   color: #f8fafc;
@@ -2258,6 +2295,12 @@ textarea {
   padding-top: 40px;
   color: #64748b;
   font-size: 0.9rem;
+}
+
+.legal-links a {
+  color: #64748b;
+  text-decoration: none;
+  margin-left: 20px;
 }
 
 /* --- Media Queries --- */

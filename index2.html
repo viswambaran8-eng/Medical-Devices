@@ -1,0 +1,1005 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Medical</title>
+    <link rel="icon" href="./Assets/icon.webp" />
+    <link rel="stylesheet" href="./index2.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <!-- Swiper CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+    />
+  </head>
+  <body>
+    <div class="medical-loader" id="medicalLoader">
+      <div class="loader-wrapper">
+        <div class="device-container">
+          <div class="device-ring"></div>
+          <div class="device-ring inner"></div>
+          <div class="device-core">
+            <img src="./Assets/icon.webp" alt="Stackly" class="loader-logo" />
+          </div>
+          <div class="scan-line"></div>
+        </div>
+
+        <div class="ecg-line">
+          <svg viewBox="0 0 500 100" preserveAspectRatio="none">
+            <path
+              d="M0 50 L70 50 L90 20 L110 80 L130 50 L200 50 L220 30 L240 70 L260 50 L500 50"
+            />
+          </svg>
+        </div>
+
+        <h3 class="loading-text">INITIATING DIAGNOSTIC SCAN...</h3>
+        <p class="sub-text">Establishing Secure Interface with Medical Hub</p>
+      </div>
+    </div>
+
+    <div class="the-main">
+      <header>
+        <div class="header1">
+          <div class="container1">
+            <h3>Welcome To Stackly Medical Devices & Services.</h3>
+          </div>
+          <div class="container2">
+            <div>
+              <i class="fa-solid fa-phone-volume"></i>
+              <p>(123)456-7890</p>
+            </div>
+            <div>
+              <i class="fa-regular fa-envelope"></i>
+              <p>Support@stackly.com</p>
+            </div>
+          </div>
+        </div>
+        <div class="header2">
+          <div class="logo">
+            <a href="./index2.html">
+              <img src="./Assets/logo.webp" alt="Logo" />
+            </a>
+          </div>
+
+          <nav>
+            <ul>
+              <li class="dropdown">
+                <a href="./index2.html">Home</a>
+
+                <span class="drop-toggle">
+                  <i class="fa-solid fa-caret-down"></i>
+                </span>
+
+                <ul class="dropdown-menu">
+                  <li><a href="./index.html">Home 1</a></li>
+                </ul>
+              </li>
+
+              <li><a href="./products.html">Products</a></li>
+              <li><a href="./industries.html">Industries</a></li>
+              <li><a href="./innovation.html">Innovation</a></li>
+              <li><a href="./support.html">Support</a></li>
+            </ul>
+          </nav>
+
+          <div class="icons">
+            <div class="login">
+              <!-- <a class="btn" href="./app.html">Buy Now</a> -->
+
+              <a href="./login2.html">
+                <i class="fa-regular fa-circle-user"></i>
+              </a>
+            </div>
+
+            <div class="mobilebar">
+              <div class="hamburger-box">
+                <div class="hamburger">
+                  <div class="line line1"></div>
+                  <div class="line line2"></div>
+                  <div class="line line3"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
+
+      <div class="sidebar" id="sidebar">
+        <ul>
+          <li
+            class="has-dropdown menu-item"
+            data-aos="fade-up-right"
+            data-aos-delay="100"
+          >
+            <div class="dropdown-header">
+              <a href="./index2.html">Home</a>
+              <span class="drop-caret" id="home-caret">▾</span>
+            </div>
+            <ul class="submenu" id="home-dropdown">
+              <li><a href="./index.html">Home 1</a></li>
+            </ul>
+          </li>
+
+          <li class="menu-item" data-aos="fade-up-right" data-aos-delay="150">
+            <a href="./products.html">Products</a>
+          </li>
+          <li class="menu-item" data-aos="fade-up-right" data-aos-delay="200">
+            <a href="./industries.html">Industries</a>
+          </li>
+          <li class="menu-item" data-aos="fade-up-right" data-aos-delay="250">
+            <a href="./innovation.html">Innovation</a>
+          </li>
+          <li class="menu-item" data-aos="fade-up-right" data-aos-delay="300">
+            <a href="./support.html">Support</a>
+          </li>
+
+          <li class="menu-item" data-aos="fade-up-right" data-aos-delay="400">
+            <a href="./login2.html">Login</a>
+          </li>
+        </ul>
+
+        <div
+          class="sidebar-login"
+          data-aos="fade-up-right"
+          data-aos-delay="450"
+        >
+          <!-- <a href="./app.html">
+            <button class="login-btn">Buy Now</button>
+          </a> -->
+        </div>
+      </div>
+
+      <div class="overlay" id="overlay"></div>
+
+      <main>
+        <section class="hero-twin">
+          <div class="glow-bg"></div>
+          <div class="grid-overlay"></div>
+
+          <div class="container">
+            <div class="hero-wrapper">
+              <div class="hero-info">
+                <div class="tagline-wrap anim-reveal">
+                  <span class="pulse-ring"></span>
+                  <span class="tag-text">Smart Healthcare Ecosystem</span>
+                </div>
+
+                <h1 class="anim-reveal">
+                  Connected Medical Devices Powered by
+                  <span class="highlight">Intelligent Software</span>
+                </h1>
+
+                <p class="anim-reveal">
+                  We integrate advanced medical hardware with secure cloud
+                  technology to deliver real-time monitoring, predictive
+                  analytics, and seamless healthcare management across hospitals
+                  and clinics.
+                </p>
+
+                <div class="platform-features anim-reveal">
+                  <div class="feat-pill"><span>🔒</span> HIPAA Compliant</div>
+                  <div class="feat-pill"><span>☁️</span> Cloud Sync</div>
+                  <div class="feat-pill"><span>📊</span> AI Diagnostics</div>
+                </div>
+
+                <div class="btn-group anim-reveal">
+                  <a href="./error2.html" class="btn-primary">Request Demo</a>
+                  <a href="./error2.html" class="btn-secondary">Explore Platform</a>
+                </div>
+              </div>
+
+              <div class="hero-visual">
+                <div class="visual-stack anim-visual">
+                  <div class="image-frame">
+                    <img
+                      src="./Assets/smart medical device_11zon_11zon.webp"
+                      alt="Connected Medical Device"
+                    />
+                  </div>
+
+                  <div class="ui-card card-top float-anim">
+                    <div class="card-head">Signal Strength</div>
+                    <div class="card-body">
+                      <span class="val">98%</span>
+                      <div class="wave-icon"></div>
+                    </div>
+                  </div>
+
+                  <div class="ui-card card-bottom float-anim-alt">
+                    <div class="status-row">
+                      <span class="dot-green"></span>
+                      <span>Cloud Integrated</span>
+                    </div>
+                    <div class="sync-bar"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+
+      <section class="platform-overview">
+        <div class="container">
+          <div class="platform-grid">
+            <div class="platform-content anim-reveal">
+              <div class="section-tag">Smart Ecosystem</div>
+              <h2>
+                An Integrated Digital
+                <span class="emerald-text">Healthcare Platform</span>
+              </h2>
+              <p>
+                Our ecosystem connects medical devices, healthcare
+                professionals, and hospital systems through a centralized
+                dashboard. Monitor patients, track performance, and access data
+                securely from anywhere.
+              </p>
+              <ul class="platform-list">
+                <li><span>✔</span> Centralized Fleet Management</li>
+                <li><span>✔</span> Remote Diagnostic Access</li>
+                <li><span>✔</span> Interoperable Data Streams</li>
+              </ul>
+            </div>
+            <div class="platform-visual anim-visual">
+              <div class="dashboard-window">
+                <img
+                  src="./Assets/device dashboard_11zon.webp"
+                  alt="Medical Dashboard Interface"
+                />
+                <div class="ui-overlay-node anim-float">
+                  Active Nodes: 1,240
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="core-features">
+        <div class="container">
+          <div class="section-header anim-reveal">
+            <div class="section-tag">Intelligence</div>
+            <h2>Built for <span class="emerald-text">Smart Hospitals</span></h2>
+          </div>
+
+          <div class="features-grid">
+            <div class="feature-card anim-reveal">
+              <div class="feat-icon">📡</div>
+              <h3>Real-Time Monitoring</h3>
+              <p>
+                Continuous patient data tracking with instant alerts and
+                high-fidelity telemetry.
+              </p>
+            </div>
+            <div class="feature-card anim-reveal">
+              <div class="feat-icon">🧠</div>
+              <h3>AI-Powered Insights</h3>
+              <p>
+                Predictive analytics to support faster, data-driven clinical
+                decisions.
+              </p>
+            </div>
+            <div class="feature-card anim-reveal">
+              <div class="feat-icon">🛡️</div>
+              <h3>Secure Cloud Infrastructure</h3>
+              <p>
+                Encrypted data storage fully compliant with HIPAA and GDPR
+                standards.
+              </p>
+            </div>
+            <div class="feature-card anim-reveal">
+              <div class="feat-icon">🏢</div>
+              <h3>Multi-Location Management</h3>
+              <p>
+                Manage devices seamlessly across multiple hospitals or global
+                branches.
+              </p>
+            </div>
+            <div class="feature-card anim-reveal">
+              <div class="feat-icon">📝</div>
+              <h3>Automated Reporting</h3>
+              <p>
+                Generate compliance and performance reports instantly with one
+                click.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="smart-devices">
+        <div class="container">
+          <div class="devices-banner anim-reveal">
+            <div class="banner-text">
+              <h2>
+                Next-Generation
+                <span class="emerald-text">Connected Devices</span>
+              </h2>
+              <p>
+                Our product suite includes IoT-enabled patient monitors,
+                diagnostic systems, and ICU solutions designed for seamless
+                software integration.
+              </p>
+              <a href="./products.html" class="btn-emerald"
+                >View All Products</a
+              >
+            </div>
+            <div class="banner-img anim-visual">
+              <img
+                src="./Assets/ICU Diagnostic Equipmen_11zon.webp"
+                alt="ICU Diagnostic Equipment"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="industries-serve">
+        <div class="container">
+          <div class="section-header anim-reveal">
+            <div class="section-tag">Global Impact</div>
+            <h2>
+              Empowering <span class="emerald-text">Healthcare Providers</span>
+            </h2>
+          </div>
+          <div class="industry-grid">
+            <div class="industry-card anim-reveal">
+              <div class="ind-icon">🏥</div>
+              <h3>Smart Hospitals</h3>
+              <p>
+                Full-scale IoT integration for digital-first medical centers.
+              </p>
+            </div>
+            <div class="industry-card anim-reveal">
+              <div class="ind-icon">🩺</div>
+              <h3>Multi-Specialty Clinics</h3>
+              <p>Streamlined data for diverse clinical departments.</p>
+            </div>
+            <div class="industry-card anim-reveal">
+              <div class="ind-icon">💻</div>
+              <h3>Telemedicine Platforms</h3>
+              <p>Remote patient monitoring with secure data streaming.</p>
+            </div>
+            <div class="industry-card anim-reveal">
+              <div class="ind-icon">🏠</div>
+              <h3>Home Healthcare</h3>
+              <p>Portable connected devices for post-op and chronic care.</p>
+            </div>
+            <div class="industry-card anim-reveal">
+              <div class="ind-icon">🚑</div>
+              <h3>Emergency & Critical Care</h3>
+              <p>High-reliability systems for ICU and trauma units.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="security-vault">
+        <div class="section-header anim-reveal">
+            <div class="section-tag">Security Impact</div>
+            <h2>
+              Empowering <span class="emerald-text">Healthcare Services</span>
+            </h2>
+          </div>
+        <div class="container">
+          <div class="vault-wrapper anim-reveal">
+            <div class="vault-info">
+              <h2>
+                Secure. Compliant. <span class="emerald-text">Reliable.</span>
+              </h2>
+              <p>
+                We prioritize patient data protection with end-to-end
+                encryption, secure cloud hosting, and compliance-ready systems
+                aligned with global healthcare standards (HIPAA, GDPR, HL7).
+              </p>
+              <div class="security-badges">
+                <div class="badge">AES-256</div>
+                <div class="badge">ISO 27001</div>
+                <div class="badge">SOC2</div>
+              </div>
+            </div>
+            <div class="vault-visual anim-visual">
+              <div class="shield-hex">🛡️</div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="why-us">
+        <div class="container">
+          <div class="section-header anim-reveal">
+            <h2>
+              <span class="emerald-text">Why Choose Us</span>
+            </h2>
+          </div>
+          <div class="why-grid">
+            <div class="why-item anim-reveal">
+              <span class="why-num">01</span>
+              <h4>Hardware + Software Integration</h4>
+              <p>Unified ecosystem where devices talk directly to the cloud.</p>
+            </div>
+            <div class="why-item anim-reveal">
+              <span class="why-num">02</span>
+              <h4>Scalable Cloud Architecture</h4>
+              <p>Built to handle thousands of concurrent data streams.</p>
+            </div>
+            <div class="why-item anim-reveal">
+              <span class="why-num">03</span>
+              <h4>AI & IoT Innovation</h4>
+              <p>Predictive maintenance and patient risk scoring.</p>
+            </div>
+            <div class="why-item anim-reveal">
+              <span class="why-num">04</span>
+              <h4>24/7 Technical Support</h4>
+              <p>Dedicated clinical engineers on call globally.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="testimonials-slider">
+        <div class="container">
+          <div class="section-header anim-reveal">
+            <h2>
+              Trusted by <span class="emerald-text">Modern Institutions</span>
+            </h2>
+          </div>
+
+          <div class="slider-container">
+            <div class="testimonial-track" id="testimonialTrack">
+              <div class="testimonial-card">
+                <p>
+                  "Our hospital reduced response time by 30% after implementing
+                  their smart monitoring system. The integration was seamless."
+                </p>
+                <div class="author">
+                  <img
+                    src="./Assets/team1_11zon.webp"
+                    alt="Doctor"
+                  />
+                  <div>
+                    <strong>Dr. Julian Reed</strong
+                    ><span>Chief Medical Officer, St. Jude Medical</span>
+                  </div>
+                </div>
+              </div>
+              <div class="testimonial-card">
+                <p>
+                  "The AI-powered diagnostics provided by this platform have
+                  improved our early detection rates for cardiac issues by
+                  nearly 25%."
+                </p>
+                <div class="author">
+                  <img
+                    src="./Assets/team2_11zon.webp"
+                    alt="Doctor"
+                  />
+                  <div>
+                    <strong>Sarah Jenkins</strong
+                    ><span>Head of Cardiology, Metro Health</span>
+                  </div>
+                </div>
+              </div>
+              <div class="testimonial-card">
+                <p>
+                  "Managing a multi-location clinic was a nightmare until we
+                  centralized our device data through this dashboard. Truly a
+                  game changer."
+                </p>
+                <div class="author">
+                  <img
+                    src="./Assets/team3_11zon.webp"
+                    alt="Doctor"
+                  />
+                  <div>
+                    <strong>Michael Chen</strong
+                    ><span>Operations Director, City Clinics</span>
+                  </div>
+                </div>
+              </div>
+              <div class="testimonial-card">
+                <p>
+                  "Security was our top priority. Knowing the data is HIPAA
+                  compliant and encrypted at every node gives our patients peace
+                  of mind."
+                </p>
+                <div class="author">
+                  <img
+                    src="./Assets/team1_11zon.webp"
+                    alt="Doctor"
+                  />
+                  <div>
+                    <strong>Dr. Elena Rodriguez</strong
+                    ><span>Information Security Lead, Global Health</span>
+                  </div>
+                </div>
+              </div>
+              <div class="testimonial-card">
+                <p>
+                  "The predictive maintenance alerts for our ICU ventilators
+                  have saved us from equipment downtime more than a dozen times
+                  this year."
+                </p>
+                <div class="author">
+                  <img
+                    src="./Assets/team2_11zon.webp"
+                    alt="Doctor"
+                  />
+                  <div>
+                    <strong>Robert Vance</strong
+                    ><span>Biomedical Engineer, Northwell ICU</span>
+                  </div>
+                </div>
+              </div>
+              <div class="testimonial-card">
+                <p>
+                  "Real-time monitoring across our entire fleet of smart devices
+                  has allowed us to optimize nurse workflows significantly."
+                </p>
+                <div class="author">
+                  <img
+                    src="./Assets/team3_11zon.webp"
+                    alt="Doctor"
+                  />
+                  <div>
+                    <strong>Dr. Amina Al-Farsi</strong
+                    ><span>Nursing Director, Emirates Specialty</span>
+                  </div>
+                </div>
+              </div>
+              <div class="testimonial-card">
+                <p>
+                  "Security was our top priority. Knowing the data is HIPAA
+                  compliant and encrypted at every node gives our patients peace
+                  of mind."
+                </p>
+                <div class="author">
+                  <img
+                    src="./Assets/team1_11zon.webp"
+                    alt="Doctor"
+                  />
+                  <div>
+                    <strong>Dr. Elena Rodriguez</strong
+                    ><span>Information Security Lead, Global Health</span>
+                  </div>
+                </div>
+              </div>
+              <div class="testimonial-card">
+                <p>
+                  "The predictive maintenance alerts for our ICU ventilators
+                  have saved us from equipment downtime more than a dozen times
+                  this year."
+                </p>
+                <div class="author">
+                  <img
+                    src="./Assets/team2_11zon.webp"
+                    alt="Doctor"
+                  />
+                  <div>
+                    <strong>Robert Vance</strong
+                    ><span>Biomedical Engineer, Northwell ICU</span>
+                  </div>
+                </div>
+              </div>
+              <div class="testimonial-card">
+                <p>
+                  "Real-time monitoring across our entire fleet of smart devices
+                  has allowed us to optimize nurse workflows significantly."
+                </p>
+                <div class="author">
+                  <img
+                    src="./Assets/team3_11zon.webp"
+                    alt="Doctor"
+                  />
+                  <div>
+                    <strong>Dr. Amina Al-Farsi</strong
+                    ><span>Nursing Director, Emirates Specialty</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="slider-dots" id="sliderDots"></div>
+        </div>
+      </section>
+
+      <footer class="main-footer">
+        <div class="footer-grid">
+          <div class="footer-brand gsap-contact">
+            <div class="logo" style="margin-bottom: 20px">
+              <a href="./index2.html">
+                <img
+                  src="./Assets/logo.webp"
+                  alt="MEDDEVICE Logo"
+                  style="max-width: 180px"
+                />
+              </a>
+            </div>
+            <!-- <h2 class="footer-logo">MED<span>DEVICE</span></h2> -->
+            <p>
+              Advancing human health through autonomous precision and clinical
+              intelligence. Our ISO-certified hardware provides the global
+              infrastructure for AI-assisted surgical operations.
+            </p>
+          </div>
+
+          <div class="footer-links gsap-contact">
+            <h4>Quick Links</h4>
+
+            <a href="./products.html">Products</a>
+            <a href="./industries.html">Industries</a>
+            <a href="./innovation.html">Innovation</a>
+            <a href="./support.html">Support</a>
+            <a href="./login2.html">Login</a>
+          </div>
+          <div class="footer-links">
+            <h4>Navigation</h4>
+            <a href="./products.html">Products</a>
+            <a href="./industries.html">Industries</a>
+            <a href="./innovation.html">Innovation</a>
+            <a href="./support.html">Support</a>
+          </div>
+          <div class="footer-newsletter">
+            <h4>Newsletter</h4>
+            <p>Stay updated on medical breakthroughs.</p>
+            <div class="news-input">
+              <input type="email" placeholder="Email Address" required />
+              <button>→</button>
+            </div>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p>&copy; 2026 Medical Device Innovations. All Rights Reserved.</p>
+          <div class="legal-links">
+            <a href="./error2.html">Privacy Policy</a>
+            <a href="./error2.html">ISO Compliance</a>
+          </div>
+        </div>
+      </footer>
+    </div>
+  </body>
+
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script src="./script.js"></script>
+  <script>
+    AOS.init({
+      once: true,
+      duration: 1000,
+      easing: "ease-out-cubic",
+      startEvent: "aos:ready", // manual trigger
+    });
+  </script>
+  <!-- GSAP -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+
+  <!-- Header Scrolled -->
+  <script>
+    window.addEventListener("scroll", function () {
+      const header = document.querySelector(".header2");
+      const mainSection = document.querySelector("main"); // Targets your <main> tag
+
+      // Get the position of the main section
+      const sectionBottom = mainSection.getBoundingClientRect().bottom;
+
+      // If the bottom of 'main' is less than or equal to 0 (off-screen)
+      if (sectionBottom <= 0) {
+        header.classList.add("scrolled");
+      } else {
+        header.classList.remove("scrolled");
+      }
+    });
+  </script>
+
+  <script>
+    // 1. Unique Timeline Name for the Healthcare Ecosystem
+    let clinicalGateTl;
+
+    document.addEventListener("DOMContentLoaded", () => {
+      // Register the GSAP ScrollTrigger plugin
+      gsap.registerPlugin(ScrollTrigger);
+
+      // --- HERO ENTRANCE (Initially Paused) ---
+      clinicalGateTl = gsap.timeline({
+        paused: true, // Remains dormant until called by the Loader
+        defaults: { ease: "expo.out", duration: 1.4 },
+      });
+
+      clinicalGateTl
+        .from(".anim-reveal", {
+          y: 40,
+          opacity: 1,
+          stagger: 0.15,
+            duration: 1.4,
+        })
+        .from(
+          ".anim-visual",
+          {
+            scale: 0.85,
+            opacity: 1,
+            duration: 1.8,
+          },
+          "-=1.2",
+        )
+        .from(
+          ".ui-card",
+          {
+            opacity: 1,
+            x: (i) => (i === 0 ? 40 : -40),
+            stagger: 0.3,
+          },
+          "-=0.8",
+        );
+
+      // --- SCROLL-TRIGGERED SECTIONS (Trigger Only Once) ---
+
+      // Section 1: Platform Overview
+      gsap.from(".platform-overview .anim-reveal", {
+        scrollTrigger: {
+          trigger: ".platform-overview",
+          start: "top 85%",
+          once: true, // 🔥 Animation will never re-trigger
+        },
+        y: 50,
+        opacity: 1,
+        stagger: 0.2,
+        duration: 0.5,
+        ease: "power3.out",
+      });
+
+      // Section 2: Features Cards
+      gsap.from(".feature-card", {
+        scrollTrigger: {
+          trigger: ".core-features",
+          start: "top 80%",
+          once: true, // 🔥 Animation will never re-trigger
+        },
+        y: 40,
+        opacity: 1,
+        stagger: 0.1,
+        duration: 0.8,
+        ease: "power3.out",
+      });
+
+      // Section 3: Smart Devices Banner
+      gsap.from(".devices-banner", {
+        scrollTrigger: {
+          trigger: ".smart-devices",
+          start: "top 85%",
+          once: true, // 🔥 Animation will never re-trigger
+        },
+        scale: 0.98,
+        opacity: 1,
+        duration: 1.2,
+        ease: "expo.out",
+      });
+
+      // --- PERSISTENT AMBIENT ANIMATIONS ---
+      // Floating UI elements that cycle infinitely
+      gsap.to(".float-anim, .ui-overlay-node", {
+        y: -15,
+        duration: 2.2,
+        repeat: -1,
+        yoyo: true,
+        ease: "sine.inOut",
+      });
+
+      // --- INTERACTIVE MOUSE PARALLAX ---
+      const heroArea = document.querySelector(".hero-twin");
+      if (heroArea) {
+        heroArea.addEventListener("mousemove", (e) => {
+          const xVal = (e.clientX - window.innerWidth / 2) / 50;
+          const yVal = (e.clientY - window.innerHeight / 2) / 50;
+
+          gsap.to(".visual-stack", {
+            x: xVal,
+            y: yVal,
+            rotateY: xVal / 2,
+            rotateX: -yVal / 2,
+            duration: 1,
+            ease: "power1.out",
+          });
+        });
+      }
+    });
+
+    // --- LOADER & EXECUTION LOGIC ---
+    window.addEventListener("load", () => {
+      const medicalLoader = document.getElementById("medicalLoader");
+      const mainWrapper = document.querySelector("main");
+      const DISPLAY_TIME = 1500; // Duration loader stays visible
+
+      setTimeout(() => {
+        // Step 1: Fade out the loader
+        if (medicalLoader) {
+          medicalLoader.style.opacity = "0";
+          medicalLoader.style.transition = "opacity 0.6s ease";
+        }
+
+        setTimeout(() => {
+          // Step 2: Remove loader from view
+          if (medicalLoader) medicalLoader.style.display = "none";
+
+          // Step 3: Reveal Main Content
+          if (mainWrapper) {
+            mainWrapper.style.visibility = "visible";
+            mainWrapper.style.opacity = "1";
+          }
+
+          // Step 4: 🔥 Trigger the Hero Entrance
+          if (clinicalGateTl) {
+            clinicalGateTl.play();
+          }
+
+          // Step 5: Recalculate ScrollTrigger positions
+          // (Vital because the page height changes when loader is removed)
+          ScrollTrigger.refresh();
+
+          // Step 6: Prepare AOS if used
+          if (typeof AOS !== "undefined") {
+            AOS.refreshHard();
+            document.dispatchEvent(new Event("aos:ready"));
+          }
+        }, 600); // Matches the 0.6s transition duration
+      }, DISPLAY_TIME);
+    });
+  </script>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      gsap.registerPlugin(ScrollTrigger);
+
+      // --- SCROLL ENTRANCE (PERMANENT ONCE) ---
+      const sections = [".industries-serve", ".security-vault"];
+
+      sections.forEach((sec) => {
+        gsap.from(`${sec} .anim-reveal`, {
+          scrollTrigger: {
+            trigger: sec,
+            start: "top 85%",
+            once: true, // 🔥 Animation triggers only once
+          },
+          y: 30,
+          opacity: 1,
+          stagger: 0.2,
+          duration: 0.8,
+        });
+      });
+
+      // --- TESTIMONIAL SLIDER LOGIC ---
+      const track = document.getElementById("testimonialTrack");
+      let index = 0;
+      const cards = document.querySelectorAll(".testimonial-card");
+
+      function slideTestimonials() {
+        index++;
+        if (index >= cards.length) index = 0;
+
+        gsap.to(track, {
+          xPercent: -100 * index,
+          duration: 1.2,
+          ease: "expo.inOut",
+        });
+      }
+
+      // Auto-play every 5 seconds
+      setInterval(slideTestimonials, 5000);
+    });
+
+    // Trigger everything after loader finishes
+    window.addEventListener("load", () => {
+      // ... your loader code from previous steps ...
+      // clinicalGateTl.play();
+    });
+  </script>
+
+  <script>
+    document.querySelectorAll(".why-item").forEach((card) => {
+      card.addEventListener("mousemove", (e) => {
+        const rect = card.getBoundingClientRect();
+        const x = e.clientX - rect.left;
+        const y = e.clientY - rect.top;
+
+        card.style.setProperty("--mouse-x", `${x}px`);
+        card.style.setProperty("--mouse-y", `${y}px`);
+      });
+    });
+  </script>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+  const track = document.getElementById("testimonialTrack");
+  const cards = document.querySelectorAll(".testimonial-card");
+  const dotsContainer = document.getElementById("sliderDots");
+  const container = document.querySelector(".slider-container");
+
+  let currentIndex = 0;
+  const totalSlides = cards.length;
+  const slideDuration = 1.2;
+  const autoPlayDelay = 5000;
+  let timer;
+
+  // 1. Initialize Navigation Dots
+  const initDots = () => {
+    dotsContainer.innerHTML = ""; // Clear existing to prevent duplicates on refresh
+    cards.forEach((_, i) => {
+      const dot = document.createElement("div");
+      dot.classList.add("dot");
+      if (i === currentIndex) dot.classList.add("active");
+      dot.addEventListener("click", () => goToSlide(i));
+      dotsContainer.appendChild(dot);
+    });
+  };
+
+  // 2. Core Sliding Function (Centered View)
+  function goToSlide(index) {
+    currentIndex = index;
+
+    // We use xPercent to move the track based on the current index
+    // Since each card is 100% width, -100 * index always centers the current card
+    gsap.to(track, {
+      xPercent: -100 * currentIndex,
+      duration: slideDuration,
+      ease: "expo.inOut",
+      overwrite: true // Prevents animation stuttering on fast clicks
+    });
+
+    // Update Dots UI
+    const dots = document.querySelectorAll(".dot");
+    dots.forEach((dot, i) => {
+      dot.classList.toggle("active", i === currentIndex);
+    });
+
+    resetAutoPlay();
+  }
+
+  // 3. Autoplay & Next Logic
+  function nextSlide() {
+    currentIndex = (currentIndex + 1) % totalSlides;
+    goToSlide(currentIndex);
+  }
+
+  function resetAutoPlay() {
+    clearInterval(timer);
+    timer = setInterval(nextSlide, autoPlayDelay);
+  }
+
+  // 4. Interaction Listeners
+  container.addEventListener("mouseenter", () => clearInterval(timer));
+  container.addEventListener("mouseleave", resetAutoPlay);
+
+  // 5. Handling Responsive Resizing
+  // This ensures that if the screen size changes, the current slide stays centered
+  window.addEventListener("resize", () => {
+    // Kill existing animations and snap to current slide
+    gsap.set(track, { xPercent: -100 * currentIndex });
+  });
+
+  // 6. Entrance Animation
+  gsap.from(".testimonial-card", {
+    scrollTrigger: {
+      trigger: ".testimonials-slider",
+      start: "top 80%",
+      once: true,
+    },
+    opacity: 1, // Ensure this is 0 for a fade-in effect
+    y: 40,
+    stagger: 0.1,
+    duration: 0.5,
+    ease: "power2.out",
+    onComplete: () => {
+        initDots();
+        resetAutoPlay();
+    }
+  });
+});
+  </script>
+</html>

@@ -1,0 +1,503 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Medical</title>
+    <link rel="icon" href="./Assets/icon.webp" />
+    <link rel="stylesheet" href="./service.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <!-- Swiper CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+    />
+  </head>
+  <body>
+    <div class="medical-loader" id="medicalLoader">
+      <div class="loader-wrapper">
+        <div class="device-container">
+          <div class="device-ring"></div>
+          <div class="device-ring inner"></div>
+          <div class="device-core">
+            <img src="./Assets/icon.webp" alt="Stackly" class="loader-logo" />
+          </div>
+          <div class="scan-line"></div>
+        </div>
+
+        <div class="ecg-line">
+          <svg viewBox="0 0 500 100" preserveAspectRatio="none">
+            <path
+              d="M0 50 L70 50 L90 20 L110 80 L130 50 L200 50 L220 30 L240 70 L260 50 L500 50"
+            />
+          </svg>
+        </div>
+
+        <h3 class="loading-text">INITIATING DIAGNOSTIC SCAN...</h3>
+        <p class="sub-text">Establishing Secure Interface with Medical Hub</p>
+      </div>
+    </div>
+
+    <div class="the-main">
+      <header>
+        <div class="header1">
+          <div class="container1">
+            <h3>Welcome To Stackly Medical Devices & Services.</h3>
+          </div>
+          <div class="container2">
+            <div>
+              <i class="fa-solid fa-phone-volume"></i>
+              <p>(123)456-7890</p>
+            </div>
+            <div>
+              <i class="fa-regular fa-envelope"></i>
+              <p>Support@stackly.com</p>
+            </div>
+          </div>
+        </div>
+        <div class="header2">
+          <div class="logo">
+            <a href="./index.html">
+              <img src="./Assets/logo.webp" alt="Logo" />
+            </a>
+          </div>
+
+          <nav>
+            <ul>
+              <li class="dropdown">
+                <a href="./index.html">Home</a>
+
+                <span class="drop-toggle">
+                  <i class="fa-solid fa-caret-down"></i>
+                </span>
+
+                <ul class="dropdown-menu">
+                  <li><a href="./index2.html">Home 2</a></li>
+                </ul>
+              </li>
+
+              <li><a href="./about.html">About</a></li>
+              <li><a href="./service.html">Services</a></li>
+              <li><a href="./blog.html">Blog</a></li>
+              <li><a href="./contact.html">Contact Us</a></li>
+              <li><a href="./dashboard.html">Dashboard</a></li>
+            </ul>
+          </nav>
+
+          <div class="icons">
+            <div class="login">
+              <!-- <a class="btn" href="./app.html">Buy Now</a> -->
+
+              <a href="./login.html">
+                <i class="fa-regular fa-circle-user"></i>
+              </a>
+            </div>
+
+            <div class="mobilebar">
+              <div class="hamburger-box">
+                <div class="hamburger">
+                  <div class="line line1"></div>
+                  <div class="line line2"></div>
+                  <div class="line line3"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
+
+      <div class="sidebar" id="sidebar">
+        <ul>
+          <li
+            class="has-dropdown menu-item"
+            data-aos="fade-up-right"
+            data-aos-delay="100"
+          >
+            <div class="dropdown-header">
+              <a href="./index.html">Home</a>
+              <span class="drop-caret" id="home-caret">▾</span>
+            </div>
+            <ul class="submenu" id="home-dropdown">
+              <li><a href="./index2.html">Home 2</a></li>
+            </ul>
+          </li>
+
+          <li class="menu-item" data-aos="fade-up-right" data-aos-delay="150">
+            <a href="./about.html">About</a>
+          </li>
+          <li class="menu-item" data-aos="fade-up-right" data-aos-delay="200">
+            <a href="./service.html">Services</a>
+          </li>
+          <li class="menu-item" data-aos="fade-up-right" data-aos-delay="250">
+            <a href="./blog.html">Blog</a>
+          </li>
+          <li class="menu-item" data-aos="fade-up-right" data-aos-delay="300">
+            <a href="./contact.html">Contact Us</a>
+          </li>
+          <li class="menu-item" data-aos="fade-up-right" data-aos-delay="350">
+            <a href="./dashboard.html">Dashboard</a>
+          </li>
+          <li class="menu-item" data-aos="fade-up-right" data-aos-delay="400">
+            <a href="./login.html">Login</a>
+          </li>
+        </ul>
+
+        <div
+          class="sidebar-login"
+          data-aos="fade-up-right"
+          data-aos-delay="450"
+        >
+          <!-- <a href="./app.html">
+            <button class="login-btn">Buy Now</button>
+          </a> -->
+        </div>
+      </div>
+
+      <div class="overlay" id="overlay"></div>
+
+<main></main>
+<section class="services-hero">
+    <div class="container">
+        <div class="s-hero-content">
+            <span class="tagline">What We Offer</span>
+            <h1 class="gsap-services-title">Comprehensive Medical Device Solutions</h1>
+            <p class="subtext">From precision manufacturing to ongoing technical support, we provide end-to-end medical device services designed to meet the needs of modern healthcare facilities.</p>
+
+            <a href="./error.html">
+              <button class="btn">Explore Services</button>
+            </a>
+        </div>
+    </div>
+</section>
+ 
+<section class="manufacturing-detail">
+    <div class="container">
+        <div class="m-grid">
+            <div class="m-content anim-left">
+                <span class="label">Manufacturing Excellence</span>
+                <h2>Precision Manufacturing & Production</h2>
+                <p>We design and manufacture high-performance medical devices using advanced production technologies and strict quality control standards. Every product undergoes rigorous testing to ensure reliability, durability, and regulatory compliance.</p>
+                
+                <div class="feature-grid">
+                    <div class="feature-item">
+                        <div class="f-icon">✓</div>
+                        <div class="f-text">
+                            <strong>ISO-compliant</strong>
+                            <span>Standardized production process</span>
+                        </div>
+                    </div>
+                    <div class="feature-item">
+                        <div class="f-icon">✓</div>
+                        <div class="f-text">
+                            <strong>Automated QA</strong>
+                            <span>High-speed quality inspection</span>
+                        </div>
+                    </div>
+                    <div class="feature-item">
+                        <div class="f-icon">✓</div>
+                        <div class="f-text">
+                            <strong>Biomedical Eng.</strong>
+                            <span>Advanced material engineering</span>
+                        </div>
+                    </div>
+                    <div class="feature-item">
+                        <div class="f-icon">✓</div>
+                        <div class="f-text">
+                            <strong>Scalable Capacity</strong>
+                            <span>Mass production ready</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="m-image anim-right">
+                <div class="img-wrapper">
+                    <img src="./Assets/s1_11zon.webp">
+                    <div class="floating-badge">
+                        <strong>100%</strong>
+                        <span>Quality Tested</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="service-detail installation-bg">
+    <div class="container">
+        <div class="m-grid inv"> <div class="m-image anim-left">
+                <div class="img-wrapper">
+                    <img src="./Assets/home1hero2_11zon_11zon.webp" alt="Medical Installation">
+                </div>
+            </div>
+            <div class="m-content anim-right">
+                <span class="label">Expert Setup</span>
+                <h2>Professional Installation Services</h2>
+                <p>Our certified technical team ensures safe and accurate installation of medical equipment at hospitals, clinics, and laboratories.</p>
+                <ul class="service-list">
+                    <li><span>On-site setup and calibration</span></li>
+                    <li><span>Safety validation</span></li>
+                    <li><span>Operational testing</span></li>
+                    <li><span>User guidance during installation</span></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="service-detail">
+    <div class="container">
+        <div class="m-grid">
+            <div class="m-content anim-left">
+                <span class="label">Support & Care</span>
+                <h2>Reliable Maintenance & Technical Support</h2>
+                <p>We offer preventive maintenance and rapid repair services to ensure uninterrupted medical operations across all healthcare facilities.</p>
+                <div class="service-cards-mini">
+                    <div class="mini-card"><strong>AMC</strong><span>Annual Contracts</span></div>
+                    <div class="mini-card"><strong>24/7</strong><span>Emergency Repair</span></div>
+                    <div class="mini-card"><strong>OEM</strong><span>Spare Parts</span></div>
+                </div>
+            </div>
+            <div class="m-image anim-right">
+                <div class="img-wrapper">
+                    <img src="./Assets/s3_11zon.webp" alt="Maintenance Support">
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="service-detail training-bg">
+    <div class="container">
+        <div class="m-grid inv">
+            <div class="m-image anim-left">
+                <div class="img-wrapper">
+                    <img src="./Assets/clilical training_11zon.webp" alt="Clinical Training">
+                </div>
+            </div>
+            <div class="m-content anim-right">
+                <span class="label">Knowledge Transfer</span>
+                <h2>Hands-On Product Training</h2>
+                <p>Structured training programs for healthcare professionals and technicians to ensure safe and efficient device usage.</p>
+                <div class="training-topics">
+                    <div class="topic">Device Operation</div>
+                    <div class="topic">Safety Protocols</div>
+                    <div class="topic">Troubleshooting</div>
+                    <div class="topic">Software Config</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+      <footer class="main-footer">
+        <div class="footer-grid">
+          <div class="footer-brand gsap-contact">
+            <div class="logo" style="margin-bottom: 20px">
+              <a href="./index.html">
+                <img
+                  src="./Assets/logo.webp"
+                  alt="MEDDEVICE Logo"
+                  style="max-width: 180px"
+                />
+              </a>
+            </div>
+            <!-- <h2 class="footer-logo">MED<span>DEVICE</span></h2> -->
+            <p>
+              Advancing human health through autonomous precision and clinical
+              intelligence. Our ISO-certified hardware provides the global
+              infrastructure for AI-assisted surgical operations.
+            </p>
+          </div>
+
+          <div class="footer-links gsap-contact">
+            <h4>Quick Links</h4>
+
+            <a href="./about.html">About</a>
+            <a href="./service.html">Services</a>
+            <a href="./blog.html">Blog</a>
+            <a href="./contact.html">Contact Us</a>
+            <a href="./dashboard.html">Dashboard</a>
+            <a href="./login.html">Login</a>
+          </div>
+          <div class="footer-links">
+            <h4>Navigation</h4>
+            <a href="./about.html">About</a>
+            <a href="./service.html">Services</a>
+            <a href="./blog.html">Clinical Blog</a>
+          </div>
+          <div class="footer-newsletter">
+            <h4>Newsletter</h4>
+            <p>Stay updated on medical breakthroughs.</p>
+            <div class="news-input">
+              <input type="email" placeholder="Email Address" required />
+              <button>→</button>
+            </div>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p>&copy; 2026 Medical Device Innovations. All Rights Reserved.</p>
+          <div class="legal-links">
+            <a href="./error.html">Privacy Policy</a>
+            <a href="./error.html">ISO Compliance</a>
+          </div>
+        </div>
+      </footer>
+    </div>
+  </body>
+
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script src="./script.js"></script>
+  <script>
+    AOS.init({
+      once: true,
+      duration: 1000,
+      easing: "ease-out-cubic",
+      startEvent: "aos:ready", // manual trigger
+    });
+  </script>
+  <!-- GSAP -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+
+  <!-- Header Scrolled -->
+  <script>
+    window.addEventListener("scroll", function () {
+      const header = document.querySelector(".header2");
+      const mainSection = document.querySelector("main"); // Targets your <main> tag
+
+      // Get the position of the main section
+      const sectionBottom = mainSection.getBoundingClientRect().bottom;
+
+      // If the bottom of 'main' is less than or equal to 0 (off-screen)
+      if (sectionBottom <= 0) {
+        header.classList.add("scrolled");
+      } else {
+        header.classList.remove("scrolled");
+      }
+    });
+  </script>
+<!-- Hero -->
+  <script>
+    // 1. Initialize Timelines (Paused)
+window.servicesTl = gsap.timeline({
+    paused: true,
+    defaults: { ease: "power4.out", duration: 1.2 }
+});
+
+window.mfgTl = gsap.timeline({
+    paused: true,
+    defaults: { ease: "power3.out", duration: 1.2 }
+});
+
+// 2. Build Animations
+window.servicesTl
+    .from(".services-hero .tagline", { y: 20, opacity: 1 })
+    .from(".gsap-services-title", { y: 30, opacity: 1 }, "-=0.8")
+    .from(".services-hero .subtext", { y: 20, opacity: 1 }, "-=1");
+
+window.mfgTl
+    .from(".anim-left", {  opacity: 1 })
+    .from(".anim-right", {  opacity: 1 }, "-=1")
+    .from(".feature-item", { scale: 0.9, opacity: 1, stagger: 0.2 }, "-=0.8")
+    .from(".floating-badge", { y: 30, opacity: 1 }, "-=0.5");
+
+// 3. Update your window.addEventListener("load") callback
+// Ensure this part is placed inside the 600ms timeout of your existing loader logic:
+
+window.addEventListener("load", () => {
+    // ... (Your Existing Loader logic) ...
+    
+    setTimeout(() => {
+        /* 🔥 Trigger Services Hero immediately after loader fades */
+        window.servicesTl.play();
+
+        /* 🔥 ScrollTrigger for Manufacturing Detail */
+        ScrollTrigger.create({
+            trigger: ".manufacturing-detail",
+            start: "top 75%",
+            onEnter: () => window.mfgTl.play()
+        });
+
+    }, 600);
+});
+
+// 4. Interactive Hover for Features
+document.querySelectorAll('.feature-item').forEach(item => {
+    item.addEventListener('mouseenter', () => {
+        gsap.to(item.querySelector('.f-icon'), { 
+            scale: 1.2, 
+            backgroundColor: "#27ae60", 
+            duration: 0.3 
+        });
+    });
+    item.addEventListener('mouseleave', () => {
+        gsap.to(item.querySelector('.f-icon'), { 
+            scale: 1, 
+            backgroundColor: "#2ecc71", 
+            duration: 0.3 
+        });
+    });
+});
+  </script>
+
+  <script>
+    // Initialize separate timelines for each section
+const createServiceTl = (selector) => {
+    return gsap.timeline({
+        paused: true,
+        defaults: { ease: "power3.out", duration: 1.2 }
+    });
+};
+
+const installTl = createServiceTl();
+const maintenanceTl = createServiceTl();
+const trainingTl = createServiceTl();
+
+// Define Animations
+installTl.from(".installation-bg .anim-left", { opacity: 1})
+         .from(".installation-bg .anim-right", { opacity: 1 }, "-=1")
+         .from(".installation-bg li", { opacity: 1, y: 10, stagger: 0.2 }, "-=0.5");
+
+maintenanceTl.from(".service-detail:not(.installation-bg):not(.training-bg) .anim-left", { x: -50, opacity: 0 })
+              .from(".service-detail:not(.installation-bg):not(.training-bg) .anim-right", { x: 50, opacity: 0 }, "-=1")
+              .from(".mini-card", { scale: 0.8, opacity: 1, stagger: 0.2 }, "-=0.8");
+
+trainingTl.from(".training-bg .anim-left", {  opacity: 1 })
+           .from(".training-bg .anim-right", { opacity: 1 }, "-=1")
+           .from(".topic", { opacity: 1, scale: 0.5, stagger: 0.1 }, "-=0.5");
+
+// SYNC WITH LOADER (Inside your existing loader logic)
+window.addEventListener("load", () => {
+    setTimeout(() => { // After LOADER_TIME (1.5s)
+        setTimeout(() => { // After 600ms CSS transition
+            
+            ScrollTrigger.create({
+                trigger: ".installation-bg",
+                start: "top 80%",
+                onEnter: () => installTl.play()
+            });
+
+            ScrollTrigger.create({
+                trigger: ".service-detail:not(.installation-bg):not(.training-bg)",
+                start: "top 80%",
+                onEnter: () => maintenanceTl.play()
+            });
+
+            ScrollTrigger.create({
+                trigger: ".training-bg",
+                start: "top 80%",
+                onEnter: () => trainingTl.play()
+            });
+
+        }, 600);
+    }, 1500);
+});
+  </script>
+</html>

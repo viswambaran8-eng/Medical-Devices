@@ -1,0 +1,357 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Medical</title>
+    <link rel="icon" href="./Assets/icon.webp" />
+    <link rel="stylesheet" href="./signout.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <!-- Swiper CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+    />
+  </head>
+  <body>
+    <div class="medical-loader" id="medicalLoader">
+      <div class="loader-wrapper">
+        <div class="device-container">
+          <div class="device-ring"></div>
+          <div class="device-ring inner"></div>
+          <div class="device-core">
+            <img src="./Assets/icon.webp" alt="Stackly" class="loader-logo" />
+          </div>
+          <div class="scan-line"></div>
+        </div>
+
+        <div class="ecg-line">
+          <svg viewBox="0 0 500 100" preserveAspectRatio="none">
+            <path
+              d="M0 50 L70 50 L90 20 L110 80 L130 50 L200 50 L220 30 L240 70 L260 50 L500 50"
+            />
+          </svg>
+        </div>
+
+        <h3 class="loading-text">INITIATING DIAGNOSTIC SCAN...</h3>
+        <p class="sub-text">Establishing Secure Interface with Medical Hub</p>
+      </div>
+    </div>
+
+    <div class="the-main">
+      <header>
+        <div class="header1">
+          <div class="container1">
+            <h3>Welcome To Stackly Medical Devices & Services.</h3>
+          </div>
+          <div class="container2">
+            <div>
+              <i class="fa-solid fa-phone-volume"></i>
+              <p>(123)456-7890</p>
+            </div>
+            <div>
+              <i class="fa-regular fa-envelope"></i>
+              <p>Support@stackly.com</p>
+            </div>
+          </div>
+        </div>
+        <div class="header2">
+          <div class="logo">
+            <a href="./index2.html">
+              <img src="./Assets/logo.webp" alt="Logo" />
+            </a>
+          </div>
+
+          <nav>
+            <ul>
+              <li class="dropdown">
+                <a href="./index2.html">Home</a>
+
+                <span class="drop-toggle">
+                  <i class="fa-solid fa-caret-down"></i>
+                </span>
+
+                <ul class="dropdown-menu">
+                  <li><a href="./index.html">Home 1</a></li>
+                </ul>
+              </li>
+
+              <li><a href="./products.html">Products</a></li>
+              <li><a href="./industries.html">Industries</a></li>
+              <li><a href="./innovation.html">Innovation</a></li>
+              <li><a href="./support.html">Support</a></li>
+            </ul>
+          </nav>
+
+          <div class="icons">
+            <div class="login">
+              <!-- <a class="btn" href="./app.html">Buy Now</a> -->
+
+              <a href="./login2.html">
+                <i class="fa-regular fa-circle-user"></i>
+              </a>
+            </div>
+
+            <div class="mobilebar">
+              <div class="hamburger-box">
+                <div class="hamburger">
+                  <div class="line line1"></div>
+                  <div class="line line2"></div>
+                  <div class="line line3"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
+
+      <div class="sidebar" id="sidebar">
+        <ul>
+          <li
+            class="has-dropdown menu-item"
+            data-aos="fade-up-right"
+            data-aos-delay="100"
+          >
+            <div class="dropdown-header">
+              <a href="./index2.html">Home</a>
+              <span class="drop-caret" id="home-caret">▾</span>
+            </div>
+            <ul class="submenu" id="home-dropdown">
+              <li><a href="./index.html">Home 1</a></li>
+            </ul>
+          </li>
+
+          <li class="menu-item" data-aos="fade-up-right" data-aos-delay="150">
+            <a href="./products.html">Products</a>
+          </li>
+          <li class="menu-item" data-aos="fade-up-right" data-aos-delay="200">
+            <a href="./industries.html">Industries</a>
+          </li>
+          <li class="menu-item" data-aos="fade-up-right" data-aos-delay="250">
+            <a href="./innovation.html">Innovation</a>
+          </li>
+          <li class="menu-item" data-aos="fade-up-right" data-aos-delay="300">
+            <a href="./support.html">Support</a>
+          </li>
+
+          <li class="menu-item" data-aos="fade-up-right" data-aos-delay="400">
+            <a href="./login2.html">Login</a>
+          </li>
+        </ul>
+
+        <div
+          class="sidebar-login"
+          data-aos="fade-up-right"
+          data-aos-delay="450"
+        >
+          <!-- <a href="./app.html">
+            <button class="login-btn">Buy Now</button>
+          </a> -->
+        </div>
+      </div>
+
+      <div class="overlay" id="overlay"></div>
+
+      <main></main>
+
+      <section class="Structure">
+        <div class="signout-wrapper">
+          <div class="signout-card">
+            <!-- LEFT SIDE -->
+            <div class="signout-left">
+              <h1>
+                Confirm Sign-out from <span>Stackly Medical Devices</span>
+              </h1>
+
+              <ul>
+                <li>✔ Secure logout confirmation</li>
+                <li>✔ Protect your medical information</li>
+                <li>✔ Prevent unauthorized access</li>
+                <li>✔ Safe & encrypted session ending</li>
+              </ul>
+
+              <div class="tip">Tip: Re-enter credentials to sign out.</div>
+            </div>
+
+            <!-- RIGHT SIDE -->
+            <div class="signout-right">
+              <h2>Sign-out</h2>
+              <p class="headings">Verify your account to complete logout.</p>
+
+              <form id="signoutForm">
+                <div class="input-group">
+                  <input
+                    type="email"
+                    id="signoutEmail"
+                    placeholder="you@gmail.com"
+                    required
+                  />
+                </div>
+
+                <div class="input-group password-group">
+                  <input
+                    type="password"
+                    id="signoutPassword"
+                    placeholder="Password"
+                    required
+                  />
+                  <span id="toggleSignoutPassword">Show</span>
+                </div>
+
+                <button type="submit" class="signout-btn">
+                  Confirm Sign-out
+                </button>
+                <div class="link">
+                  <p class="links">
+                    Already Have An Account ?
+                    <a href="./login2.html">Sign-In</a>
+                  </p>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+
+
+
+      <footer class="main-footer">
+        <div class="footer-grid">
+          <div class="footer-brand gsap-contact">
+            <div class="logo" style="margin-bottom: 20px">
+              <a href="./index2.html">
+                <img
+                  src="./Assets/logo.webp"
+                  alt="MEDDEVICE Logo"
+                  style="max-width: 180px"
+                />
+              </a>
+            </div>
+            <!-- <h2 class="footer-logo">MED<span>DEVICE</span></h2> -->
+            <p>
+              Advancing human health through autonomous precision and clinical
+              intelligence. Our ISO-certified hardware provides the global
+              infrastructure for AI-assisted surgical operations.
+            </p>
+          </div>
+
+          <div class="footer-links gsap-contact">
+            <h4>Quick Links</h4>
+
+            <a href="./products.html">Products</a>
+            <a href="./industries.html">Industries</a>
+            <a href="./innovation.html">Innovation</a>
+            <a href="./support.html">Support</a>
+            <a href="./login2.html">Login</a>
+          </div>
+          <div class="footer-links">
+            <h4>Navigation</h4>
+            <a href="./products.html">Products</a>
+            <a href="./industries.html">Industries</a>
+            <a href="./innovation.html">Innovation</a>
+            <a href="./support.html">Support</a>
+          </div>
+          <div class="footer-newsletter">
+            <h4>Newsletter</h4>
+            <p>Stay updated on medical breakthroughs.</p>
+            <div class="news-input">
+              <input type="email" placeholder="Email Address" required />
+              <button>→</button>
+            </div>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p>&copy; 2026 Medical Device Innovations. All Rights Reserved.</p>
+          <div class="legal-links">
+            <a href="#">Privacy Policy</a>
+            <a href="#">ISO Compliance</a>
+          </div>
+        </div>
+      </footer>
+    </div>
+  </body>
+
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script src="./script.js"></script>
+  <script>
+    AOS.init({
+      once: true,
+      duration: 1000,
+      easing: "ease-out-cubic",
+      startEvent: "aos:ready", // manual trigger
+    });
+  </script>
+  <!-- GSAP -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+
+  <!-- Header Scrolled -->
+  <script>
+    window.addEventListener("scroll", function () {
+      const header = document.querySelector(".header2");
+      const mainSection = document.querySelector("main"); // Targets your <main> tag
+
+      // Get the position of the main section
+      const sectionBottom = mainSection.getBoundingClientRect().bottom;
+
+      // If the bottom of 'main' is less than or equal to 0 (off-screen)
+      if (sectionBottom <= 0) {
+        header.classList.add("scrolled");
+      } else {
+        header.classList.remove("scrolled");
+      }
+    });
+  </script>
+
+        <script>
+        const toggleSignoutPassword = document.getElementById(
+          "toggleSignoutPassword",
+        );
+        const signoutPassword = document.getElementById("signoutPassword");
+        const signoutForm = document.getElementById("signoutForm");
+
+        // Show / Hide Password
+        toggleSignoutPassword.addEventListener("click", () => {
+          const type =
+            signoutPassword.type === "password" ? "text" : "password";
+          signoutPassword.type = type;
+          toggleSignoutPassword.textContent =
+            type === "password" ? "Show" : "Hide";
+        });
+
+        signoutForm.addEventListener("submit", (e) => {
+          e.preventDefault();
+
+          const email = document.getElementById("signoutEmail").value.trim();
+          const pass = signoutPassword.value.trim();
+
+          // Gmail validation
+          const gmailPattern = /^[a-zA-Z0-9._%+-]+@gmail\.com$/;
+
+          // Password validation
+          const passwordPattern =
+            /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&]).{6,}$/;
+
+          if (!gmailPattern.test(email)) {
+            alert("Email must end with @gmail.com");
+            return;
+          }
+
+          if (!passwordPattern.test(pass)) {
+            alert(
+              "Password must contain:\n- Uppercase letter\n- Lowercase letter\n- Number\n- Special symbol\n- Minimum 6 characters",
+            );
+            return;
+          }
+
+          alert("You have been securely signed out.");
+          window.location.href = "login2.html";
+        });
+      </script>
+</html>

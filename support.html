@@ -1,0 +1,495 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Medical</title>
+    <link rel="icon" href="./Assets/icon.webp" />
+    <link rel="stylesheet" href="./support.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <!-- Swiper CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+    />
+  </head>
+  <body>
+    <div class="medical-loader" id="medicalLoader">
+      <div class="loader-wrapper">
+        <div class="device-container">
+          <div class="device-ring"></div>
+          <div class="device-ring inner"></div>
+          <div class="device-core">
+            <img src="./Assets/icon.webp" alt="Stackly" class="loader-logo" />
+          </div>
+          <div class="scan-line"></div>
+        </div>
+
+        <div class="ecg-line">
+          <svg viewBox="0 0 500 100" preserveAspectRatio="none">
+            <path
+              d="M0 50 L70 50 L90 20 L110 80 L130 50 L200 50 L220 30 L240 70 L260 50 L500 50"
+            />
+          </svg>
+        </div>
+
+        <h3 class="loading-text">INITIATING DIAGNOSTIC SCAN...</h3>
+        <p class="sub-text">Establishing Secure Interface with Medical Hub</p>
+      </div>
+    </div>
+
+    <div class="the-main">
+      <header>
+        <div class="header1">
+          <div class="container1">
+            <h3>Welcome To Stackly Medical Devices & Services.</h3>
+          </div>
+          <div class="container2">
+            <div>
+              <i class="fa-solid fa-phone-volume"></i>
+              <p>(123)456-7890</p>
+            </div>
+            <div>
+              <i class="fa-regular fa-envelope"></i>
+              <p>Support@stackly.com</p>
+            </div>
+          </div>
+        </div>
+        <div class="header2">
+          <div class="logo">
+            <a href="./index2.html">
+              <img src="./Assets/logo.webp" alt="Logo" />
+            </a>
+          </div>
+
+          <nav>
+            <ul>
+              <li class="dropdown">
+                <a href="./index2.html">Home</a>
+
+                <span class="drop-toggle">
+                  <i class="fa-solid fa-caret-down"></i>
+                </span>
+
+                <ul class="dropdown-menu">
+                  <li><a href="./index.html">Home 1</a></li>
+                </ul>
+              </li>
+
+              <li><a href="./products.html">Products</a></li>
+              <li><a href="./industries.html">Industries</a></li>
+              <li><a href="./innovation.html">Innovation</a></li>
+              <li><a href="./support.html">Support</a></li>
+            </ul>
+          </nav>
+
+          <div class="icons">
+            <div class="login">
+              <!-- <a class="btn" href="./app.html">Buy Now</a> -->
+
+              <a href="./login2.html">
+                <i class="fa-regular fa-circle-user"></i>
+              </a>
+            </div>
+
+            <div class="mobilebar">
+              <div class="hamburger-box">
+                <div class="hamburger">
+                  <div class="line line1"></div>
+                  <div class="line line2"></div>
+                  <div class="line line3"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
+
+      <div class="sidebar" id="sidebar">
+        <ul>
+          <li
+            class="has-dropdown menu-item"
+            data-aos="fade-up-right"
+            data-aos-delay="100"
+          >
+            <div class="dropdown-header">
+              <a href="./index2.html">Home</a>
+              <span class="drop-caret" id="home-caret">▾</span>
+            </div>
+            <ul class="submenu" id="home-dropdown">
+              <li><a href="./index.html">Home 1</a></li>
+            </ul>
+          </li>
+
+          <li class="menu-item" data-aos="fade-up-right" data-aos-delay="150">
+            <a href="./products.html">Products</a>
+          </li>
+          <li class="menu-item" data-aos="fade-up-right" data-aos-delay="200">
+            <a href="./industries.html">Industries</a>
+          </li>
+          <li class="menu-item" data-aos="fade-up-right" data-aos-delay="250">
+            <a href="./innovation.html">Innovation</a>
+          </li>
+          <li class="menu-item" data-aos="fade-up-right" data-aos-delay="300">
+            <a href="./support.html">Support</a>
+          </li>
+
+          <li class="menu-item" data-aos="fade-up-right" data-aos-delay="400">
+            <a href="./login2.html">Login</a>
+          </li>
+        </ul>
+
+        <div
+          class="sidebar-login"
+          data-aos="fade-up-right"
+          data-aos-delay="450"
+        >
+          <!-- <a href="./app.html">
+            <button class="login-btn">Buy Now</button>
+          </a> -->
+        </div>
+      </div>
+
+      <div class="overlay" id="overlay"></div>
+
+      <section class="support-hero">
+        <div class="support-overlay"></div>
+        <div class="med-container">
+          <div class="support-hero-content">
+            <span class="support-tag">We’re Here to Help</span>
+            <h1 class="support-title">
+              24/7 Support for
+              <span class="highlight">Connected Medical Systems</span>
+            </h1>
+            <p class="support-subtext">
+              Our technical experts ensure your devices and platform operate
+              smoothly with minimal downtime and maximum reliability. Experience
+              enterprise-grade assistance tailored for healthcare innovators.
+            </p>
+            <div class="support-actions">
+              <a href="./error2.html" class="med-btn btn-primary">Contact Support</a>
+              <a href="./error2.html" class="med-btn btn-secondary">Submit a Ticket</a>
+            </div>
+
+            <div class="support-stats">
+              <div class="stat-item">
+                <span class="stat-num">99.9%</span>
+                <span class="stat-label">System Uptime</span>
+              </div>
+              <div class="stat-item">
+                <span class="stat-num">&lt;15m</span>
+                <span class="stat-label">Response Time</span>
+              </div>
+              <div class="stat-item">
+                <span class="stat-num">Global</span>
+                <span class="stat-label">Compliance</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="support-suite">
+        <div class="med-container">
+          <div class="supp-block style-tech-split" id="expert-assist">
+            <div class="supp-content">
+              <div class="supp-number">01</div>
+              <span class="supp-category">Engineered Assistance</span>
+              <h2 class="supp-heading">
+                Expert Technical <span class="text-green">Assistance</span>
+              </h2>
+              <p class="supp-paragraph">
+                Our certified engineers provide real-time assistance for device
+                setup, troubleshooting, and system integration.
+              </p>
+
+              <div class="supp-feature-grid">
+                <div class="f-pill">Device Configuration</div>
+                <div class="f-pill">Software Fixes</div>
+                <div class="f-pill">Cloud Assistance</div>
+                <div class="f-pill">Firmware Updates</div>
+              </div>
+
+              <div class="supp-availability">
+                <span class="pulse-dot"></span> 24/7 Support for Enterprise
+                Clients
+              </div>
+            </div>
+            <div class="supp-visual">
+              <div class="code-window">
+                <div class="window-header">
+                  <span></span><span></span><span></span>
+                </div>
+                <img
+                  src="./Assets/technical support_11zon.webp"
+                  alt="Technical Support"
+                />
+              </div>
+            </div>
+          </div>
+
+          <div class="supp-block style-diagnostic-card" id="remote-diag">
+            <div class="diag-container">
+              <div class="diag-header">
+                <div class="supp-number">02</div>
+                <h2 class="supp-heading">Proactive Issue Detection</h2>
+                <p class="supp-paragraph">
+                  Our platform continuously monitors device performance to
+                  detect issues before they impact patient care.
+                </p>
+              </div>
+
+              <div class="diag-grid">
+                <div class="diag-box">
+                  <div class="diag-icon">🔔</div>
+                  <h4>Automated Alerts</h4>
+                  <p>Instant system notifications.</p>
+                </div>
+                <div class="diag-box">
+                  <div class="diag-icon">🩺</div>
+                  <h4>Health Checks</h4>
+                  <p>Remote device diagnostics.</p>
+                </div>
+                <div class="diag-box highlight-box">
+                  <div class="diag-icon">📈</div>
+                  <h4>Predictive Failures</h4>
+                  <p>AI-driven notifications.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="supp-block style-onboarding-flow" id="deployment">
+            <div class="flow-layout">
+              <div class="flow-image">
+                <img
+                  src="./Assets/onboarding_11zon.webp"
+                  alt="Onboarding"
+                />
+              </div>
+              <div class="flow-content">
+                <div class="supp-number">03</div>
+                <h2 class="supp-heading">Smooth Deployment & Setup</h2>
+                <p class="supp-paragraph">
+                  We assist hospitals and manufacturers during implementation to
+                  ensure seamless integration.
+                </p>
+
+                <ul class="flow-list">
+                  <li>
+                    <strong>Virtual Installation:</strong> Remote setup
+                    guidance.
+                  </li>
+                  <li>
+                    <strong>System Config:</strong> Tailored device parameters.
+                  </li>
+                  <li>
+                    <strong>Staff Training:</strong> Comprehensive onboarding.
+                  </li>
+                  <li>
+                    <strong>Go-Live Support:</strong> Real-time launch
+                    assistance.
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <footer class="main-footer">
+        <div class="footer-grid">
+          <div class="footer-brand gsap-contact">
+            <div class="logo" style="margin-bottom: 20px">
+              <a href="./index2.html">
+                <img
+                  src="./Assets/logo.webp"
+                  alt="MEDDEVICE Logo"
+                  style="max-width: 180px"
+                />
+              </a>
+            </div>
+            <!-- <h2 class="footer-logo">MED<span>DEVICE</span></h2> -->
+            <p>
+              Advancing human health through autonomous precision and clinical
+              intelligence. Our ISO-certified hardware provides the global
+              infrastructure for AI-assisted surgical operations.
+            </p>
+          </div>
+
+          <div class="footer-links gsap-contact">
+            <h4>Quick Links</h4>
+
+            <a href="./products.html">Products</a>
+            <a href="./industries.html">Industries</a>
+            <a href="./innovation.html">Innovation</a>
+            <a href="./support.html">Support</a>
+            <a href="./login2.html">Login</a>
+          </div>
+          <div class="footer-links">
+            <h4>Navigation</h4>
+            <a href="./products.html">Products</a>
+            <a href="./industries.html">Industries</a>
+            <a href="./innovation.html">Innovation</a>
+            <a href="./support.html">Support</a>
+          </div>
+          <div class="footer-newsletter">
+            <h4>Newsletter</h4>
+            <p>Stay updated on medical breakthroughs.</p>
+            <div class="news-input">
+              <input type="email" placeholder="Email Address" required />
+              <button>→</button>
+            </div>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p>&copy; 2026 Medical Device Innovations. All Rights Reserved.</p>
+          <div class="legal-links">
+            <a href="./error2.html">Privacy Policy</a>
+            <a href="./error2.html">ISO Compliance</a>
+          </div>
+        </div>
+      </footer>
+    </div>
+  </body>
+
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script src="./script.js"></script>
+  <script>
+    AOS.init({
+      once: true,
+      duration: 1000,
+      easing: "ease-out-cubic",
+      startEvent: "aos:ready", // manual trigger
+    });
+  </script>
+  <!-- GSAP -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+
+  <!-- Header Scrolled -->
+  <script>
+    window.addEventListener("scroll", function () {
+      const header = document.querySelector(".header2");
+      const mainSection = document.querySelector("main"); // Targets your <main> tag
+
+      // Get the position of the main section
+      const sectionBottom = mainSection.getBoundingClientRect().bottom;
+
+      // If the bottom of 'main' is less than or equal to 0 (off-screen)
+      if (sectionBottom <= 0) {
+        header.classList.add("scrolled");
+      } else {
+        header.classList.remove("scrolled");
+      }
+    });
+  </script>
+
+ <script>
+  gsap.registerPlugin(ScrollTrigger);
+
+/**
+ * 1. HERO TIMELINE (GLOBAL & PAUSED)
+ */
+const supportTl = gsap.timeline({
+    paused: true, // Remains frozen until loader calls .play()
+    defaults: { ease: "expo.out", duration: 3 },
+});
+
+// Defining the sequence (it won't run yet)
+supportTl
+    .from(".support-tag", { opacity: 1, y: 20 })
+    .from(".support-title", { opacity: 1, y: 30 }, "-=0.9")
+    .from(".support-subtext", { opacity: 1, y: 20 }, "-=0.9")
+    .from(".support-actions", { opacity: 1, scale: 0.9, y: 20 }, "-=0.8")
+    .from(".stat-item", {
+        opacity: 1,
+        y: 30,
+        stagger: 0.2,
+        duration: 0.8,
+        ease: "back.out(1.7)",
+    }, "-=0.6");
+
+/**
+ * 2. ON-SCROLL SUITE (INITIALIZATION FUNCTION)
+ */
+const initSupportSuite = () => {
+    // 01. Tech Split
+    gsap.timeline({
+        scrollTrigger: { 
+            trigger: ".style-tech-split", 
+            start: "top 85%",
+            toggleActions: "play none none none" 
+        }
+    })
+    .from(".style-tech-split .supp-content > *", { opacity: 1, x: -60, skewX: 5, stagger: 0.1, duration: 1 })
+    .from(".f-pill", { opacity: 1, scale: 0.5, stagger: 0.05, duration: 0.6 }, "-=0.7")
+    .from(".code-window", { opacity: 1, clipPath: "inset(0 100% 0 0)", x: 50, duration: 1.5 }, "-=1.1");
+
+    // 02. Diagnostic Card
+    gsap.from(".diag-box", {
+        scrollTrigger: { trigger: ".style-diagnostic-card", start: "top 80%" },
+        opacity: 1, y: 80, rotationX: -30, transformOrigin: "top center",
+        stagger: { each: 0.2, from: "center" }, duration: 1, ease: "power3.out"
+    });
+
+    // 03. Onboarding
+    gsap.timeline({
+        scrollTrigger: { trigger: ".style-onboarding-flow", start: "top 80%" }
+    })
+    .from(".flow-image", { opacity: 1, clipPath: "inset(100% 0 0 0)", scale: 1.1, duration: 1.5 })
+    .from(".flow-content > *", { opacity: 1, y: 30, stagger: 0.1, duration: 0.8 }, "-=1");
+};
+
+/**
+ * 3. MASTER LOADER CONTROL
+ */
+window.addEventListener("load", () => {
+    const loader = document.getElementById("medicalLoader");
+    const mainContent = document.querySelector("main");
+    const LOADER_TIME = 1500;
+
+    // Force scroll to top so triggers don't fire early
+    if ('scrollRestoration' in history) { history.scrollRestoration = 'manual'; }
+    window.scrollTo(0, 0);
+
+    setTimeout(() => {
+        /* 1. Start fading the loader */
+        loader.style.opacity = "0";
+
+        setTimeout(() => {
+            /* 2. Remove loader from DOM flow */
+            loader.style.display = "none";
+
+            /* 3. Reveal Main Content */
+            mainContent.style.visibility = "visible";
+            mainContent.style.opacity = "1";
+            mainContent.style.transform = "translateY(0)";
+
+            /* 4. 🔥 THE BIG REVEAL 🔥 */
+            
+            // Play the Hero immediately
+            supportTl.play(); 
+            
+            // Only NOW define and start the on-scroll triggers
+            initSupportSuite(); 
+
+            // Re-calculate page positions now that content is visible
+            ScrollTrigger.refresh();
+
+            /* 5. Clean up AOS */
+            if (window.AOS) {
+                AOS.refreshHard();
+            }
+
+        }, 600); // Wait for the opacity transition to finish
+    }, LOADER_TIME); // The initial 1.5s wait
+});
+ </script>
+</html>

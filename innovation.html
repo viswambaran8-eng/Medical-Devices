@@ -1,0 +1,537 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Medical</title>
+    <link rel="icon" href="./Assets/icon.webp" />
+    <link rel="stylesheet" href="./innovation.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <!-- Swiper CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+    />
+  </head>
+  <body>
+    <div class="medical-loader" id="medicalLoader">
+      <div class="loader-wrapper">
+        <div class="device-container">
+          <div class="device-ring"></div>
+          <div class="device-ring inner"></div>
+          <div class="device-core">
+            <img src="./Assets/icon.webp" alt="Stackly" class="loader-logo" />
+          </div>
+          <div class="scan-line"></div>
+        </div>
+
+        <div class="ecg-line">
+          <svg viewBox="0 0 500 100" preserveAspectRatio="none">
+            <path
+              d="M0 50 L70 50 L90 20 L110 80 L130 50 L200 50 L220 30 L240 70 L260 50 L500 50"
+            />
+          </svg>
+        </div>
+
+        <h3 class="loading-text">INITIATING DIAGNOSTIC SCAN...</h3>
+        <p class="sub-text">Establishing Secure Interface with Medical Hub</p>
+      </div>
+    </div>
+
+    <div class="the-main">
+      <header>
+        <div class="header1">
+          <div class="container1">
+            <h3>Welcome To Stackly Medical Devices & Services.</h3>
+          </div>
+          <div class="container2">
+            <div>
+              <i class="fa-solid fa-phone-volume"></i>
+              <p>(123)456-7890</p>
+            </div>
+            <div>
+              <i class="fa-regular fa-envelope"></i>
+              <p>Support@stackly.com</p>
+            </div>
+          </div>
+        </div>
+        <div class="header2">
+          <div class="logo">
+            <a href="./index2.html">
+              <img src="./Assets/logo.webp" alt="Logo" />
+            </a>
+          </div>
+
+          <nav>
+            <ul>
+              <li class="dropdown">
+                <a href="./index2.html">Home</a>
+
+                <span class="drop-toggle">
+                  <i class="fa-solid fa-caret-down"></i>
+                </span>
+
+                <ul class="dropdown-menu">
+                  <li><a href="./index.html">Home 1</a></li>
+                </ul>
+              </li>
+
+              <li><a href="./products.html">Products</a></li>
+              <li><a href="./industries.html">Industries</a></li>
+              <li><a href="./innovation.html">Innovation</a></li>
+              <li><a href="./support.html">Support</a></li>
+            </ul>
+          </nav>
+
+          <div class="icons">
+            <div class="login">
+              <!-- <a class="btn" href="./app.html">Buy Now</a> -->
+
+              <a href="./login2.html">
+                <i class="fa-regular fa-circle-user"></i>
+              </a>
+            </div>
+
+            <div class="mobilebar">
+              <div class="hamburger-box">
+                <div class="hamburger">
+                  <div class="line line1"></div>
+                  <div class="line line2"></div>
+                  <div class="line line3"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
+
+      <div class="sidebar" id="sidebar">
+        <ul>
+          <li
+            class="has-dropdown menu-item"
+            data-aos="fade-up-right"
+            data-aos-delay="100"
+          >
+            <div class="dropdown-header">
+              <a href="./index2.html">Home</a>
+              <span class="drop-caret" id="home-caret">▾</span>
+            </div>
+            <ul class="submenu" id="home-dropdown">
+              <li><a href="./index.html">Home 1</a></li>
+            </ul>
+          </li>
+
+          <li class="menu-item" data-aos="fade-up-right" data-aos-delay="150">
+            <a href="./products.html">Products</a>
+          </li>
+          <li class="menu-item" data-aos="fade-up-right" data-aos-delay="200">
+            <a href="./industries.html">Industries</a>
+          </li>
+          <li class="menu-item" data-aos="fade-up-right" data-aos-delay="250">
+            <a href="./innovation.html">Innovation</a>
+          </li>
+          <li class="menu-item" data-aos="fade-up-right" data-aos-delay="300">
+            <a href="./support.html">Support</a>
+          </li>
+
+          <li class="menu-item" data-aos="fade-up-right" data-aos-delay="400">
+            <a href="./login2.html">Login</a>
+          </li>
+        </ul>
+
+        <div
+          class="sidebar-login"
+          data-aos="fade-up-right"
+          data-aos-delay="450"
+        >
+          <!-- <a href="./app.html">
+            <button class="login-btn">Buy Now</button>
+          </a> -->
+        </div>
+      </div>
+
+      <div class="overlay" id="overlay"></div>
+
+      <main>
+        <section class="innovation-hero">
+          <div class="inn-bg-overlay"></div>
+
+          <div class="med-container">
+            <div class="inn-hero-wrapper">
+              <div class="inn-content">
+                <span class="inn-tagline"
+                  >Shaping the Future of Healthcare</span
+                >
+                <h1 class="inn-title">
+                  Innovation at the Core of
+                  <span class="text-gradient">Connected Care</span>
+                </h1>
+                <p class="inn-subtext">
+                  We combine AI, IoT, and cloud intelligence to transform
+                  traditional medical devices into smart, predictive healthcare
+                  ecosystems. Our mission is to bridge the gap between hardware
+                  and human outcomes.
+                </p>
+                <div class="inn-actions">
+                  <a href="./error2.html" class="med-btn btn-filled"
+                    >Discover Our Technology</a
+                  >
+                  <a href="./error2.html" class="med-btn btn-outline">Watch Keynote</a>
+                </div>
+              </div>
+
+              <div class="inn-pillars-grid">
+                <div class="pillar-card">
+                  <div class="pillar-icon">🧠</div>
+                  <h3>Adaptive AI</h3>
+                  <p>
+                    Machine learning models that predict device failure and
+                    patient trends.
+                  </p>
+                </div>
+                <div class="pillar-card">
+                  <div class="pillar-icon">📡</div>
+                  <h3>Edge IoT</h3>
+                  <p>
+                    Real-time data processing directly at the point of care.
+                  </p>
+                </div>
+                <div class="pillar-card">
+                  <div class="pillar-icon">☁️</div>
+                  <h3>Secure Cloud</h3>
+                  <p>
+                    HIPAA-compliant global scalability for every device pulse.
+                  </p>
+                </div>
+                <div class="pillar-card ">
+                  <div class="pillar-icon">📈</div>
+                  <h3>Predictive Ecosystem</h3>
+                  <p>
+                    Turning raw telemetry into actionable clinical intelligence.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+
+      <section class="innovation-suite">
+    <div class="med-container">
+        
+        <div class="inn-block style-split" id="ai-intelligence">
+            <div class="inn-content">
+                <div class="inn-badge">01 // AI & ML</div>
+                <h2 class="inn-title">AI-Powered <span class="glow-text">Clinical Intelligence</span></h2>
+                <p class="inn-desc">Our platform uses advanced machine learning models to analyze patient data in real time and generate predictive insights.</p>
+                <div class="inn-feature-list">
+                    <div class="f-item"><span>🧠</span> Predictive risk scoring</div>
+                    <div class="f-item"><span>⚠️</span> Automated anomaly detection</div>
+                </div>
+                <div class="impact-footer">
+                    <strong>Impact:</strong> Faster diagnosis & Reduced emergency incidents.
+                </div>
+            </div>
+            <div class="inn-visual">
+                <div class="visual-wrap">
+                    <img src="./Assets/innovation ai_11zon.webp" alt="AI Logic">
+                </div>
+            </div>
+        </div>
+
+        <div class="inn-block style-glass-card" id="iot-connectivity">
+            <div class="glass-container">
+                <div class="glass-text">
+                    <div class="inn-badge">02 // IoT EDGE</div>
+                    <h2 class="inn-title">Connected Devices. <br>Real-Time Data.</h2>
+                    <p class="inn-desc">Embedding secure IoT modules into hardware for seamless device-to-cloud communication.</p>
+                </div>
+                <div class="glass-grid">
+                    <div class="g-box"><h4>Sync</h4><p>Secure cloud telemetry</p></div>
+                    <div class="g-box"><h4>OTA</h4><p>Remote firmware updates</p></div>
+                    <div class="g-box"><h4>Live</h4><p>Performance tracking</p></div>
+                </div>
+                <div class="glass-image">
+                    <img src="./Assets/iot devices_11zon_11zon.webp" alt="IoT Hardware">
+                </div>
+            </div>
+        </div>
+
+        <div class="inn-block style-dashboard" id="cloud-saas">
+            <div class="dash-header">
+                <div class="inn-badge">03 // SAAS CLOUD</div>
+                <h2 class="inn-title">Scalable Healthcare Cloud Platform</h2>
+            </div>
+            <div class="dash-body">
+                <div class="dash-image-main">
+                    <img src="./Assets/Cloud Servers_11zon.webp" alt="Cloud Network">
+                </div>
+            </div>
+            <div class="dash-stats">
+                    <div class="stat-pill">✔ Multi-tenant SaaS</div>
+                    <div class="stat-pill">✔ RBAC Control</div>
+                    <div class="stat-pill">✔ Encrypted Storage</div>
+                </div>
+        </div>
+
+        <div class="inn-block style-technical" id="predictive-care">
+            <div class="tech-layout">
+                <div class="tech-visual">
+                    <img src="./Assets/analtics_11zon_11zon.webp" alt="Analytics">
+                </div>
+                <div class="tech-content">
+                    <div class="inn-badge">04 // PREVENTIVE</div>
+                    <h2 class="inn-title">From Reactive to Predictive Care</h2>
+                    <div class="tech-stack">
+                        <div class="stack-box">
+                            <h5>Health Forecasting</h5>
+                            <p>Trend-based monitoring for chronic diseases.</p>
+                        </div>
+                        <div class="stack-box">
+                            <h5>ICU Early Warning</h5>
+                            <p>Instant alerts for patient vital shifts.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+      <footer class="main-footer">
+        <div class="footer-grid">
+          <div class="footer-brand gsap-contact">
+            <div class="logo" style="margin-bottom: 20px">
+              <a href="./index2.html">
+                <img
+                  src="./Assets/logo.webp"
+                  alt="MEDDEVICE Logo"
+                  style="max-width: 180px"
+                />
+              </a>
+            </div>
+            <!-- <h2 class="footer-logo">MED<span>DEVICE</span></h2> -->
+            <p>
+              Advancing human health through autonomous precision and clinical
+              intelligence. Our ISO-certified hardware provides the global
+              infrastructure for AI-assisted surgical operations.
+            </p>
+          </div>
+
+          <div class="footer-links gsap-contact">
+            <h4>Quick Links</h4>
+
+            <a href="./products.html">Products</a>
+            <a href="./industries.html">Industries</a>
+            <a href="./innovation.html">Innovation</a>
+            <a href="./support.html">Support</a>
+            <a href="./login2.html">Login</a>
+          </div>
+          <div class="footer-links">
+            <h4>Navigation</h4>
+            <a href="./products.html">Products</a>
+            <a href="./industries.html">Industries</a>
+            <a href="./innovation.html">Innovation</a>
+            <a href="./support.html">Support</a>
+          </div>
+          <div class="footer-newsletter">
+            <h4>Newsletter</h4>
+            <p>Stay updated on medical breakthroughs.</p>
+            <div class="news-input">
+              <input type="email" placeholder="Email Address" required />
+              <button>→</button>
+            </div>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p>&copy; 2026 Medical Device Innovations. All Rights Reserved.</p>
+          <div class="legal-links">
+            <a href="./error2.html">Privacy Policy</a>
+            <a href="./error2.html">ISO Compliance</a>
+          </div>
+        </div>
+      </footer>
+    </div>
+  </body>
+
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script src="./script.js"></script>
+  <script>
+    AOS.init({
+      once: true,
+      duration: 1000,
+      easing: "ease-out-cubic",
+      startEvent: "aos:ready", // manual trigger
+    });
+  </script>
+  <!-- GSAP -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+
+  <!-- Header Scrolled -->
+  <script>
+    window.addEventListener("scroll", function () {
+      const header = document.querySelector(".header2");
+      const mainSection = document.querySelector("main"); // Targets your <main> tag
+
+      // Get the position of the main section
+      const sectionBottom = mainSection.getBoundingClientRect().bottom;
+
+      // If the bottom of 'main' is less than or equal to 0 (off-screen)
+      if (sectionBottom <= 0) {
+        header.classList.add("scrolled");
+      } else {
+        header.classList.remove("scrolled");
+      }
+    });
+  </script>
+
+  <script>
+    // 1. Register ScrollTrigger
+gsap.registerPlugin(ScrollTrigger);
+
+/**
+ * 2. DEFINE THE HERO TIMELINE (Initially Paused)
+ */
+const innTl = gsap.timeline({ 
+    paused: true,
+    defaults: { ease: "power3.out", duration: 1 } 
+});
+
+// Entrance sequence for Left Content
+innTl.from(".inn-tagline", { opacity: 1, x: -30 })
+     .from(".inn-title", { opacity: 1, x: -40 }, "-=0.7")
+     .from(".inn-subtext", { opacity: 1, x: -30 }, "-=0.7")
+     .from(".inn-actions", { opacity: 1, y: 20 }, "-=0.7");
+
+// Staggered "Pop" entrance for the Pillar Cards
+innTl.from(".pillar-card", { 
+    opacity: 1, 
+    scale: 0.9, 
+    y: 30, 
+    stagger: 0.15,
+    duration: 0.8,
+    ease: "back.out(1.7)" 
+}, "-=0.8");
+
+/**
+ * 3. DEFINE BACKGROUND AMBIENCE
+ */
+function startAmbientAnimations() {
+    gsap.to(".inn-bg-overlay", {
+        scale: 1.05,
+        duration: 10,
+        repeat: -1,
+        yoyo: true,
+        ease: "sine.inOut"
+    });
+}
+
+/**
+ * 4. MASTER LOADER INTEGRATION
+ * This is the ONLY place the animations are triggered.
+ */
+window.addEventListener("load", () => {
+    const loader = document.getElementById("medicalLoader");
+    const mainContent = document.querySelector("main");
+    const LOADER_TIME = 1500; // Your defined static wait
+
+    if (!loader || !mainContent) return;
+
+    // Step A: Initial Wait
+    setTimeout(() => {
+        /* Step B: Start Fading Loader */
+        loader.style.opacity = "0";
+
+        setTimeout(() => {
+            /* Step C: Remove Loader and Reveal Main */
+            loader.style.display = "none";
+
+            mainContent.style.visibility = "visible";
+            mainContent.style.opacity = "1";
+            mainContent.style.transform = "translateY(0)";
+
+            /* 🔥 Step D: TRIGGER GSAP ANIMATIONS */
+            // Now that the page is visible, play the Hero sequence
+            innTl.play(); 
+
+            // Start the infinite background floating effect
+            startAmbientAnimations();
+
+            // Refresh ScrollTrigger so it knows where elements are located
+            ScrollTrigger.refresh();
+
+            /* 🔥 Step E: PREPARE AOS (If used) */
+            if (typeof AOS !== "undefined") {
+                AOS.refreshHard();
+                document.dispatchEvent(new Event("aos:ready"));
+            }
+
+        }, 600); // Wait for the 0.6s CSS transition to finish
+    }, LOADER_TIME);
+});
+  </script>
+
+  <script>
+    gsap.registerPlugin(ScrollTrigger);
+
+const initUltraAnimations = () => {
+    // 1. STYLE SPLIT (AI) - Slide & Blur
+    gsap.from(".style-split .inn-content", {
+        scrollTrigger: { trigger: ".style-split", start: "top 80%" },
+        x: -100, opacity: 1, duration: 1.2, ease: "power4.out"
+    });
+    gsap.from(".style-split .visual-wrap", {
+        scrollTrigger: { trigger: ".style-split", start: "top 80%" },
+        scale: 0.8, filter: "blur(10px)", opacity: 1, duration: 1.5, ease: "expo.out"
+    });
+
+    // 2. STYLE GLASS CARD (IOT) - Staggered Grid Rise
+    const glassTl = gsap.timeline({ scrollTrigger: { trigger: ".style-glass-card", start: "top 75%" }});
+    glassTl.from(".style-glass-card", { y: 100, opacity: 1, duration: 1 })
+           .from(".g-box", { y: 30, opacity: 1, stagger: 0.2, duration: 0.8 }, "-=0.5");
+
+    // 3. STYLE DASHBOARD (CLOUD) - Zoom Out Reveal
+    gsap.from(".style-dashboard .dash-body", {
+        scrollTrigger: { trigger: ".style-dashboard", start: "top 70%" },
+        scale: 0.9, opacity: 1, duration: 1.2, ease: "back.out(1.2)"
+    });
+    gsap.from(".stat-pill", {
+        scrollTrigger: { trigger: ".style-dashboard", start: "top 60%" },
+         opacity: 1, stagger: 0.1, duration: 0.6, ease: "power2.out"
+    });
+
+    // 4. STYLE TECHNICAL (PREDICTIVE) - Drawing Border Effect
+    gsap.from(".style-technical .stack-box", {
+        scrollTrigger: { trigger: ".style-technical", start: "top 80%" },
+        opacity: 1, stagger: 0.3, duration: 1, ease: "power3.out"
+    });
+};
+
+/** MASTER LOADER INTEGRATION **/
+window.addEventListener("load", () => {
+    const loader = document.getElementById("medicalLoader");
+    const mainContent = document.querySelector("main");
+    
+    setTimeout(() => {
+        loader.style.opacity = "0";
+        setTimeout(() => {
+            loader.style.display = "none";
+            mainContent.style.visibility = "visible";
+            mainContent.style.opacity = "1";
+            
+            /* 🔥 START ALL UNIQUE ANIMATIONS */
+            initUltraAnimations();
+            ScrollTrigger.refresh();
+        }, 600);
+    }, 1500);
+});
+  </script>
+</html>

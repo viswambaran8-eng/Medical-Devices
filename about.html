@@ -1,0 +1,728 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Medical</title>
+    <link rel="icon" href="./Assets/icon.webp" />
+    <link rel="stylesheet" href="./about.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <!-- Swiper CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+    />
+  </head>
+  <body>
+    <div class="medical-loader" id="medicalLoader">
+      <div class="loader-wrapper">
+        <div class="device-container">
+          <div class="device-ring"></div>
+          <div class="device-ring inner"></div>
+          <div class="device-core">
+            <img src="./Assets/icon.webp" alt="Stackly" class="loader-logo" />
+          </div>
+          <div class="scan-line"></div>
+        </div>
+
+        <div class="ecg-line">
+          <svg viewBox="0 0 500 100" preserveAspectRatio="none">
+            <path
+              d="M0 50 L70 50 L90 20 L110 80 L130 50 L200 50 L220 30 L240 70 L260 50 L500 50"
+            />
+          </svg>
+        </div>
+
+        <h3 class="loading-text">INITIATING DIAGNOSTIC SCAN...</h3>
+        <p class="sub-text">Establishing Secure Interface with Medical Hub</p>
+      </div>
+    </div>
+
+    <div class="the-main">
+      <header>
+        <div class="header1">
+          <div class="container1">
+            <h3>Welcome To Stackly Medical Devices & Services.</h3>
+          </div>
+          <div class="container2">
+            <div>
+              <i class="fa-solid fa-phone-volume"></i>
+              <p>(123)456-7890</p>
+            </div>
+            <div>
+              <i class="fa-regular fa-envelope"></i>
+              <p>Support@stackly.com</p>
+            </div>
+          </div>
+        </div>
+        <div class="header2">
+          <div class="logo">
+            <a href="./index.html">
+              <img src="./Assets/logo.webp" alt="Logo" />
+            </a>
+          </div>
+
+          <nav>
+            <ul>
+              <li class="dropdown">
+                <a href="./index.html">Home</a>
+
+                <span class="drop-toggle">
+                  <i class="fa-solid fa-caret-down"></i>
+                </span>
+
+                <ul class="dropdown-menu">
+                  <li><a href="./index2.html">Home 2</a></li>
+                </ul>
+              </li>
+
+              <li><a href="./about.html">About</a></li>
+              <li><a href="./service.html">Services</a></li>
+              <li><a href="./blog.html">Blog</a></li>
+              <li><a href="./contact.html">Contact Us</a></li>
+              <li><a href="./dashboard.html">Dashboard</a></li>
+            </ul>
+          </nav>
+
+          <div class="icons">
+            <div class="login">
+              <!-- <a class="btn" href="./app.html">Buy Now</a> -->
+
+              <a href="./login.html">
+                <i class="fa-regular fa-circle-user"></i>
+              </a>
+            </div>
+
+            <div class="mobilebar">
+              <div class="hamburger-box">
+                <div class="hamburger">
+                  <div class="line line1"></div>
+                  <div class="line line2"></div>
+                  <div class="line line3"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
+
+      <div class="sidebar" id="sidebar">
+        <ul>
+          <li
+            class="has-dropdown menu-item"
+            data-aos="fade-up-right"
+            data-aos-delay="100"
+          >
+            <div class="dropdown-header">
+              <a href="./index.html">Home</a>
+              <span class="drop-caret" id="home-caret">▾</span>
+            </div>
+            <ul class="submenu" id="home-dropdown">
+              <li><a href="./index2.html">Home 2</a></li>
+            </ul>
+          </li>
+
+          <li class="menu-item" data-aos="fade-up-right" data-aos-delay="150">
+            <a href="./about.html">About</a>
+          </li>
+          <li class="menu-item" data-aos="fade-up-right" data-aos-delay="200">
+            <a href="./service.html">Services</a>
+          </li>
+          <li class="menu-item" data-aos="fade-up-right" data-aos-delay="250">
+            <a href="./blog.html">Blog</a>
+          </li>
+          <li class="menu-item" data-aos="fade-up-right" data-aos-delay="300">
+            <a href="./contact.html">Contact Us</a>
+          </li>
+          <li class="menu-item" data-aos="fade-up-right" data-aos-delay="350">
+            <a href="./dashboard.html">Dashboard</a>
+          </li>
+          <li class="menu-item" data-aos="fade-up-right" data-aos-delay="400">
+            <a href="./login.html">Login</a>
+          </li>
+        </ul>
+
+        <div
+          class="sidebar-login"
+          data-aos="fade-up-right"
+          data-aos-delay="450"
+        >
+          <!-- <a href="./app.html">
+            <button class="login-btn">Buy Now</button>
+          </a> -->
+        </div>
+      </div>
+
+      <div class="overlay" id="overlay"></div>
+<main></main>
+      <section class="hero">
+        <div class="container">
+          <div class="hero-content">
+            <span class="tagline">About Our Company</span>
+            <h1 class="gsap-hero-title">
+              Committed to Advancing Healthcare Technology
+            </h1>
+            <p class="subtext">
+              Delivering precision-engineered medical devices that enhance
+              patient care and meet the highest global safety standards.
+            </p>
+            <a href="./error.html" class="btn-primary">Learn More</a>
+          </div>
+        </div>
+      </section>
+
+      <section class="overview" id="about">
+        <div class="container">
+          <div class="overview-grid">
+            <div class="image-box anim-left">
+              <img
+                src="./Assets/medical tech_11zon.webp"
+                alt="Medical Tech"
+              />
+            </div>
+            <div class="text-box anim-right">
+              <span class="label">Who We Are</span>
+              <h2>Trusted Healthcare Solutions</h2>
+              <p>
+                We are a trusted medical device manufacturer dedicated to
+                designing, developing, and delivering high-quality healthcare
+                equipment. With years of industry expertise, we partner with
+                hospitals and laboratories worldwide.
+              </p>
+              <p>
+                Our commitment to excellence ensures every product meets strict
+                regulatory compliance and international quality standards.
+              </p>
+
+              <div class="badge-row">
+                <div class="badge">
+                  <strong>ISO 13485</strong>
+                  <span>Certified Quality</span>
+                </div>
+                <div class="badge">
+                  <strong>Global</strong>
+                  <span>Safety Standards</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="mission-vision">
+        <div class="mv-bg-shape"></div>
+
+        <div class="container">
+          <div class="mv-header">
+            <span class="label">Our Purpose</span>
+            <h2 class="gsap-reveal">Driving the Future of Healthcare</h2>
+            <p>
+              Combining engineering precision with a deep commitment to patient
+              safety.
+            </p>
+          </div>
+
+          <div class="mv-grid">
+            <div class="mv-card mission-box">
+              <div class="icon-circle">
+                <svg
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="#2ecc71"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
+                </svg>
+              </div>
+              <span class="label">Improving Care</span>
+              <h2>Our Mission</h2>
+              <p>
+                To improve patient outcomes by delivering safe, accurate, and
+                innovative medical devices that empower healthcare professionals
+                worldwide. We bridge the gap between complex engineering and
+                clinical empathy to ensure every heartbeat is monitored with
+                absolute precision.
+              </p>
+              <ul class="mv-list">
+                <li>Uncompromising Safety Standards</li>
+                <li>Clinical Accuracy & Precision</li>
+                <li>Empowering Medical Teams</li>
+              </ul>
+            </div>
+
+            <div class="mv-card vision-box">
+              <div class="icon-circle">
+                <svg
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="#2ecc71"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <circle cx="12" cy="12" r="10" />
+                  <line x1="22" y1="12" x2="18" y2="12" />
+                  <line x1="6" y1="12" x2="2" y2="12" />
+                  <line x1="12" y1="6" x2="12" y2="2" />
+                  <line x1="12" y1="22" x2="12" y2="18" />
+                </svg>
+              </div>
+              <span class="label">Future Focus</span>
+              <h2>Our Vision</h2>
+              <p>
+                To become a globally recognized leader in medical device
+                innovation by continuously advancing technology, quality, and
+                customer satisfaction. We aim to set the benchmark for the next
+                generation of clinical tools that predict, prevent, and protect.
+              </p>
+              <ul class="mv-list">
+                <li>Global Leadership in Med-Tech</li>
+                <li>Sustainable Healthcare Innovation</li>
+                <li>Next-Gen Diagnostic Excellence</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="certifications">
+        <div class="container">
+          <div class="section-header center">
+            <span class="label">Compliance</span>
+            <h2>Certified for Quality & Safety</h2>
+            <p>
+              We adhere to internationally recognized standards to ensure
+              safety, performance, and reliability.
+            </p>
+          </div>
+          <div class="cert-grid">
+            <div class="cert-item">
+              <div class="cert-icon">📜</div>
+              <h3>ISO 13485 Certified</h3>
+              <p>Medical devices — Quality management systems.</p>
+            </div>
+            <div class="cert-item">
+              <div class="cert-icon">🇪🇺</div>
+              <h3>CE Marked Products</h3>
+              <p>Conformity with European health and safety standards.</p>
+            </div>
+            <div class="cert-item">
+              <div class="cert-icon">🇺🇸</div>
+              <h3>FDA Compliance</h3>
+              <p>
+                Strict adherence to US Food & Drug Administration protocols.
+              </p>
+            </div>
+            <div class="cert-item">
+              <div class="cert-icon">🏭</div>
+              <h3>GMP Standards</h3>
+              <p>Good Manufacturing Practices for consistent production.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="leadership">
+        <div class="container">
+          <div class="section-header">
+            <span class="label">Our People</span>
+            <h2>Leadership & Innovation</h2>
+            <p>
+              Combining biomedical engineering expertise with healthcare
+              industry knowledge.
+            </p>
+          </div>
+          <div class="team-grid">
+            <div class="team-card">
+              <div class="team-img">
+                <img
+                  src="./Assets/team1_11zon.webp"
+                  alt="CEO"
+                />
+              </div>
+              <div class="team-info">
+                <h3>Dr. Sarah Jenkins</h3>
+                <span class="role">Chief Executive Officer</span>
+                <p>
+                  Over 20 years of experience in clinical engineering and global
+                  health strategy.
+                </p>
+              </div>
+            </div>
+            <div class="team-card">
+              <div class="team-img">
+                <img
+                  src="./Assets/team2_11zon.webp"
+                  alt="CTO"
+                />
+              </div>
+              <div class="team-info">
+                <h3>Marcus Thorne</h3>
+                <span class="role">Chief Technology Officer</span>
+                <p>
+                  A pioneer in robotic surgical systems and biocompatible
+                  materials research.
+                </p>
+              </div>
+            </div>
+            <div class="team-card">
+              <div class="team-img">
+                <img
+                  src="./Assets/team3_11zon.webp"
+                  alt="COO"
+                />
+              </div>
+              <div class="team-info">
+                <h3>Elena Rodriguez</h3>
+                <span class="role">Director of Compliance</span>
+                <p>
+                  Expert in international regulatory affairs and ISO quality
+                  control systems.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="cta-section">
+        <div class="cta-overlay"></div>
+        <div class="container">
+          <div class="cta-content">
+            <span class="label white">Collaborate with us</span>
+            <h2 class="gsap-cta-title">
+              Partner With a Trusted Medical Device Manufacturer
+            </h2>
+            <p class="cta-subtext">
+              Let’s work together to deliver better healthcare solutions. Our
+              team is ready to assist with technical specifications, regulatory
+              guidance, and bulk manufacturing requirements.
+            </p>
+
+            <div class="cta-buttons">
+              <a href="./error.html" class="btn-primary">Contact Us</a>
+              <a href="./error.html" class="btn-outline">Request a Quote</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <footer class="main-footer">
+        <div class="footer-grid">
+          <div class="footer-brand gsap-contact">
+            <div class="logo" style="margin-bottom: 20px">
+              <a href="./index.html">
+                <img
+                  src="./Assets/logo.webp"
+                  alt="MEDDEVICE Logo"
+                  style="max-width: 180px"
+                />
+              </a>
+            </div>
+            <!-- <h2 class="footer-logo">MED<span>DEVICE</span></h2> -->
+            <p>
+              Advancing human health through autonomous precision and clinical
+              intelligence. Our ISO-certified hardware provides the global
+              infrastructure for AI-assisted surgical operations.
+            </p>
+          </div>
+
+          <div class="footer-links gsap-contact">
+            <h4>Quick Links</h4>
+
+            <a href="./about.html">About</a>
+            <a href="./service.html">Services</a>
+            <a href="./blog.html">Blog</a>
+            <a href="./contact.html">Contact Us</a>
+            <a href="./dashboard.html">Dashboard</a>
+            <a href="./login.html">Login</a>
+          </div>
+          <div class="footer-links">
+            <h4>Navigation</h4>
+            <a href="./about.html">About</a>
+            <a href="./service.html">Services</a>
+            <a href="./blog.html">Clinical Blog</a>
+          </div>
+          <div class="footer-newsletter">
+            <h4>Newsletter</h4>
+            <p>Stay updated on medical breakthroughs.</p>
+            <div class="news-input">
+              <input type="email" placeholder="Email Address" required />
+              <button>→</button>
+            </div>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p>&copy; 2026 Medical Device Innovations. All Rights Reserved.</p>
+          <div class="legal-links">
+            <a href="./error.html">Privacy Policy</a>
+            <a href="./error.html">ISO Compliance</a>
+          </div>
+        </div>
+      </footer>
+    </div>
+  </body>
+
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script src="./script.js"></script>
+  <script>
+    AOS.init({
+      once: true,
+      duration: 1000,
+      easing: "ease-out-cubic",
+      startEvent: "aos:ready", // manual trigger
+    });
+  </script>
+  <!-- GSAP -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+
+  <!-- Header Scrolled -->
+  <script>
+    window.addEventListener("scroll", function () {
+      const header = document.querySelector(".header2");
+      const mainSection = document.querySelector("main"); // Targets your <main> tag
+
+      // Get the position of the main section
+      const sectionBottom = mainSection.getBoundingClientRect().bottom;
+
+      // If the bottom of 'main' is less than or equal to 0 (off-screen)
+      if (sectionBottom <= 0) {
+        header.classList.add("scrolled");
+      } else {
+        header.classList.remove("scrolled");
+      }
+    });
+  </script>
+
+  <!-- Hero -->
+  <script>
+    gsap.registerPlugin(ScrollTrigger);
+
+    /**
+     * 1. INITIALIZE ALL TIMELINES (PAUSED STATE)
+     * We set them to paused: true so they don't fire while the loader is active.
+     */
+
+    // --- Hero Timeline ---
+    window.heroTl = gsap.timeline({
+      paused: true,
+      defaults: { ease: "power4.out", duration: 1.5 },
+    });
+
+    window.heroTl
+      .from(".tagline", { y: 20, opacity: 1, duration: 0.8 })
+      .from(".gsap-hero-title", { y: 40, opacity: 1 }, "-=1")
+      .from(".subtext", { y: 30, opacity: 1 }, "-=1.2")
+      .from(".btn-primary", { scale: 0.9, opacity: 1 }, "-=1.2");
+
+    // --- Mission & Vision Timeline ---
+    window.mvTl = gsap.timeline({
+      paused: true,
+      defaults: { ease: "power4.out", duration: 1.5 },
+    });
+
+    window.mvTl
+      .from(".mv-header .label", { opacity: 1, y: 20, duration: 0.6 })
+      .from(".gsap-reveal", { opacity: 1, y: 30 }, "-=1")
+      .from(".mv-card", { opacity: 1, y: 60, stagger: 0.2, scale: 0.95 }, "-=1")
+      .from(".mv-list li", { opacity: 1, x: -20, stagger: 0.1 }, "-=0.8");
+
+    // --- Certifications Timeline ---
+    window.certTl = gsap.timeline({ paused: true });
+    window.certTl.from(".cert-item", {
+      y: 30,
+      opacity: 1,
+      stagger: 0.2,
+      duration: 1,
+      ease: "power2.out",
+    });
+
+    // --- Leadership Team Timeline ---
+    window.teamTl = gsap.timeline({ paused: true });
+    window.teamTl.from(".team-card", {
+      y: 50,
+      opacity: 1,
+      stagger: 0.3,
+      duration: 1.2,
+      ease: "power3.out",
+    });
+
+    /**
+     * 2. LOADER & INITIALIZATION LOGIC
+     * Synchronized with your 1500ms loader and 600ms CSS fade.
+     */
+    window.addEventListener("load", () => {
+      const loader = document.getElementById("medicalLoader");
+      const mainContent = document.querySelector("main");
+      const LOADER_TIME = 1500;
+
+      setTimeout(() => {
+        /* Start Loader Fade Out */
+        if (loader) loader.style.opacity = "0";
+
+        setTimeout(() => {
+          /* Remove Loader from DOM Flow */
+          if (loader) loader.style.display = "none";
+
+          /* Make Main Content Visible */
+          if (mainContent) {
+            mainContent.style.visibility = "visible";
+            mainContent.style.opacity = "1";
+            mainContent.style.transform = "translateY(0)";
+          }
+
+          /* 🔥 START HERO ANIMATION */
+          window.heroTl.play();
+
+          /* 🔥 INITIALIZE SCROLL TRIGGERS AFTER LOAD */
+
+          // Overview Section Animations
+          gsap.from(".anim-left", {
+            scrollTrigger: { trigger: ".overview", start: "top 75%" },
+            x: -100,
+            opacity: 1,
+            duration: 1.5,
+            ease: "power2.out",
+          });
+
+          gsap.from(".anim-right", {
+            scrollTrigger: { trigger: ".overview", start: "top 75%" },
+            x: 100,
+            opacity: 1,
+            duration: 1.5,
+            ease: "power2.out",
+          });
+
+          // Mission/Vision Trigger
+          ScrollTrigger.create({
+            trigger: ".mission-vision",
+            start: "top 75%",
+            onEnter: () => window.mvTl.play(),
+          });
+
+          // Certifications Trigger
+          ScrollTrigger.create({
+            trigger: ".certifications",
+            start: "top 80%",
+            onEnter: () => window.certTl.play(),
+          });
+
+          // Leadership Trigger
+          ScrollTrigger.create({
+            trigger: ".leadership",
+            start: "top 75%",
+            onEnter: () => window.teamTl.play(),
+          });
+
+          /* AOS Refresh if using AOS alongside GSAP */
+          if (window.AOS) {
+            AOS.refreshHard();
+            document.dispatchEvent(new Event("aos:ready"));
+          }
+        }, 600); // Matches your CSS transition time
+      }, LOADER_TIME);
+    });
+
+    /**
+     * 3. INTERACTIVE MOUSE HOVER EFFECTS
+     * Uses GSAP for smooth transitions on hover.
+     */
+
+    // Mission Card Hover Logic
+    document.querySelectorAll(".mv-card").forEach((card) => {
+      const icon = card.querySelector(".icon-circle");
+      const svg = icon?.querySelector("svg");
+
+      card.addEventListener("mouseenter", () => {
+        gsap.to(icon, {
+          backgroundColor: "#2ecc71",
+          rotate: 10,
+          scale: 1.1,
+          duration: 0.4,
+        });
+        if (svg) gsap.to(svg, { stroke: "#ffffff", duration: 0.4 });
+      });
+
+      card.addEventListener("mouseleave", () => {
+        gsap.to(icon, {
+          backgroundColor: "rgba(46, 204, 113, 0.08)",
+          rotate: 0,
+          scale: 1,
+          duration: 0.4,
+        });
+        if (svg) gsap.to(svg, { stroke: "#2ecc71", duration: 0.4 });
+      });
+    });
+
+    // Team Card Hover Logic
+    document.querySelectorAll(".team-card").forEach((card) => {
+      const role = card.querySelector(".role");
+      const img = card.querySelector("img");
+
+      card.addEventListener("mouseenter", () => {
+        gsap.to(role, { x: 5, color: "#27ae60", duration: 0.3 });
+        gsap.to(img, { scale: 1.08, duration: 0.6, ease: "power2.out" });
+      });
+
+      card.addEventListener("mouseleave", () => {
+        gsap.to(role, { x: 0, color: "#2ecc71", duration: 0.3 });
+        gsap.to(img, { scale: 1, duration: 0.6, ease: "power2.out" });
+      });
+    });
+  </script>
+
+  <script>
+    // 1. Initialize CTA Timeline (Paused)
+    if (typeof ctaTl === "undefined") {
+      window.ctaTl = gsap.timeline({
+        paused: true,
+        defaults: { ease: "power3.out", duration: 1.2 },
+      });
+    }
+
+    // 2. Build CTA Animation Sequence
+    window.ctaTl
+      .from(".cta-content .label", { y: 20, opacity: 1 })
+      .from(".gsap-cta-title", { y: 30, opacity: 1 }, "-=0.8")
+      .from(".cta-subtext", { y: 20, opacity: 1 }, "-=0.9")
+      .from(".cta-buttons .btn-primary", { x: -30, opacity: 1 }, "-=0.7")
+      .from(".cta-buttons .btn-outline", { x: 0, opacity: 1 }, "-=1.2");
+
+    // 3. Update your loader's window.addEventListener("load") block
+    // Ensure this code is inside the 600ms timeout of your existing loader logic:
+
+    window.addEventListener("load", () => {
+      // ... (Your existing loader logic) ...
+
+      setTimeout(() => {
+        // ... (Your existing display: block logic) ...
+
+        /* 🔥 INITIALIZE CTA SCROLL TRIGGER */
+        ScrollTrigger.create({
+          trigger: ".cta-section",
+          start: "top 70%",
+          onEnter: () => window.ctaTl.play(),
+        });
+      }, 600);
+    });
+
+    // 4. Button Interaction Logic (GSAP Hover)
+    document.querySelectorAll(".btn-outline").forEach((btn) => {
+      btn.addEventListener("mouseenter", () => {
+        gsap.to(btn, { scale: 1.05, duration: 0.3 });
+      });
+      btn.addEventListener("mouseleave", () => {
+        gsap.to(btn, { scale: 1, duration: 0.3 });
+      });
+    });
+  </script>
+</html>

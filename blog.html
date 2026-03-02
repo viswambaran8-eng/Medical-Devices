@@ -1,0 +1,957 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Medical</title>
+    <link rel="icon" href="./Assets/icon.webp" />
+    <link rel="stylesheet" href="./blog.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <!-- Swiper CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+    />
+  </head>
+  <body>
+    <div class="medical-loader" id="medicalLoader">
+      <div class="loader-wrapper">
+        <div class="device-container">
+          <div class="device-ring"></div>
+          <div class="device-ring inner"></div>
+          <div class="device-core">
+            <img src="./Assets/icon.webp" alt="Stackly" class="loader-logo" />
+          </div>
+          <div class="scan-line"></div>
+        </div>
+
+        <div class="ecg-line">
+          <svg viewBox="0 0 500 100" preserveAspectRatio="none">
+            <path
+              d="M0 50 L70 50 L90 20 L110 80 L130 50 L200 50 L220 30 L240 70 L260 50 L500 50"
+            />
+          </svg>
+        </div>
+
+        <h3 class="loading-text">INITIATING DIAGNOSTIC SCAN...</h3>
+        <p class="sub-text">Establishing Secure Interface with Medical Hub</p>
+      </div>
+    </div>
+
+    <div class="the-main">
+      <header>
+        <div class="header1">
+          <div class="container1">
+            <h3>Welcome To Stackly Medical Devices & Services.</h3>
+          </div>
+          <div class="container2">
+            <div>
+              <i class="fa-solid fa-phone-volume"></i>
+              <p>(123)456-7890</p>
+            </div>
+            <div>
+              <i class="fa-regular fa-envelope"></i>
+              <p>Support@stackly.com</p>
+            </div>
+          </div>
+        </div>
+        <div class="header2">
+          <div class="logo">
+            <a href="./index.html">
+              <img src="./Assets/logo.webp" alt="Logo" />
+            </a>
+          </div>
+
+          <nav>
+            <ul>
+              <li class="dropdown">
+                <a href="./index.html">Home</a>
+
+                <span class="drop-toggle">
+                  <i class="fa-solid fa-caret-down"></i>
+                </span>
+
+                <ul class="dropdown-menu">
+                  <li><a href="./index2.html">Home 2</a></li>
+                </ul>
+              </li>
+
+              <li><a href="./about.html">About</a></li>
+              <li><a href="./service.html">Services</a></li>
+              <li><a href="./blog.html">Blog</a></li>
+              <li><a href="./contact.html">Contact Us</a></li>
+              <li><a href="./dashboard.html">Dashboard</a></li>
+            </ul>
+          </nav>
+
+          <div class="icons">
+            <div class="login">
+              <!-- <a class="btn" href="./app.html">Buy Now</a> -->
+
+              <a href="./login.html">
+                <i class="fa-regular fa-circle-user"></i>
+              </a>
+            </div>
+
+            <div class="mobilebar">
+              <div class="hamburger-box">
+                <div class="hamburger">
+                  <div class="line line1"></div>
+                  <div class="line line2"></div>
+                  <div class="line line3"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
+
+      <div class="sidebar" id="sidebar">
+        <ul>
+          <li
+            class="has-dropdown menu-item"
+            data-aos="fade-up-right"
+            data-aos-delay="100"
+          >
+            <div class="dropdown-header">
+              <a href="./index.html">Home</a>
+              <span class="drop-caret" id="home-caret">▾</span>
+            </div>
+            <ul class="submenu" id="home-dropdown">
+              <li><a href="./index2.html">Home 2</a></li>
+            </ul>
+          </li>
+
+          <li class="menu-item" data-aos="fade-up-right" data-aos-delay="150">
+            <a href="./about.html">About</a>
+          </li>
+          <li class="menu-item" data-aos="fade-up-right" data-aos-delay="200">
+            <a href="./service.html">Services</a>
+          </li>
+          <li class="menu-item" data-aos="fade-up-right" data-aos-delay="250">
+            <a href="./blog.html">Blog</a>
+          </li>
+          <li class="menu-item" data-aos="fade-up-right" data-aos-delay="300">
+            <a href="./contact.html">Contact Us</a>
+          </li>
+          <li class="menu-item" data-aos="fade-up-right" data-aos-delay="350">
+            <a href="./dashboard.html">Dashboard</a>
+          </li>
+          <li class="menu-item" data-aos="fade-up-right" data-aos-delay="400">
+            <a href="./login.html">Login</a>
+          </li>
+        </ul>
+
+        <div
+          class="sidebar-login"
+          data-aos="fade-up-right"
+          data-aos-delay="450"
+        >
+          <!-- <a href="./app.html">
+            <button class="login-btn">Buy Now</button>
+          </a> -->
+        </div>
+      </div>
+
+      <div class="overlay" id="overlay"></div>
+      <main></main>
+      <section class="blog-hero">
+        <div class="hero-overlay"></div>
+        <div class="container">
+          <div class="blog-hero-content">
+            <span class="tagline">Industry Insights & Updates</span>
+            <h1 class="gsap-blog-title">
+              Medical Technology News & Innovations
+            </h1>
+            <p class="subtext">
+              Stay informed with the latest advancements in medical device
+              technology, regulatory updates, and healthcare industry trends.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="featured-article">
+        <div class="container">
+          <div class="section-header">
+            <span class="label">Today's Highlight</span>
+            <h2>Featured Article</h2>
+          </div>
+
+          <div class="featured-card">
+            <div class="featured-img-box anim-left">
+              <img
+                src="./Assets/smart medical device_11zon_11zon.webp"
+                alt="Smart Medical Devices"
+              />
+              <div class="category-badge">Future Tech</div>
+            </div>
+            <div class="featured-content-box anim-right">
+              <span class="date">March 01, 2026</span>
+              <h3>The Future of Smart Medical Devices in Modern Hospitals</h3>
+              <p>
+                Explore how intelligent monitoring systems and AI-powered
+                diagnostics are transforming patient care and improving hospital
+                efficiency. From wearable sensors to autonomous surgical
+                assistants, the landscape of clinical care is shifting towards a
+                proactive, data-driven model.
+              </p>
+              <div class="featured-meta">
+                <div class="author">
+                  <img
+                    src="./Assets/team1_11zon.webp"
+                    alt="Doctor"
+                  />
+                  <span>Dr. Aris Thorne</span>
+                </div>
+                <a href="./error.html" class="read-more-btn">
+                  Read Full Article
+                  <svg
+                    width="20"
+                    height="20"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                  >
+                    <path d="M5 12h14M12 5l7 7-7 7" />
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="blog-categories">
+        <div class="container">
+          <div class="section-header">
+            <span class="label">Filter Insights</span>
+            <h2 class="gsap-cat-title">Browse by Category</h2>
+          </div>
+          <div class="category-pills">
+            <button class="pill active" data-filter="all">All Articles</button>
+            <button class="pill" data-filter="innovations">
+              Medical Device Innovations
+            </button>
+            <button class="pill" data-filter="regulatory">
+              Regulatory & Compliance
+            </button>
+            <button class="pill" data-filter="launch">Product Launches</button>
+            <button class="pill" data-filter="trends">Healthcare Trends</button>
+            <button class="pill" data-filter="cases">Case Studies</button>
+            <button class="pill" data-filter="clinical">
+              Clinical Best Practices
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <section class="blog-listing">
+        <div class="container">
+          <div class="blog-grid">
+            <article class="blog-card" data-category="regulatory">
+              <div class="post-img">
+                <img
+                  src="./Assets/iso_11zon.webp"
+                  alt="ISO Certification"
+                />
+                <div class="post-tag">Regulatory</div>
+              </div>
+              <div class="post-body">
+                <span class="post-date">Feb 28, 2026</span>
+                <h3>
+                  Understanding ISO 13485 Certification for Medical Devices
+                </h3>
+                <p>
+                  A complete guide to quality management systems and why ISO
+                  certification is essential for medical manufacturers in the
+                  global market.
+                </p>
+                <a href="./error.html" class="btn-read">Read More <span>→</span></a>
+              </div>
+            </article>
+
+            <article class="blog-card" data-category="clinical">
+              <div class="post-img">
+                <img
+                  src="./Assets/maintainence_11zon.webp"
+                  alt="Maintenance"
+                />
+                <div class="post-tag">Maintenance</div>
+              </div>
+              <div class="post-body">
+                <span class="post-date">Feb 24, 2026</span>
+                <h3>How Preventive Maintenance Improves Equipment Lifespan</h3>
+                <p>
+                  Learn how regular servicing reduces downtime and enhances the
+                  performance of critical medical equipment in high-pressure
+                  environments.
+                </p>
+                <a href="./error.html" class="btn-read">Read More <span>→</span></a>
+              </div>
+            </article>
+
+            <article class="blog-card" data-category="innovations">
+              <div class="post-img">
+                <img
+                  src="./Assets/ICU Diagnostic Equipmen_11zon.webp"
+                  alt="ICU Systems"
+                />
+                <div class="post-tag">Innovation</div>
+              </div>
+              <div class="post-body">
+                <span class="post-date">Feb 20, 2026</span>
+                <h3>Emerging Trends in ICU Monitoring Systems</h3>
+                <p>
+                  Discover the latest advancements in patient monitoring
+                  technology designed specifically for critical care and
+                  intensive care environments.
+                </p>
+                <a href="./error.html" class="btn-read">Read More <span>→</span></a>
+              </div>
+            </article>
+
+            <article class="blog-card" data-category="launch">
+              <div class="post-img">
+                <img
+                  src="./Assets/ventilator_11zon.webp"
+                  alt="New Ventilator"
+                />
+                <div class="post-tag">Launch</div>
+              </div>
+              <div class="post-body">
+                <span class="post-date">Feb 15, 2026</span>
+                <h3>Introducing the AeroFlow Gen-3 Ventilator</h3>
+                <p>
+                  Our latest respiratory solution combines high-frequency
+                  oscillation with AI-driven weaning protocols to improve
+                  patient outcomes.
+                </p>
+                <a href="./error.html" class="btn-read">Read More <span>→</span></a>
+              </div>
+            </article>
+
+            <article class="blog-card" data-category="trends">
+              <div class="post-img">
+                <img
+                  src="./Assets/telemedical tech_11zon.webp"
+                  alt="Telemedicine Tech"
+                />
+                <div class="post-tag">Trends</div>
+              </div>
+              <div class="post-body">
+                <span class="post-date">Feb 10, 2026</span>
+                <h3>The Rise of Remote Patient Monitoring (RPM)</h3>
+                <p>
+                  How wearable biosensors are enabling continuous cardiac
+                  monitoring outside the traditional hospital environment.
+                </p>
+                <a href="./error.html" class="btn-read">Read More <span>→</span></a>
+              </div>
+            </article>
+
+            <article class="blog-card" data-category="cases">
+              <div class="post-img">
+                <img
+                  src="./Assets/hospital workflow_11zon.webp"
+                  alt="Hospital Workflow"
+                />
+                <div class="post-tag">Case Study</div>
+              </div>
+              <div class="post-body">
+                <span class="post-date">Feb 05, 2026</span>
+                <h3>Optimizing Laboratory Efficiency in St. Mary’s Hospital</h3>
+                <p>
+                  A deep dive into how our automated diagnostic systems reduced
+                  testing turnaround time by 40% in a high-volume facility.
+                </p>
+                <a href="./error.html" class="btn-read">Read More <span>→</span></a>
+              </div>
+            </article>
+
+            <article class="blog-card" data-category="innovations">
+              <div class="post-img">
+                <img
+                  src="./Assets/bio_11zon.webp"
+                  alt="Biomedical Engineering"
+                />
+                <div class="post-tag">Innovation</div>
+              </div>
+              <div class="post-body">
+                <span class="post-date">Jan 28, 2026</span>
+                <h3>Breakthroughs in Biocompatible Implant Materials</h3>
+                <p>
+                  Examining the role of 3D-printed titanium and polymer
+                  scaffolds in orthopedic surgery and long-term device
+                  integration.
+                </p>
+                <a href="./error.html" class="btn-read">Read More <span>→</span></a>
+              </div>
+            </article>
+
+            <article class="blog-card" data-category="clinical">
+              <div class="post-img">
+                <img
+                  src="./Assets/surgical room_11zon.webp"
+                  alt="Surgical Room"
+                />
+                <div class="post-tag">Clinical</div>
+              </div>
+              <div class="post-body">
+                <span class="post-date">Jan 22, 2026</span>
+                <h3>Best Practices for Surgical Instrument Sterilization</h3>
+                <p>
+                  Reducing HAI (Hospital Acquired Infections) through
+                  standardized autoclave protocols and post-sterilization
+                  handling.
+                </p>
+                <a href="./error.html" class="btn-read">Read More <span>→</span></a>
+              </div>
+            </article>
+
+            <article class="blog-card" data-category="regulatory">
+              <div class="post-img">
+                <img
+                  src="./Assets/navigation_11zon.webp"
+                  alt="Legal Compliance"
+                />
+                <div class="post-tag">Regulatory</div>
+              </div>
+              <div class="post-body">
+                <span class="post-date">Jan 15, 2026</span>
+                <h3>Navigating FDA 510(k) Clearances for New Devices</h3>
+                <p>
+                  A step-by-step roadmap for manufacturers to prove substantial
+                  equivalence and gain US market entry for Class II devices.
+                </p>
+                <a href="./error.html" class="btn-read">Read More <span>→</span></a>
+              </div>
+            </article>
+
+            <article class="blog-card" data-category="trends">
+              <div class="post-img">
+                <img
+                  src="./Assets/cyber_11zon.webp"
+                  alt="Cybersecurity"
+                />
+                <div class="post-tag">Cybersecurity</div>
+              </div>
+              <div class="post-body">
+                <span class="post-date">Jan 08, 2026</span>
+                <h3>Cybersecurity Standards for Connected Medical Devices</h3>
+                <p>
+                  As IoT becomes standard in healthcare, protecting patient data
+                  from vulnerabilities in network-linked hardware is paramount.
+                </p>
+                <a href="./error.html" class="btn-read">Read More <span>→</span></a>
+              </div>
+            </article>
+
+            <article class="blog-card" data-category="launch">
+              <div class="post-img">
+                <img
+                  src="./Assets/ultrascan_11zon.webp"
+                  alt="Portable Ultrasound"
+                />
+                <div class="post-tag">Launch</div>
+              </div>
+              <div class="post-body">
+                <span class="post-date">Jan 02, 2026</span>
+                <h3>The UltraScan P10: Portable Imaging Reimagined</h3>
+                <p>
+                  Point-of-care diagnostics just got better with our handheld
+                  ultrasound that integrates seamlessly with tablet displays.
+                </p>
+                <a href="./error.html" class="btn-read">Read More <span>→</span></a>
+              </div>
+            </article>
+
+            <article class="blog-card" data-category="innovations">
+              <div class="post-img">
+                <img
+                  src="Assets/innovation ai_11zon.webp"
+                  alt="AI Radiology"
+                />
+                <div class="post-tag">Innovation</div>
+              </div>
+              <div class="post-body">
+                <span class="post-date">Dec 20, 2025</span>
+                <h3>AI Integration in Radiology Workflows</h3>
+                <p>
+                  How deep learning algorithms are helping radiologists flag
+                  anomalies in CT scans faster than ever before.
+                </p>
+                <a href="./error.html" class="btn-read">Read More <span>→</span></a>
+              </div>
+            </article>
+
+            <article class="blog-card" data-category="clinical">
+              <div class="post-img">
+                <img
+                  src="./Assets/blood pressure monitor_11zon_11zon (1).webp"
+                  alt="Blood Pressure Monitor"
+                />
+                <div class="post-tag">Clinical</div>
+              </div>
+              <div class="post-body">
+                <span class="post-date">Dec 14, 2025</span>
+                <h3>Reducing Calibration Errors in Infusion Pumps</h3>
+                <p>
+                  Detailed guide for clinical staff on maintaining dosing
+                  accuracy and preventing medication errors in high-risk
+                  patients.
+                </p>
+                <a href="./error.html" class="btn-read">Read More <span>→</span></a>
+              </div>
+            </article>
+
+            <article class="blog-card" data-category="cases">
+              <div class="post-img">
+                <img
+                  src="./Assets/Patient security_11zon.webp"
+                  alt="Smart Hospital"
+                />
+                <div class="post-tag">Case Study</div>
+              </div>
+              <div class="post-body">
+                <span class="post-date">Dec 05, 2025</span>
+                <h3>Improving Patient Safety in Cardiac ICU Units</h3>
+                <p>
+                  How a regional cardiology center implemented our real-time
+                  telemetry systems to reduce emergency response times.
+                </p>
+                <a href="./error.html" class="btn-read">Read More <span>→</span></a>
+              </div>
+            </article>
+
+            <article class="blog-card" data-category="regulatory">
+              <div class="post-img">
+                <img
+                  src="Assets/MDR_11zon.webp"
+                  alt="MDR Regulations"
+                />
+                <div class="post-tag">Regulatory</div>
+              </div>
+              <div class="post-body">
+                <span class="post-date">Nov 28, 2025</span>
+                <h3>EU MDR: Key Compliance Deadline Updates</h3>
+                <p>
+                  Essential information for manufacturers exporting to the EU
+                  regarding new technical documentation requirements and
+                  EUDAMED.
+                </p>
+                <a href="./error.html" class="btn-read">Read More <span>→</span></a>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="knowledge-resources">
+        <div class="container">
+          <div class="resource-grid">
+            <div class="resource-text anim-left">
+              <span class="label">Deep Dive</span>
+              <h2>Educational Resources</h2>
+              <p>
+                Access our comprehensive library of technical documentation and
+                clinical studies designed for healthcare engineers and medical
+                professionals.
+              </p>
+
+              <div class="resource-links">
+                <a href="./error.html" class="res-item">
+                  <div class="res-icon">📄</div>
+                  <div class="res-info">
+                    <strong>Whitepapers</strong
+                    ><span>Latest industry research</span>
+                  </div>
+                </a>
+                <a href="./error.html" class="res-item">
+                  <div class="res-icon">🛠️</div>
+                  <div class="res-info">
+                    <strong>Technical Guides</strong
+                    ><span>Hardware specifications</span>
+                  </div>
+                </a>
+                <a href="./error.html" class="res-item">
+                  <div class="res-icon">📦</div>
+                  <div class="res-info">
+                    <strong>Installation Manuals</strong
+                    ><span>Step-by-step setup</span>
+                  </div>
+                </a>
+                <a href="./error.html" class="res-item">
+                  <div class="res-icon">🔬</div>
+                  <div class="res-info">
+                    <strong>Clinical Reports</strong
+                    ><span>Efficacy & Safety data</span>
+                  </div>
+                </a>
+              </div>
+            </div>
+
+            <div class="resource-highlight anim-right">
+              <div class="highlight-card">
+                <h3>Why Follow Our Blog</h3>
+                <ul class="why-list">
+                  <li>Expert industry insights from MDs</li>
+                  <li>Global regulatory awareness (FDA/MDR)</li>
+                  <li>Advanced product education</li>
+                  <li>Healthcare innovation updates</li>
+                  <li>Professional technical guidance</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="newsletter-section">
+        <div class="container">
+          <div class="newsletter-box">
+            <div class="news-content">
+              <h2>Subscribe to Our Medical Technology Newsletter</h2>
+              <p>
+                Get the latest medical device updates and compliance alerts
+                delivered directly to your inbox.
+              </p>
+
+              <form class="news-form" id="newsletterForm">
+                <div class="input-group">
+                  <input
+                    type="email"
+                    placeholder="Enter professional email"
+                    required
+                  />
+                  <button type="submit" class="btn-subscribe">
+                    <span class="btn-text">Subscribe Now</span>
+                    <div class="loader-dots">
+                      <span></span><span></span><span></span>
+                    </div>
+                  </button>
+                </div>
+                <p class="form-note">
+                  By subscribing, you agree to our HIPAA-compliant privacy
+                  policy.
+                </p>
+              </form>
+            </div>
+            <div class="news-image">
+              <img
+                src="./Assets/medical tech_11zon.webp"
+                alt="Medical Tech"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <footer class="main-footer">
+        <div class="footer-grid">
+          <div class="footer-brand gsap-contact">
+            <div class="logo" style="margin-bottom: 20px">
+              <a href="./index.html">
+                <img
+                  src="./Assets/logo.webp"
+                  alt="MEDDEVICE Logo"
+                  style="max-width: 180px"
+                />
+              </a>
+            </div>
+            <!-- <h2 class="footer-logo">MED<span>DEVICE</span></h2> -->
+            <p>
+              Advancing human health through autonomous precision and clinical
+              intelligence. Our ISO-certified hardware provides the global
+              infrastructure for AI-assisted surgical operations.
+            </p>
+          </div>
+
+          <div class="footer-links gsap-contact">
+            <h4>Quick Links</h4>
+
+            <a href="./about.html">About</a>
+            <a href="./service.html">Services</a>
+            <a href="./blog.html">Blog</a>
+            <a href="./contact.html">Contact Us</a>
+            <a href="./dashboard.html">Dashboard</a>
+            <a href="./login.html">Login</a>
+          </div>
+          <div class="footer-links">
+            <h4>Navigation</h4>
+            <a href="./about.html">About</a>
+            <a href="./service.html">Services</a>
+            <a href="./blog.html">Clinical Blog</a>
+          </div>
+          <div class="footer-newsletter">
+            <h4>Newsletter</h4>
+            <p>Stay updated on medical breakthroughs.</p>
+            <div class="news-input">
+              <input type="email" placeholder="Email Address" required />
+              <button>→</button>
+            </div>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p>&copy; 2026 Medical Device Innovations. All Rights Reserved.</p>
+          <div class="legal-links">
+            <a href="./error.html">Privacy Policy</a>
+            <a href="./error.html">ISO Compliance</a>
+          </div>
+        </div>
+      </footer>
+    </div>
+  </body>
+
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script src="./script.js"></script>
+  <script>
+    AOS.init({
+      once: true,
+      duration: 1000,
+      easing: "ease-out-cubic",
+      startEvent: "aos:ready", // manual trigger
+    });
+  </script>
+  <!-- GSAP -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+
+  <!-- Header Scrolled -->
+  <script>
+    window.addEventListener("scroll", function () {
+      const header = document.querySelector(".header2");
+      const mainSection = document.querySelector("main"); // Targets your <main> tag
+
+      // Get the position of the main section
+      const sectionBottom = mainSection.getBoundingClientRect().bottom;
+
+      // If the bottom of 'main' is less than or equal to 0 (off-screen)
+      if (sectionBottom <= 0) {
+        header.classList.add("scrolled");
+      } else {
+        header.classList.remove("scrolled");
+      }
+    });
+  </script>
+
+  <script>
+    gsap.registerPlugin(ScrollTrigger);
+
+    // 1. Initialize Timelines (Paused)
+    const blogHeroTl = gsap.timeline({
+      paused: true,
+      defaults: { ease: "power4.out", duration: 1.5 },
+    });
+
+    const featuredTl = gsap.timeline({
+      paused: true,
+      defaults: { ease: "power3.out", duration: 1.2 },
+    });
+
+    // 2. Build Hero Animation
+    blogHeroTl
+      .from(".blog-hero .tagline", { opacity: 1, y: 20, duration: 0.8 })
+      .from(".gsap-blog-title", { opacity: 1, y: 40 }, "-=1")
+      .from(".blog-hero .subtext", { opacity: 1, y: 30 }, "-=1.2");
+
+    // 3. Build Featured Animation
+    featuredTl
+      .from(".featured-card", { scale: 0.95, opacity: 1, y: 50 })
+      .from(".featured-img-box", { x: -30, opacity: 1 }, "-=0.8")
+      .from(
+        ".featured-content-box > *",
+        { opacity: 1, y: 20, stagger: 0.1 },
+        "-=0.5",
+      );
+
+    // 4. Loader Sync Logic
+    window.addEventListener("load", () => {
+      // Matching your existing 1500ms + 600ms transition
+      setTimeout(() => {
+        setTimeout(() => {
+          /* Start Hero */
+          blogHeroTl.play();
+
+          /* Initialize Featured ScrollTrigger */
+          ScrollTrigger.create({
+            trigger: ".featured-article",
+            start: "top 75%",
+            onEnter: () => featuredTl.play(),
+          });
+        }, 600);
+      }, 1500);
+    });
+
+    // 5. Hover Workability
+    document
+      .querySelector(".featured-card")
+      .addEventListener("mousemove", (e) => {
+        const card = e.currentTarget;
+        const rect = card.getBoundingClientRect();
+        const x = e.clientX - rect.left;
+        const y = e.clientY - rect.top;
+
+        // Subtle glow effect following cursor
+        card.style.setProperty("--mouse-x", `${x}px`);
+        card.style.setProperty("--mouse-y", `${y}px`);
+      });
+  </script>
+
+  <!-- Blogs -->
+
+  <script>
+    gsap.registerPlugin(ScrollTrigger);
+
+    // 1. Initialize Timelines
+    const catTl = gsap.timeline({ paused: true });
+    const gridTl = gsap.timeline({ paused: true });
+
+    catTl
+      .from(".gsap-cat-title", { opacity: 1, y: 30, duration: 1 })
+      .from(
+        ".pill",
+        { opacity: 1, scale: 0.8, stagger: 0.1, duration: 0.8 },
+        "-=0.6",
+      );
+
+    gridTl.from(".blog-card", {
+      opacity: 1,
+      y: 50,
+      stagger: 0.2,
+      duration: 1.2,
+      ease: "power3.out",
+    });
+
+    // 2. Loader Integration
+    window.addEventListener("load", () => {
+      setTimeout(() => {
+        setTimeout(() => {
+          // Trigger Category Animation
+          ScrollTrigger.create({
+            trigger: ".blog-categories",
+            start: "top 85%",
+            onEnter: () => catTl.play(),
+          });
+
+          // Trigger Grid Animation
+          ScrollTrigger.create({
+            trigger: ".blog-listing",
+            start: "top 80%",
+            onEnter: () => gridTl.play(),
+          });
+        }, 600); // 600ms transition check
+      }, 1500); // 1.5s loader time
+    });
+
+    // 3. Category Filter Functionality
+    const pills = document.querySelectorAll(".pill");
+    const cards = document.querySelectorAll(".blog-card");
+
+    pills.forEach((pill) => {
+      pill.addEventListener("click", () => {
+        // UI Update
+        pills.forEach((p) => p.classList.remove("active"));
+        pill.classList.add("active");
+
+        const filter = pill.getAttribute("data-filter");
+
+        // GSAP Filter Animation
+        gsap.to(cards, {
+          opacity: 1,
+          scale: 0.9,
+          duration: 0.3,
+          onComplete: () => {
+            cards.forEach((card) => {
+              if (
+                filter === "all" ||
+                card.getAttribute("data-category") === filter
+              ) {
+                card.style.display = "block";
+              } else {
+                card.style.display = "none";
+              }
+            });
+
+            gsap.to(cards, {
+              opacity: 1,
+              scale: 1,
+              duration: 0.4,
+              stagger: 0.1,
+            });
+          },
+        });
+      });
+    });
+  </script>
+
+  <script>
+    // 1. Initialize Timelines
+    const resTl = gsap.timeline({ paused: true });
+    const newsTl = gsap.timeline({ paused: true });
+
+    resTl
+      .from(".knowledge-resources .anim-left", {
+        opacity: 1,
+        x: -50,
+        duration: 1,
+      })
+      .from(".res-item", { opacity: 1, y: 20, stagger: 0.1 }, "-=0.5")
+      .from(
+        ".highlight-card",
+        { opacity: 1, scale: 0.9, duration: 1 },
+        "-=0.8",
+      );
+
+    newsTl.from(".newsletter-box", {
+      opacity: 1,
+      y: 40,
+      duration: 1.2,
+      ease: "power4.out",
+    });
+
+    // 2. Loader Integration
+    window.addEventListener("load", () => {
+      setTimeout(() => {
+        setTimeout(() => {
+          ScrollTrigger.create({
+            trigger: ".knowledge-resources",
+            start: "top 80%",
+            onEnter: () => resTl.play(),
+          });
+
+          ScrollTrigger.create({
+            trigger: ".newsletter-section",
+            start: "top 85%",
+            onEnter: () => newsTl.play(),
+          });
+        }, 600);
+      }, 1500);
+    });
+
+    // 3. Newsletter Submission Functionality
+    const newsForm = document.getElementById("newsletterForm");
+    newsForm.addEventListener("submit", (e) => {
+      e.preventDefault();
+      const btn = newsForm.querySelector(".btn-subscribe");
+      const btnText = btn.querySelector(".btn-text");
+
+      // Simple UI feedback
+      btnText.innerText = "Processing...";
+      gsap.to(btn, { backgroundColor: "#27ae60", scale: 0.95, duration: 0.2 });
+
+      setTimeout(() => {
+        btnText.innerText = "Subscribed! ✔";
+        gsap.to(btn, { backgroundColor: "#2ecc71", scale: 1, duration: 0.3 });
+        newsForm.reset();
+      }, 2000);
+    });
+  </script>
+</html>

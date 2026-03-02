@@ -1,0 +1,676 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Medical</title>
+    <link rel="icon" href="./Assets/icon.webp" />
+    <link rel="stylesheet" href="./industries.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <!-- Swiper CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+    />
+  </head>
+  <body>
+    <div class="medical-loader" id="medicalLoader">
+      <div class="loader-wrapper">
+        <div class="device-container">
+          <div class="device-ring"></div>
+          <div class="device-ring inner"></div>
+          <div class="device-core">
+            <img src="./Assets/icon.webp" alt="Stackly" class="loader-logo" />
+          </div>
+          <div class="scan-line"></div>
+        </div>
+
+        <div class="ecg-line">
+          <svg viewBox="0 0 500 100" preserveAspectRatio="none">
+            <path
+              d="M0 50 L70 50 L90 20 L110 80 L130 50 L200 50 L220 30 L240 70 L260 50 L500 50"
+            />
+          </svg>
+        </div>
+
+        <h3 class="loading-text">INITIATING DIAGNOSTIC SCAN...</h3>
+        <p class="sub-text">Establishing Secure Interface with Medical Hub</p>
+      </div>
+    </div>
+
+    <div class="the-main">
+      <header>
+        <div class="header1">
+          <div class="container1">
+            <h3>Welcome To Stackly Medical Devices & Services.</h3>
+          </div>
+          <div class="container2">
+            <div>
+              <i class="fa-solid fa-phone-volume"></i>
+              <p>(123)456-7890</p>
+            </div>
+            <div>
+              <i class="fa-regular fa-envelope"></i>
+              <p>Support@stackly.com</p>
+            </div>
+          </div>
+        </div>
+        <div class="header2">
+          <div class="logo">
+            <a href="./index2.html">
+              <img src="./Assets/logo.webp" alt="Logo" />
+            </a>
+          </div>
+
+          <nav>
+            <ul>
+              <li class="dropdown">
+                <a href="./index2.html">Home</a>
+
+                <span class="drop-toggle">
+                  <i class="fa-solid fa-caret-down"></i>
+                </span>
+
+                <ul class="dropdown-menu">
+                  <li><a href="./index.html">Home 1</a></li>
+                </ul>
+              </li>
+
+              <li><a href="./products.html">Products</a></li>
+              <li><a href="./industries.html">Industries</a></li>
+              <li><a href="./innovation.html">Innovation</a></li>
+              <li><a href="./support.html">Support</a></li>
+            </ul>
+          </nav>
+
+          <div class="icons">
+            <div class="login">
+              <!-- <a class="btn" href="./app.html">Buy Now</a> -->
+
+              <a href="./login2.html">
+                <i class="fa-regular fa-circle-user"></i>
+              </a>
+            </div>
+
+            <div class="mobilebar">
+              <div class="hamburger-box">
+                <div class="hamburger">
+                  <div class="line line1"></div>
+                  <div class="line line2"></div>
+                  <div class="line line3"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
+
+      <div class="sidebar" id="sidebar">
+        <ul>
+          <li
+            class="has-dropdown menu-item"
+            data-aos="fade-up-right"
+            data-aos-delay="100"
+          >
+            <div class="dropdown-header">
+              <a href="./index2.html">Home</a>
+              <span class="drop-caret" id="home-caret">▾</span>
+            </div>
+            <ul class="submenu" id="home-dropdown">
+              <li><a href="./index.html">Home 1</a></li>
+            </ul>
+          </li>
+
+          <li class="menu-item" data-aos="fade-up-right" data-aos-delay="150">
+            <a href="./products.html">Products</a>
+          </li>
+          <li class="menu-item" data-aos="fade-up-right" data-aos-delay="200">
+            <a href="./industries.html">Industries</a>
+          </li>
+          <li class="menu-item" data-aos="fade-up-right" data-aos-delay="250">
+            <a href="./innovation.html">Innovation</a>
+          </li>
+          <li class="menu-item" data-aos="fade-up-right" data-aos-delay="300">
+            <a href="./support.html">Support</a>
+          </li>
+
+          <li class="menu-item" data-aos="fade-up-right" data-aos-delay="400">
+            <a href="./login2.html">Login</a>
+          </li>
+        </ul>
+
+        <div
+          class="sidebar-login"
+          data-aos="fade-up-right"
+          data-aos-delay="450"
+        >
+          <!-- <a href="./app.html">
+            <button class="login-btn">Buy Now</button>
+          </a> -->
+        </div>
+      </div>
+
+      <div class="overlay" id="overlay"></div>
+
+      <main>
+        <section class="medical-theme-section">
+          <div class="med-hero">
+            <div class="med-container">
+              <span class="med-tagline"
+                >Empowering Every Healthcare Sector</span
+              >
+              <h1 class="med-title">
+                Smart Healthcare Solutions <br />Across Industries
+              </h1>
+              <p class="med-description">
+                Our connected medical devices and cloud-based SaaS platform
+                support hospitals, manufacturers, distributors, and healthcare
+                providers worldwide.
+              </p>
+              <a href="./error2.html" class="med-btn">Explore Solutions</a>
+            </div>
+          </div>
+
+          <div class="med-container">
+            <div class="industry-block">
+              <div class="industry-text">
+                <!-- <div class="industry-icon">🏥</div> -->
+                <h2 class="industry-heading">
+                  Smart Infrastructure for Modern Hospitals
+                </h2>
+                <p>
+                  We provide real-time patient monitoring, ICU connectivity, and
+                  centralized device management systems designed for
+                  high-performance healthcare environments.
+                </p>
+
+                <div class="use-case-box">
+                  <strong>Use Cases:</strong> ICU monitoring, Nurse dashboards,
+                  Remote access, Predictive analytics
+                </div>
+
+                <div class="benefit-pills">
+                  <span class="pill">✔ Faster clinical decisions</span>
+                  <span class="pill">✔ Reduced manual errors</span>
+                  <span class="pill">✔ Improved patient outcomes</span>
+                </div>
+              </div>
+              <div class="industry-img-wrap">
+                <img
+                  src="./Assets/medical tech_11zon.webp"
+                  alt="Hospital Tech"
+                />
+              </div>
+            </div>
+
+            <div class="industry-block row-reverse">
+              <div class="industry-text">
+                <!-- <div class="industry-icon">🏭</div> -->
+                <h2 class="industry-heading">
+                  Digital Enablement for Device Manufacturers
+                </h2>
+                <p>
+                  Transform traditional medical equipment into connected,
+                  data-driven smart devices with our embedded IoT and SaaS
+                  integration solutions.
+                </p>
+
+                <div class="use-case-box">
+                  <strong>Use Cases:</strong> Firmware cloud integration,
+                  Performance analytics, Remote updates, Lifecycle tracking
+                </div>
+
+                <div class="benefit-pills">
+                  <span class="pill">✔ Recurring SaaS revenue model</span>
+                  <span class="pill">✔ Predictive maintenance insights</span>
+                  <span class="pill">✔ Global device visibility</span>
+                </div>
+              </div>
+              <div class="industry-img-wrap">
+                <img
+                  src="./Assets/maintainence_11zon.webp"
+                  alt="Manufacturing Tech"
+                />
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+
+      <section class="med-tech-hub">
+        <div class="med-container">
+          <header class="hub-header">
+            <span class="hub-tag">Industry Ecosystem</span>
+            <h2 class="hub-main-title">Integrated Medical Intelligence</h2>
+            <p>
+              Bridging the gap between hardware and healthcare through our
+              unified IoT ecosystem.
+            </p>
+          </header>
+
+          <div class="hub-grid">
+            <article class="hub-card" data-category="logistics">
+              <div class="card-inner">
+                <div class="card-head">
+                  <span class="card-number">01</span>
+                  <div class="card-icon">📦</div>
+                </div>
+                <h3 class="card-title">Smart Distribution & Inventory</h3>
+                <p class="card-text">
+                  Total visibility into the supply chain. We transform
+                  warehouses into intelligent hubs with predictive restocking
+                  and real-time transit telemetry.
+                </p>
+
+                <ul class="card-features">
+                  <li>
+                    <strong>Warehouse:</strong> Environment sensing
+                    (Temp/Humidity)
+                  </li>
+                  <li>
+                    <strong>Shipment:</strong> Shock & vibration monitoring
+                  </li>
+                  <li><strong>Analytics:</strong> Demand-curve forecasting</li>
+                </ul>
+
+                <div class="card-image">
+                  <img
+                    src="./Assets/Logistics_11zon_11zon.webp"
+                    alt="Logistics"
+                  />
+                </div>
+                <div class="card-footer">
+                  <span class="benefit-tag">✔ -20% Waste</span>
+                  <span class="benefit-tag">✔ 99.9% Accuracy</span>
+                </div>
+              </div>
+            </article>
+
+            <article class="hub-card highlight" data-category="patient-care">
+              <div class="card-inner">
+                <div class="card-head">
+                  <span class="card-number">02</span>
+                  <div class="card-icon">🏠</div>
+                </div>
+                <h3 class="card-title">Connected Remote Patient Care</h3>
+                <p class="card-text">
+                  Bringing the ICU to the living room. Our portable IoT devices
+                  provide clinical-grade data to doctors without the patient
+                  leaving home.
+                </p>
+
+                <ul class="card-features">
+                  <li>
+                    <strong>Chronic:</strong> 24/7 cardiac and glucose tracking
+                  </li>
+                  <li>
+                    <strong>Telemedicine:</strong> High-def vitals streaming
+                  </li>
+                  <li>
+                    <strong>Safety:</strong> Fall detection & emergency alerts
+                  </li>
+                </ul>
+
+                <div class="card-image">
+                  <img
+                    src="./Assets/remotecare_11zon.webp"
+                    alt="Remote Care"
+                  />
+                </div>
+                <div class="card-footer">
+                  <span class="benefit-tag">✔ Faster Response</span>
+                  <span class="benefit-tag">✔ Patient Comfort</span>
+                </div>
+              </div>
+            </article>
+
+            <article class="hub-card" data-category="labs">
+              <div class="card-inner">
+                <div class="card-head">
+                  <span class="card-number">03</span>
+                  <div class="card-icon">🧪</div>
+                </div>
+                <h3 class="card-title">Cloud-Connected Diagnostics</h3>
+                <p class="card-text">
+                  Automating the diagnostic pipeline. We sync lab hardware
+                  directly to physician dashboards to eliminate manual data
+                  entry and human error.
+                </p>
+
+                <ul class="card-features">
+                  <li><strong>Automation:</strong> Instant result syncing</li>
+                  <li><strong>Security:</strong> HIPAA-compliant encryption</li>
+                  <li><strong>Scale:</strong> Multi-location lab sync</li>
+                </ul>
+
+                <div class="card-image">
+                  <img
+                    src="./Assets/lab_11zon.webp"
+                    alt="Labs"
+                  />
+                </div>
+                <div class="card-footer">
+                  <span class="benefit-tag">✔ Zero Paperwork</span>
+                  <span class="benefit-tag">✔ Instant Results</span>
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="capabilities-section">
+        <div class="cap-container">
+          <div class="cap-wrapper">
+            <div class="cap-content">
+              <span class="cap-tag">Unified Ecosystem</span>
+              <h2 class="cap-title">One Platform.<br />Multiple Industries.</h2>
+              <p class="cap-desc">
+                Our unified SaaS ecosystem adapts to different healthcare
+                sectors while maintaining enterprise-grade standards across
+                every touchpoint.
+              </p>
+
+              <div class="cap-list">
+                <div class="cap-item">
+                  <span class="cap-icon">🛡️</span>
+                  <div>
+                    <h4>Secure Cloud Infrastructure</h4>
+                    <p>HIPAA-compliant data encryption and secure tunneling.</p>
+                  </div>
+                </div>
+                <div class="cap-item">
+                  <span class="cap-icon">🤖</span>
+                  <div>
+                    <h4>AI-Powered Analytics</h4>
+                    <p>
+                      Predictive modeling for patient outcomes and device
+                      health.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="cap-visual-grid">
+              <div class="cap-card" data-speed="1.1">
+                <div class="card-img">
+                  <img
+                    src="./Assets/data analtics_11zon.webp"
+                    alt="Data Analytics"
+                  />
+                </div>
+                <div class="card-info">
+                  <h5>Multi-location Scalability</h5>
+                  <p>Sync data across global hospital networks seamlessly.</p>
+                </div>
+              </div>
+
+              <div class="cap-card" data-speed="0.9">
+                <div class="card-img">
+                  <img
+                    src="./Assets/Cloud Servers_11zon.webp"
+                    alt="Cloud Servers"
+                  />
+                </div>
+                <div class="card-info">
+                  <h5>Role-based Access Control</h5>
+                  <p>Granular permissions for doctors, staff, and admins.</p>
+                </div>
+              </div>
+
+              <div class="cap-card" data-speed="1.2">
+                <div class="card-img">
+                  <img
+                    src="./Assets/device performance_11zon.webp"
+                    alt="Device Performance"
+                  />
+                </div>
+                <div class="card-info">
+                  <h5>Device Performance Monitoring</h5>
+                  <p>
+                    Real-time heartbeat and diagnostic pings for every IoT unit.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <footer class="main-footer">
+        <div class="footer-grid">
+          <div class="footer-brand gsap-contact">
+            <div class="logo" style="margin-bottom: 20px">
+              <a href="./index2.html">
+                <img
+                  src="./Assets/logo.webp"
+                  alt="MEDDEVICE Logo"
+                  style="max-width: 180px"
+                />
+              </a>
+            </div>
+            <!-- <h2 class="footer-logo">MED<span>DEVICE</span></h2> -->
+            <p>
+              Advancing human health through autonomous precision and clinical
+              intelligence. Our ISO-certified hardware provides the global
+              infrastructure for AI-assisted surgical operations.
+            </p>
+          </div>
+
+          <div class="footer-links gsap-contact">
+            <h4>Quick Links</h4>
+
+            <a href="./products.html">Products</a>
+            <a href="./industries.html">Industries</a>
+            <a href="./innovation.html">Innovation</a>
+            <a href="./support.html">Support</a>
+            <a href="./login2.html">Login</a>
+          </div>
+          <div class="footer-links">
+            <h4>Navigation</h4>
+            <a href="./products.html">Products</a>
+            <a href="./industries.html">Industries</a>
+            <a href="./innovation.html">Innovation</a>
+            <a href="./support.html">Support</a>
+          </div>
+          <div class="footer-newsletter">
+            <h4>Newsletter</h4>
+            <p>Stay updated on medical breakthroughs.</p>
+            <div class="news-input">
+              <input type="email" placeholder="Email Address" required />
+              <button>→</button>
+            </div>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p>&copy; 2026 Medical Device Innovations. All Rights Reserved.</p>
+          <div class="legal-links">
+            <a href="./error2.html">Privacy Policy</a>
+            <a href="./error2.html">ISO Compliance</a>
+          </div>
+        </div>
+      </footer>
+    </div>
+  </body>
+
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script src="./script.js"></script>
+  <script>
+    AOS.init({
+      once: true,
+      duration: 1000,
+      easing: "ease-out-cubic",
+      startEvent: "aos:ready", // manual trigger
+    });
+  </script>
+  <!-- GSAP -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+
+  <!-- Header Scrolled -->
+  <script>
+    window.addEventListener("scroll", function () {
+      const header = document.querySelector(".header2");
+      const mainSection = document.querySelector("main"); // Targets your <main> tag
+
+      // Get the position of the main section
+      const sectionBottom = mainSection.getBoundingClientRect().bottom;
+
+      // If the bottom of 'main' is less than or equal to 0 (off-screen)
+      if (sectionBottom <= 0) {
+        header.classList.add("scrolled");
+      } else {
+        header.classList.remove("scrolled");
+      }
+    });
+  </script>
+
+  <script>
+    // 1. Register ScrollTrigger immediately
+    gsap.registerPlugin(ScrollTrigger);
+
+    /**
+     * 2. DEFINE TIMELINES (Initially Paused)
+     * We set these up early so they are ready to play the moment the loader clears.
+     */
+
+    // Hero Section Timeline
+    const heroTl = gsap.timeline({
+      paused: true,
+      defaults: { ease: "power3.out", duration: 1.2 },
+    });
+
+    heroTl
+      .from(".med-tagline", { opacity: 1, y: 30 })
+      .from(".med-title", { opacity: 1, y: 40 }, "-=0.9")
+      .from(".med-description", { opacity: 1, y: 20 }, "-=0.9")
+      .from(".med-btn", { opacity: 1, scale: 0.8, y: 20 }, "-=0.7");
+
+    // Industry Ecosystem (Content Hub) Timeline
+    const hubTl = gsap.timeline({
+      paused: true,
+      defaults: { ease: "expo.out", duration: 1.4 },
+    });
+
+    hubTl
+      .from(".hub-tag", { opacity: 1, y: 20 })
+      .from(".hub-main-title", { opacity: 1, y: 30 }, "-=1.1")
+      .from(".hub-header p", { opacity: 1, y: 20 }, "-=1.1")
+      .from(
+        ".hub-card",
+        {
+          opacity: 1,
+          y: 60,
+          scale: 0.92,
+          stagger: 0.2, // Creates the 1-2-3 sequence
+          clearProps: "all", // Cleans up transforms after animation
+        },
+        "-=0.8",
+      );
+
+    /**
+     * 3. DEFINE SCROLL-TRIGGERED ANIMATIONS
+     * These function-wrapped animations handle the rest of the page.
+     */
+    const initScrollAnimations = () => {
+      // A. Alternating Industry Blocks (Hospitals, Manufacturers, etc.)
+      gsap.utils.toArray(".industry-block").forEach((block) => {
+        gsap.from(block, {
+          scrollTrigger: {
+            trigger: block,
+            start: "top 85%",
+            toggleActions: "play none none none",
+          },
+          opacity: 1,
+          y: 80,
+          duration: 1.2,
+          ease: "power2.out",
+        });
+      });
+
+      // B. Cross-Industry Capabilities (Dark Section)
+      const capTl = gsap.timeline({
+        scrollTrigger: {
+          trigger: ".capabilities-section",
+          start: "top 75%",
+        },
+      });
+
+      capTl
+        .from(".cap-tag", { opacity: 1, x: -40, duration: 0.8 })
+        .from(".cap-title", { opacity: 1, x: -40, duration: 0.8 }, "-=0.6")
+        .from(".cap-desc", { opacity: 1, x: -40, duration: 0.8 }, "-=0.6")
+        .from(
+          ".cap-item",
+          { opacity: 1, y: 30, stagger: 0.15, duration: 0.7 },
+          "-=0.4",
+        );
+
+      // C. Parallax Effect for Capability Cards
+      gsap.utils.toArray(".cap-card").forEach((card) => {
+        const speed = parseFloat(card.getAttribute("data-speed")) || 1;
+        gsap.from(card, {
+          scrollTrigger: {
+            trigger: card,
+            start: "top bottom",
+            end: "bottom top",
+            scrub: 1.5, // Smooth lag effect
+          },
+          y: 100 * speed,
+          opacity: 1,
+          ease: "none",
+        });
+      });
+    };
+
+    /**
+     * 4. THE LOADER & HANDOFF LOGIC
+     * This is the "Conductor" that triggers everything in order.
+     */
+    window.addEventListener("load", () => {
+      const loader = document.getElementById("medicalLoader");
+      const mainContent = document.querySelector("main");
+      const LOADER_IDLE = 1500; // Time user sees the loader
+
+      if (!loader || !mainContent) return;
+
+      // Step 1: Wait for the static loader time
+      setTimeout(() => {
+        // Step 2: Fade out the loader
+        loader.style.opacity = "0";
+
+        setTimeout(() => {
+          // Step 3: Remove loader from view
+          loader.style.display = "none";
+
+          // Step 4: Reveal Main (CSS should have opacity:0, visibility:hidden initially)
+          mainContent.style.visibility = "visible";
+          mainContent.style.opacity = "1";
+          mainContent.style.transform = "translateY(0)";
+
+          // Step 5: Initialize ScrollTriggers now that the DOM is visible
+          initScrollAnimations();
+
+          // Step 6: IMPORTANT - Recalculate all scroll positions
+          ScrollTrigger.refresh();
+
+          // Step 7: Play the entry sequences
+          heroTl.play();
+          hubTl.play();
+
+          // Step 8: Final AOS Refresh (if using it)
+          if (typeof AOS !== "undefined") {
+            AOS.refreshHard();
+          }
+        }, 600); // Wait for loader's CSS opacity transition to finish
+      }, LOADER_IDLE);
+    });
+  </script>
+</html>

@@ -1,0 +1,496 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Medical</title>
+    <link rel="icon" href="./Assets/icon.webp" />
+    <link rel="stylesheet" href="./contact.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <!-- Swiper CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+    />
+  </head>
+  <body>
+    <div class="medical-loader" id="medicalLoader">
+      <div class="loader-wrapper">
+        <div class="device-container">
+          <div class="device-ring"></div>
+          <div class="device-ring inner"></div>
+          <div class="device-core">
+            <img src="./Assets/icon.webp" alt="Stackly" class="loader-logo" />
+          </div>
+          <div class="scan-line"></div>
+        </div>
+
+        <div class="ecg-line">
+          <svg viewBox="0 0 500 100" preserveAspectRatio="none">
+            <path
+              d="M0 50 L70 50 L90 20 L110 80 L130 50 L200 50 L220 30 L240 70 L260 50 L500 50"
+            />
+          </svg>
+        </div>
+
+        <h3 class="loading-text">INITIATING DIAGNOSTIC SCAN...</h3>
+        <p class="sub-text">Establishing Secure Interface with Medical Hub</p>
+      </div>
+    </div>
+
+    <div class="the-main">
+      <header>
+        <div class="header1">
+          <div class="container1">
+            <h3>Welcome To Stackly Medical Devices & Services.</h3>
+          </div>
+          <div class="container2">
+            <div>
+              <i class="fa-solid fa-phone-volume"></i>
+              <p>(123)456-7890</p>
+            </div>
+            <div>
+              <i class="fa-regular fa-envelope"></i>
+              <p>Support@stackly.com</p>
+            </div>
+          </div>
+        </div>
+        <div class="header2">
+          <div class="logo">
+            <a href="./index.html">
+              <img src="./Assets/logo.webp" alt="Logo" />
+            </a>
+          </div>
+
+          <nav>
+            <ul>
+              <li class="dropdown">
+                <a href="./index.html">Home</a>
+
+                <span class="drop-toggle">
+                  <i class="fa-solid fa-caret-down"></i>
+                </span>
+
+                <ul class="dropdown-menu">
+                  <li><a href="./index2.html">Home 2</a></li>
+                </ul>
+              </li>
+
+              <li><a href="./about.html">About</a></li>
+              <li><a href="./service.html">Services</a></li>
+              <li><a href="./blog.html">Blog</a></li>
+              <li><a href="./contact.html">Contact Us</a></li>
+              <li><a href="./dashboard.html">Dashboard</a></li>
+            </ul>
+          </nav>
+
+          <div class="icons">
+            <div class="login">
+              <!-- <a class="btn" href="./app.html">Buy Now</a> -->
+
+              <a href="./login.html">
+                <i class="fa-regular fa-circle-user"></i>
+              </a>
+            </div>
+
+            <div class="mobilebar">
+              <div class="hamburger-box">
+                <div class="hamburger">
+                  <div class="line line1"></div>
+                  <div class="line line2"></div>
+                  <div class="line line3"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
+
+      <div class="sidebar" id="sidebar">
+        <ul>
+          <li
+            class="has-dropdown menu-item"
+            data-aos="fade-up-right"
+            data-aos-delay="100"
+          >
+            <div class="dropdown-header">
+              <a href="./index.html">Home</a>
+              <span class="drop-caret" id="home-caret">▾</span>
+            </div>
+            <ul class="submenu" id="home-dropdown">
+              <li><a href="./index2.html">Home 2</a></li>
+            </ul>
+          </li>
+
+          <li class="menu-item" data-aos="fade-up-right" data-aos-delay="150">
+            <a href="./about.html">About</a>
+          </li>
+          <li class="menu-item" data-aos="fade-up-right" data-aos-delay="200">
+            <a href="./service.html">Services</a>
+          </li>
+          <li class="menu-item" data-aos="fade-up-right" data-aos-delay="250">
+            <a href="./blog.html">Blog</a>
+          </li>
+          <li class="menu-item" data-aos="fade-up-right" data-aos-delay="300">
+            <a href="./contact.html">Contact Us</a>
+          </li>
+          <li class="menu-item" data-aos="fade-up-right" data-aos-delay="350">
+            <a href="./dashboard.html">Dashboard</a>
+          </li>
+          <li class="menu-item" data-aos="fade-up-right" data-aos-delay="400">
+            <a href="./login.html">Login</a>
+          </li>
+        </ul>
+
+        <div
+          class="sidebar-login"
+          data-aos="fade-up-right"
+          data-aos-delay="450"
+        >
+          <!-- <a href="./app.html">
+            <button class="login-btn">Buy Now</button>
+          </a> -->
+        </div>
+      </div>
+
+      <main></main>
+
+      <div class="overlay" id="overlay"></div>
+
+      <section class="contact-hero">
+        <div class="hero-bg-overlay"></div>
+        <div class="container">
+          <div class="contact-hero-content">
+            <span class="tagline">We’re Here to Help</span>
+            <h1 class="gsap-contact-title">Get in Touch with Our Team</h1>
+            <p class="subtext">
+              Have questions about our medical devices or services? Our experts
+              are ready to assist you with reliable and timely support, ensuring
+              your facility operates without interruption.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="contact-info-section">
+        <div class="container">
+          <div class="info-wrapper">
+            <div class="info-text anim-left">
+              <span class="label">Our Headquarters</span>
+              <h2>Corporate Office</h2>
+              <p>
+                Located in the heart of Chennai’s medical technology hub, our
+                facility houses our engineering, regulatory, and support teams.
+              </p>
+
+              <div class="info-grid">
+                <div class="info-item">
+                  <div class="icon-circle">📍</div>
+                  <div class="details">
+                    <strong>Address</strong>
+                    <span
+                      >123 Healthcare Industrial Park, Medical Technology Zone,
+                      Chennai, Tamil Nadu – 6000XX, India</span
+                    >
+                  </div>
+                </div>
+                <div class="info-item">
+                  <div class="icon-circle">📞</div>
+                  <div class="details">
+                    <strong>Phone</strong>
+                    <span>+91 9XXXXXXXXX</span>
+                  </div>
+                </div>
+                <div class="info-item">
+                  <div class="icon-circle">📧</div>
+                  <div class="details">
+                    <strong>Email</strong>
+                    <span>info@yourcompany.com</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="hours-card anim-right">
+              <div class="hours-inner">
+                <div class="hours-header">
+                  <span class="icon">🕒</span>
+                  <h3>Business Hours</h3>
+                </div>
+                <ul class="hours-list">
+                  <li>
+                    <span>Monday – Friday</span>
+                    <strong>9:00 AM – 6:00 PM</strong>
+                  </li>
+                  <li>
+                    <span>Saturday</span> <strong>9:00 AM – 1:00 PM</strong>
+                  </li>
+                  <li class="closed">
+                    <span>Sunday</span> <strong>Closed</strong>
+                  </li>
+                </ul>
+                <div class="emergency-note">
+                  <p>
+                    For 24/7 critical equipment support, please use your
+                    dedicated AMC hotline.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="support-partnership">
+        <div class="container">
+          <div class="dual-grid">
+            <div class="support-card anim-left">
+              <div class="card-tag">Service Center</div>
+              <h2>Need Technical Support?</h2>
+              <p>
+                For urgent service requests, preventive maintenance scheduling,
+                or immediate product troubleshooting, our certified engineers
+                are on standby.
+              </p>
+
+              <div class="contact-methods">
+                <a href="mailto:support@yourcompany.com" class="method-item">
+                  <span class="m-icon">📧</span>
+                  <div class="m-info">
+                    <strong>Support Email</strong>
+                    <span>support@yourcompany.com</span>
+                  </div>
+                </a>
+                <a href="tel:+919000000000" class="method-item emergency">
+                  <span class="m-icon">📞</span>
+                  <div class="m-info">
+                    <strong>24/7 Emergency Line</strong>
+                    <span>+91 9XXXXXXXXX</span>
+                  </div>
+                </a>
+              </div>
+              <a href="./error.html" class="btn-primary">Request Service</a>
+            </div>
+
+            <div class="partner-card anim-right">
+              <div class="card-tag">Global Outreach</div>
+              <h2>Become a Distribution Partner</h2>
+              <p>
+                Expand your portfolio with our ISO-certified medical technology.
+                We are looking for established partners to bring our life-saving
+                solutions to new markets.
+              </p>
+              <ul class="partner-perks">
+                <li>Exclusive Regional Rights</li>
+                <li>Technical Training & Certification</li>
+                <li>Marketing & Regulatory Support</li>
+              </ul>
+              <a href="./error.html" class="btn-outline-green"
+                >Apply for Partnership</a
+              >
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="map-section">
+        <div class="container">
+          <div class="section-header center">
+            <span class="label">Our Presence</span>
+            <h2>Find Our Location</h2>
+          </div>
+          <div class="map-container">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d124440.12345678!2d80.154321!3d13.082682!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a5265ea4f7d333f%3A0x40c1a179a1a0b0!2sChennai%2C%20Tamil%20Nadu!5e0!3m2!1sen!2sin!4v1700000000000!5m2!1sen!2sin"
+              width="100%"
+              height="350"
+              style="border: 0"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            >
+            </iframe>
+          </div>
+        </div>
+      </section>
+
+      <footer class="main-footer">
+        <div class="footer-grid">
+          <div class="footer-brand gsap-contact">
+            <div class="logo" style="margin-bottom: 20px">
+              <a href="./index.html">
+                <img
+                  src="./Assets/logo.webp"
+                  alt="MEDDEVICE Logo"
+                  style="max-width: 180px"
+                />
+              </a>
+            </div>
+            <!-- <h2 class="footer-logo">MED<span>DEVICE</span></h2> -->
+            <p>
+              Advancing human health through autonomous precision and clinical
+              intelligence. Our ISO-certified hardware provides the global
+              infrastructure for AI-assisted surgical operations.
+            </p>
+          </div>
+
+          <div class="footer-links gsap-contact">
+            <h4>Quick Links</h4>
+
+            <a href="./about.html">About</a>
+            <a href="./service.html">Services</a>
+            <a href="./blog.html">Blog</a>
+            <a href="./contact.html">Contact Us</a>
+            <a href="./dashboard.html">Dashboard</a>
+            <a href="./login.html">Login</a>
+          </div>
+          <div class="footer-links">
+            <h4>Navigation</h4>
+            <a href="./about.html">About</a>
+            <a href="./service.html">Services</a>
+            <a href="./blog.html">Clinical Blog</a>
+          </div>
+          <div class="footer-newsletter">
+            <h4>Newsletter</h4>
+            <p>Stay updated on medical breakthroughs.</p>
+            <div class="news-input">
+              <input type="email" placeholder="Email Address" required />
+              <button>→</button>
+            </div>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p>&copy; 2026 Medical Device Innovations. All Rights Reserved.</p>
+          <div class="legal-links">
+            <a href="./error.html">Privacy Policy</a>
+            <a href="./error.html">ISO Compliance</a>
+          </div>
+        </div>
+      </footer>
+    </div>
+  </body>
+
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script src="./script.js"></script>
+  <script>
+    AOS.init({
+      once: true,
+      duration: 1000,
+      easing: "ease-out-cubic",
+      startEvent: "aos:ready", // manual trigger
+    });
+  </script>
+  <!-- GSAP -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+
+  <!-- Header Scrolled -->
+  <script>
+    window.addEventListener("scroll", function () {
+      const header = document.querySelector(".header2");
+      const mainSection = document.querySelector("main"); // Targets your <main> tag
+
+      // Get the position of the main section
+      const sectionBottom = mainSection.getBoundingClientRect().bottom;
+
+      // If the bottom of 'main' is less than or equal to 0 (off-screen)
+      if (sectionBottom <= 0) {
+        header.classList.add("scrolled");
+      } else {
+        header.classList.remove("scrolled");
+      }
+    });
+  </script>
+
+  <script>
+    gsap.registerPlugin(ScrollTrigger);
+
+    // 1. Initialize Timelines
+    const contactHeroTl = gsap.timeline({
+      paused: true,
+      defaults: { ease: "power4.out", duration: 1.5 },
+    });
+
+    const infoTl = gsap.timeline({
+      paused: true,
+      defaults: { ease: "power3.out", duration: 1.2 },
+    });
+
+    // 2. Build Animations
+    contactHeroTl
+      .from(".contact-hero .tagline", { opacity: 1, y: 20 })
+      .from(".gsap-contact-title", { opacity: 1, y: 40 }, "-=1")
+      .from(".contact-hero .subtext", { opacity: 1, y: 30 }, "-=1.2");
+
+    infoTl
+      .from(".info-text .label", { opacity: 1, x: -20 })
+      .from(".info-text h2", { opacity: 1, x: -30 }, "-=0.8")
+      .from(".info-item", { opacity: 1, y: 20, stagger: 0.2 }, "-=0.5")
+      .from(".hours-card", { opacity: 1, scale: 0.9, x: 30 }, "-=1");
+
+    // 3. Sync with Loader (1.5s loader + 600ms transition)
+    window.addEventListener("load", () => {
+      setTimeout(() => {
+        setTimeout(() => {
+          // Play Hero
+          contactHeroTl.play();
+
+          // Info ScrollTrigger
+          ScrollTrigger.create({
+            trigger: ".contact-info-section",
+            start: "top 80%",
+            onEnter: () => infoTl.play(),
+          });
+        }, 600);
+      }, 1500);
+    });
+  </script>
+
+  <script>
+    // 1. Initialize Timelines
+const supportTl = gsap.timeline({
+    paused: true,
+    defaults: { ease: "power3.out", duration: 1 }
+});
+
+// 2. Build Sequence
+supportTl
+    .from(".support-card", { opacity: 1, x: -40, duration: 1.2 })
+    .from(".partner-card", { opacity: 1, x: 40, duration: 1.2 }, "-=1")
+    .from(".method-item", { opacity: 1, y: 15, stagger: 0.1 }, "-=0.8")
+    .from(".partner-perks li", { opacity: 1, x: 20, stagger: 0.1 }, "-=0.8");
+
+// 3. Loader & ScrollTrigger Sync
+window.addEventListener("load", () => {
+    setTimeout(() => {
+        setTimeout(() => {
+            
+            // Trigger Support Grid
+            ScrollTrigger.create({
+                trigger: ".support-partnership",
+                start: "top 75%",
+                onEnter: () => supportTl.play()
+            });
+
+            // Map Animation (Simple Fade)
+            gsap.from(".map-container", {
+                scrollTrigger: {
+                    trigger: ".map-section",
+                    start: "top 80%"
+                },
+                opacity: 1,
+                y: 30,
+                duration: 1.5
+            });
+
+        }, 600);
+    }, 1500);
+});
+  </script>
+</html>
