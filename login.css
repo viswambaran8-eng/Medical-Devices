@@ -785,7 +785,7 @@ body.no-scroll {
   text-transform: uppercase;
 }
 
-.ecg-line .sub-text {
+ .sub-text {
   color: #2ecc71;
   font-size: 14px;
   margin-top: 5px;
@@ -830,8 +830,7 @@ body.no-scroll {
     letter-spacing: 3px;
     text-align: center;
   }
-
-  .ecg-line .sub-text {
+ .sub-text {
     font-size: 12px;
     padding: 0 20px;
   }
@@ -879,7 +878,7 @@ body.no-scroll {
     letter-spacing: 1.5px;
   }
 
-  .ecg-line .sub-text {
+ .sub-text {
     font-size: 10px;
   }
 }
